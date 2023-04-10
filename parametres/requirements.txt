@@ -1,0 +1,7 @@
+dearpygui
+rdkit
+tabulate
+lxml
+tqdm
+argparse
+numpy

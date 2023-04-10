@@ -1,0 +1,25 @@
+npts 100 100 100                        # num.grid points in xyz
+gridfld receptor_multimer.maps.fld    # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C NA OA N SA HD     # receptor atom types
+ligand_types H HD HS C A N NA NS OA OS F Mg MG P   # ligand atom types
+receptor /home/louis/total/receptor/receptor_multimer.pdbqt      # macromolecule
+gridcenter 270 256 283                      # xyz-coordinates or auto
+smooth 0.5       # store minimum energy w/in rad(A)
+map receptor_multimer.H.map
+map receptor_multimer.HD.map
+map receptor_multimer.HS.map
+map receptor_multimer.C.map
+map receptor_multimer.A.map
+map receptor_multimer.N.map
+map receptor_multimer.NA.map
+map receptor_multimer.NS.map
+map receptor_multimer.OA.map
+map receptor_multimer.OS.map
+map receptor_multimer.F.map
+map receptor_multimer.Mg.map
+map receptor_multimer.MG.map
+map receptor_multimer.P.map
+elecmap receptor_multimer.e.map       # electrostatic potential map
+dsolvmap receptor_multimer.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

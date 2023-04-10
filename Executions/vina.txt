@@ -1,0 +1,12 @@
+#SOFTWARE# vina
+#DEBUG# True 
+#THREADS# 6
+#NRUNS# 100 
+#PATHDB# /home/louis/Téléchargements/PROJETISDD/ligands 
+#SPACING# 1
+#CENTERX# 11.356
+#CENTERY# 0
+#CENTERZ# 8.729 
+#SIZEX# 50
+#SIZEY# 76
+#SIZEZ# 74

@@ -1,0 +1,12 @@
+PyInquirer
+pprint
+lxml
+numpy
+glob
+openbabel
+argparse
+tqdm
+subprocess
+multiprocessing
+shutil
+

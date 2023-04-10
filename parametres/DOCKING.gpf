@@ -1,0 +1,25 @@
+npts 100 100 100                        # num.grid points in xyz
+gridfld DOCKING.receptor.maps.fld    # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C NA OA N SA HD     # receptor atom types
+ligand_types C A N O S H P n f F c b I M           # ligand atom types
+receptor /home/louis/total/receptor/receptor_multimer.pdbqt      # macromolecule
+gridcenter 270 256 283                      # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map DOCKING.receptor.A.map
+map DOCKING.receptor.C.map
+map DOCKING.receptor.N.map
+map DOCKING.receptor.O.map
+map DOCKING.receptor.S.map
+map DOCKING.receptor.H.map
+map DOCKING.receptor.P.map
+map DOCKING.receptor.n.map
+map DOCKING.receptor.f.map
+map DOCKING.receptor.F.map
+map DOCKING.receptor.c.map
+map DOCKING.receptor.b.map
+map DOCKING.receptor.I.map
+map DOCKING.receptor.M.map
+elecmap DOCKING.receptor.e.map       # electrostatic potential map
+dsolvmap DOCKING.receptor.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

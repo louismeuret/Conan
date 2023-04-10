@@ -1,0 +1,35 @@
+# Conan est un programme permettant de faire du virtual screening: du docking sur plusieurs récepteurs à la fois, avec de grandes banques de ligands
+Le principal du programme est contenu dans deux fichiers python, présents dans le dossier Executions: docklaunch.py et docking.py
+docking.py est utilisable comme une librairie, avec les arguments adaptés, il permet de lancer le docking avec le logiciel demandé, sur les ligands demandés.
+docklaunch permet de faciliter certaines opérations, il est donc recommandé de consulter son fonctionnement si vous souhaitez lancer des dockings en ligne de commande ou 
+via un script python.
+
+Pour lancer un docking, il est tout d'abord nécessaires de copier les fichiers des récepteurs dans le dossier receptors. Ils doivent être au format pdbqt, avec les charges calculéés
+Il est possible pour cela d'utiliser le script prepare_receptor4.py, présent dans le dossier parametres, attention les récepteurs doivent être alignés, car un seul set de coordonnées est utilisé
+
+Par la suite, il faut renseigner le dossier où les ligands sont présents. il est interessant de noter que vos ligands peuvent être dans plusieurs dossiers de profondeurs, ils
+seront quand même pris en compte: tout les pdbqt de la base renseignée sont utilisés. Les fichiers doivent être au format pdbqt, avec les charges calculées.
+
+Pour lancer le programme avec une interface graphique, il faut tout d'abord installer les packages necessaires:
+dans le dossier paramètres, executez la commande: pip install -r requirements.txt
+Ensuite, déplacez vous dans le dossier "Executions" et lancez le programme avec la commande: python gui.py
+là, une interface graphique vous est présentée, (normalement), il n'y a pas grand chose à expliquer, à part qu'il est possible d'enregistrer les configurations et de les recharger
+pour faciliter la modification de paramètres.
+
+Pour lancer le programme en ligne de commande, il faut se placer dans le dossier Executions et lancer la commande: python clilaunch.py -h
+cette commande affiche tout les arguments nécessaires à l'execution du programme, voici une commande exemple pour un docking avec autodock-gpu:
+python clilaunch.py -software GPU -nptsx 50 -nptsy 76 -nptsz 74 -gridcenterx 11.356 -gridcentery 0 -gridcenterz 8.729 -spacing 1 -threads 4 -nruns 100 -pathdb /home/louis/Téléchargements/PROJETISDD/ligands/
+les differents softwares sont GPU (autodock-gpu), VINA (autodock-vina), AD4 (Autodock4), Gnina (Gnina)
+
+une barre de suivis de docking s'affiche dans le terminal régulièrement, montrant combien de ligands sont dockés entièrement (aux n recepteurs)
+Une fois l'execution de Conan terminée, il est possible d'aller voir les résultats
+pour cela, plusieurs scripts sont disponibles dans le dossier Analysis
+
+postprocessdict.py pour autodock-gpu
+postprocessvina.py pour autodock-vina
+postprocessAD4.py pour autodock4
+postprocessgnina.py pour Gnina
+
+Ces scripts récupèrent les énergies, et vous affichent dans une sortie classée les ligands avec les meilleurs scores.
+Les résultats sont visibles dans les dossiers results_Nom_du_logiciel, et les scripts postprocess génèrent quand c'est possible un pdb pour la meilleure pose de chaque dock
+
