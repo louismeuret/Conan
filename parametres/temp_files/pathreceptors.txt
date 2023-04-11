@@ -1,3 +1,0 @@
-../receptors/7k3t.pdbqt
-../receptors/7djr.pdbqt
-../receptors/7p51.pdbqt
