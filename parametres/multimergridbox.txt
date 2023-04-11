@@ -1,0 +1,4 @@
+chain_A_3_4_receptor
+spacing    0.375
+npts       74 78 86
+center    248.485 251.884 283.473

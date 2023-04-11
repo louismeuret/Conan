@@ -1,0 +1,12 @@
+#SOFTWARE# gnina
+#DEBUG# no
+#THREADS# 10 
+#NRUNS# 150 
+#PATHDB# /home/louis/Téléchargements/Databases/Chimiothèques/ICSN/auto3d 
+#SPACING#  0.375
+#CENTERX# 10 
+#CENTERY# 155555
+#CENTERZ# 10 
+#SIZEX# 50 
+#SIZEY# 50 
+#SIZEZ# 50 
