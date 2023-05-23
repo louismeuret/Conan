@@ -39,9 +39,9 @@ def dockingtot(software2:str,nptsx:str,nptsy:str,nptsz:str,gridcenterx:str,gridc
         elif software2 == "GNINA":
             pathsoftware = cwd+"parametres/executables/gnina"
         elif software2 == "SMINA":
-            pathsoftware = cwd+"parametres/executables/smina"
+            pathsoftware = cwd+"parametres/executables/smina.static"
         elif software2 == "QVINA":
-            pathsoftware = cwd+"parametres/executables/qvina"
+            pathsoftware = cwd+"parametres/executables/qvina2.1"
         elif software2 == "AD4":
             pathsoftware = cwd+"parametres/executables/autodock4"
     #listofpdbqt = glob.glob(pathdb)

@@ -1,0 +1,17 @@
+chempy==0.8.2
+click==8.1.3
+dearpygui==1.8.0
+dearpygui_ext==0.9.5
+htmlwebshot==0.1.2
+lxml==4.9.1
+numpy==1.23.0
+openbabel==3.1.1.1
+pip==23.0.1
+prolif==1.1.0
+psutil==5.9.1
+PyInquirer==1.0.3
+pymol==0.1.0
+rdkit==2022.3.3
+scipy==1.9.1
+tabulate==0.8.10
+tqdm==4.63.0

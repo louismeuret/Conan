@@ -1,4 +1,4 @@
-#!/usr/bin/env /home/louis/MGLTools-1.5.7 (copie)/bin/pythonsh
+#!/usr/bin/env /home/louis/MGLTools-1.5.7/bin/pythonsh
 #
 # 
 #

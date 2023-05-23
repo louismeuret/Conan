@@ -6,7 +6,7 @@
 
 ######
 ## Set some environment variable.
-MGL_ROOT="/home/louis/MGLTools-1.5.7" 
+MGL_ROOT="/home/louis/Conan/parametres/AutodockLibs" 
 export MGL_ROOT
 
 ########
@@ -119,7 +119,7 @@ then
 	unset PYTHONHOME
 	PYTHONHOME="$MGL_ROOT"
 	export PYTHONHOME
-	PYTHONPATH="$MGL_ROOT/MGLToolsPckgs"
+	PYTHONPATH="$MGL_ROOT/MGL"
 	export PYTHONPATH
 	#python="$MGL_ROOT/bin/python -i"
 	python="$MGL_ROOT/bin/python"
@@ -127,6 +127,9 @@ else
 	PATH="$originalpath"
 	#python="python -i"
 	python="python"
+	PYTHONPATH="$MGL_ROOT/MGL"
+	echo $PYTHONPATH
+	export PYTHONPATH
 fi
 if test $# -gt 0
 then

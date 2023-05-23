@@ -1,0 +1,146 @@
+
+        <html>
+        <head>
+        <script type="text/javascript" src="https://unpkg.com/vis-network@9.0.4/dist/vis-network.min.js"></script>
+        <link href="https://unpkg.com/vis-network@9.0.4/dist/dist/vis-network.min.css" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+            body {
+                padding: 0;
+                margin: 0;
+                background: #fff;
+            }
+            .legend-btn.residues.disabled {
+                background: #b4b4b4 !important;
+                color: #555 !important;
+            }
+            .legend-btn.interactions.disabled {
+                border-color: #b4b4b4 !important;
+                color: #555 !important;
+            }
+        </style>
+        </head>
+        <body>
+        <div id="mynetwork"></div>
+        <div id="networklegend"></div>
+        <script type="text/javascript">
+            
+        var ifp, legend, nodes, edges, legend_buttons;
+        function drawGraph(_id, nodes, edges, options) {
+            var container = document.getElementById(_id);
+            nodes = new vis.DataSet(nodes);
+            edges = new vis.DataSet(edges);
+            var data = {nodes: nodes, edges: edges};
+            var network = new vis.Network(container, data, options);
+            network.on("stabilizationIterationsDone", function () {
+                network.setOptions( { physics: false } );
+            });
+            return network;
+        }
+        nodes = [{"id": "ARG105.A", "label": "ARG105.A", "color": "#5979e3", "shape": "box", "borderWidth": 0, "physics": true, "mass": 2, "group": "protein", "residue_type": "Basic"}, {"id": "ARG40.A", "label": "ARG40.A", "color": "#5979e3", "shape": "box", "borderWidth": 0, "physics": true, "mass": 2, "group": "protein", "residue_type": "Basic"}, {"id": "ASN180.A", "label": "ASN180.A", "color": "#59bee3", "shape": "box", "borderWidth": 0, "physics": true, "mass": 2, "group": "protein", "residue_type": "Polar"}, {"id": "ASP187.A", "label": "ASP187.A", "color": "#e35959", "shape": "box", "borderWidth": 0, "physics": true, "mass": 2, "group": "protein", "residue_type": "Acidic"}, {"id": "CYS85.A", "label": "CYS85.A", "color": "#e3ce59", "shape": "box", "borderWidth": 0, "physics": true, "mass": 2, "group": "protein", "residue_type": "Sulfur"}, {"id": "GLY183.A", "label": "GLY183.A", "color": "#59e382", "shape": "box", "borderWidth": 0, "physics": true, "mass": 2, "group": "protein", "residue_type": "Aliphatic"}, {"id": "PHE181.A", "label": "PHE181.A", "color": "#b559e3", "shape": "box", "borderWidth": 0, "physics": true, "mass": 2, "group": "protein", "residue_type": "Aromatic"}, {"id": "PHE185.A", "label": "PHE185.A", "color": "#b559e3", "shape": "box", "borderWidth": 0, "physics": true, "mass": 2, "group": "protein", "residue_type": "Aromatic"}, {"id": "PRO52.A", "label": "PRO52.A", "color": "#59e382", "shape": "box", "borderWidth": 0, "physics": true, "mass": 2, "group": "protein", "residue_type": "Aliphatic"}, {"id": "VAL186.A", "label": "VAL186.A", "color": "#59e382", "shape": "box", "borderWidth": 0, "physics": true, "mass": 2, "group": "protein", "residue_type": "Aliphatic"}, {"label": "N", "shape": "circle", "color": "white", "font": {"color": "blue"}, "id": 0, "x": 72.00242197320618, "y": 0.820318784559424, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": "N", "shape": "circle", "color": "white", "font": {"color": "blue"}, "id": 1, "x": 72.00242197320615, "y": 85.76710319392889, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 2, "x": 121.93288907870175, "y": 17.043710989244197, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 3, "x": 41.14369622785133, "y": 43.29371098924415, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 4, "x": 121.93288907870175, "y": 69.54371098924419, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 5, "x": 212.86555647606784, "y": 69.54371098924416, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 6, "x": 167.39922277738475, "y": 95.79371098924419, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 7, "x": 167.39922277738478, "y": -9.206289010755835, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 8, "x": 212.86555647606784, "y": 17.043710989244165, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 9, "x": 55.779029768521454, "y": -49.110148320936176, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 10, "x": -11.356303772148667, "y": 43.29371098924413, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": "N", "shape": "circle", "color": "white", "font": {"color": "blue"}, "id": 11, "x": -37.606303772148685, "y": 88.76004468792716, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": "H", "shape": "circle", "color": "white", "font": {"color": "grey"}, "id": 12, "x": -11.356303772148808, "y": 134.2263783866102, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 13, "x": -90.10630377214872, "y": 88.760044687927, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 14, "x": -116.35630377214888, "y": 134.22637838661, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 15, "x": -168.8563037721489, "y": 134.22637838660978, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 16, "x": -195.10630377214875, "y": 88.76004468792672, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 17, "x": -168.85630377214875, "y": 43.29371098924381, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 18, "x": -116.35630377214862, "y": 43.293710989243934, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 19, "x": -247.6063037721487, "y": 88.76004468792647, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": "N", "shape": "circle", "color": "white", "font": {"color": "blue"}, "id": 20, "x": -273.85630377214824, "y": 43.29371098924323, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": "H", "shape": "circle", "color": "white", "font": {"color": "grey"}, "id": 21, "x": -247.60630377214784, "y": -2.172622709439549, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": "NH2", "shape": "ellipse", "color": "white", "font": {"color": "blue"}, "id": 22, "x": -273.8563037721491, "y": 134.22637838660933, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 25, "x": 258.33189017475087, "y": 95.79371098924416, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": "O", "shape": "circle", "color": "white", "font": {"color": "red"}, "id": 26, "x": 303.7982238734338, "y": 69.54371098924416, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": "N", "shape": "circle", "color": "white", "font": {"color": "blue"}, "id": 27, "x": 258.33189017475087, "y": 148.29371098924415, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 28, "x": 303.798223873434, "y": 174.54371098924418, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 29, "x": 349.2645575721169, "y": 148.29371098924415, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 30, "x": 394.7308912707998, "y": 174.54371098924418, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": "O", "shape": "circle", "color": "white", "font": {"color": "red"}, "id": 31, "x": 440.197224969483, "y": 148.2937109892442, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": "O", "shape": "circle", "color": "white", "font": {"color": "red"}, "id": 32, "x": 394.7308912707998, "y": 227.04371098924418, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 33, "x": 212.86555647606784, "y": 174.54371098924418, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": "N", "shape": "circle", "color": "white", "font": {"color": "blue"}, "id": 34, "x": 212.8655564760679, "y": 227.04371098924432, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 35, "x": 167.39922277738492, "y": 253.29371098924426, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 36, "x": 121.93288907870185, "y": 227.04371098924435, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 37, "x": 121.93288907870178, "y": 174.54371098924437, "fixed": true, "group": "ligand", "borderWidth": 0}, {"label": " ", "shape": "dot", "color": "black", "size": 5.6000000000000005, "id": 38, "x": 167.39922277738475, "y": 148.29371098924432, "fixed": true, "group": "ligand", "borderWidth": 0}];
+        edges = [{"from": 31, "to": "ARG105.A", "title": "HBAcceptor", "interaction_type": "HBDonor/HBAcceptor", "color": "#59bee3", "smooth": {"type": "cubicBezier", "roundness": 0.2}, "dashes": [10], "width": 6.0, "group": "interaction"}, {"from": 26, "to": "ARG105.A", "title": "VdWContact", "interaction_type": "VdWContact", "color": "#59e3ad", "smooth": {"type": "cubicBezier", "roundness": 0.2}, "dashes": [10], "width": 6.0, "group": "interaction"}, {"from": 14, "to": "ARG40.A", "title": "VdWContact", "interaction_type": "VdWContact", "color": "#59e3ad", "smooth": {"type": "cubicBezier", "roundness": 0.2}, "dashes": [10], "width": 6.0, "group": "interaction"}, {"from": 7, "to": "ASN180.A", "title": "VdWContact", "interaction_type": "VdWContact", "color": "#59e3ad", "smooth": {"type": "cubicBezier", "roundness": 0.2}, "dashes": [10], "width": 6.0, "group": "interaction"}, {"from": 17, "to": "ASP187.A", "title": "VdWContact", "interaction_type": "VdWContact", "color": "#59e3ad", "smooth": {"type": "cubicBezier", "roundness": 0.2}, "dashes": [10], "width": 6.0, "group": "interaction"}, {"from": 10, "to": "CYS85.A", "title": "VdWContact", "interaction_type": "VdWContact", "color": "#59e3ad", "smooth": {"type": "cubicBezier", "roundness": 0.2}, "dashes": [10], "width": 6.0, "group": "interaction"}, {"from": 32, "to": "GLY183.A", "title": "HBAcceptor", "interaction_type": "HBDonor/HBAcceptor", "color": "#59bee3", "smooth": {"type": "cubicBezier", "roundness": 0.2}, "dashes": [10], "width": 6.0, "group": "interaction"}, {"from": 6, "to": "GLY183.A", "title": "VdWContact", "interaction_type": "VdWContact", "color": "#59e3ad", "smooth": {"type": "cubicBezier", "roundness": 0.2}, "dashes": [10], "width": 6.0, "group": "interaction"}, {"from": 2, "to": "PHE181.A", "title": "VdWContact", "interaction_type": "VdWContact", "color": "#59e3ad", "smooth": {"type": "cubicBezier", "roundness": 0.2}, "dashes": [10], "width": 6.0, "group": "interaction"}, {"from": 1, "to": "PHE185.A", "title": "VdWContact", "interaction_type": "VdWContact", "color": "#59e3ad", "smooth": {"type": "cubicBezier", "roundness": 0.2}, "dashes": [10], "width": 6.0, "group": "interaction"}, {"from": 21, "to": "PRO52.A", "title": "HBDonor", "interaction_type": "HBDonor/HBAcceptor", "color": "#59bee3", "smooth": {"type": "cubicBezier", "roundness": 0.2}, "dashes": [10], "width": 6.0, "group": "interaction"}, {"from": 20, "to": "PRO52.A", "title": "VdWContact", "interaction_type": "VdWContact", "color": "#59e3ad", "smooth": {"type": "cubicBezier", "roundness": 0.2}, "dashes": [10], "width": 6.0, "group": "interaction"}, {"from": 12, "to": "VAL186.A", "title": "VdWContact", "interaction_type": "VdWContact", "color": "#59e3ad", "smooth": {"type": "cubicBezier", "roundness": 0.2}, "dashes": [10], "width": 6.0, "group": "interaction"}, {"from": 2, "to": 0, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 3, "to": 1, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 3, "to": 0, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 4, "to": 2, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 4, "to": 1, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 6, "to": 5, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 6, "to": 4, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 7, "to": 2, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 8, "to": 7, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 8, "to": 5, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 9, "to": 0, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 10, "to": 3, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 11, "to": 10, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 12, "to": 11, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 13, "to": 11, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 14, "to": 13, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 15, "to": 14, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 16, "to": 15, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 17, "to": 16, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 18, "to": 17, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 18, "to": 13, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 19, "to": 16, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 20, "to": 19, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 21, "to": 20, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 22, "to": 19, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 25, "to": 5, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 26, "to": 25, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 27, "to": 25, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 28, "to": 27, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 29, "to": 28, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 30, "to": 29, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 31, "to": 30, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 32, "to": 30, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 33, "to": 27, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 34, "to": 33, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 35, "to": 34, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 36, "to": 35, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 37, "to": 36, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 38, "to": 37, "color": "black", "physics": false, "group": "ligand", "width": 4}, {"from": 38, "to": 33, "color": "black", "physics": false, "group": "ligand", "width": 4}];
+        ifp = drawGraph('mynetwork', nodes, edges, {"width": "100%", "height": "500px", "nodes": {"font": {"size": 20}}, "physics": {"barnesHut": {"avoidOverlap": 0.8, "springConstant": 0.1}}});
+    
+        legend_buttons = [{"index": 0, "label": "Acidic", "color": "#e35959", "group": "residues"}, {"index": 1, "label": "Aliphatic", "color": "#59e382", "group": "residues"}, {"index": 2, "label": "Aromatic", "color": "#b559e3", "group": "residues"}, {"index": 3, "label": "Basic", "color": "#5979e3", "group": "residues"}, {"index": 4, "label": "Polar", "color": "#59bee3", "group": "residues"}, {"index": 5, "label": "Sulfur", "color": "#e3ce59", "group": "residues"}, {"index": 0, "label": "HBDonor/HBAcceptor", "color": "#59bee3", "group": "interactions"}, {"index": 1, "label": "VdWContact", "color": "#59e3ad", "group": "interactions"}];
+        legend = document.getElementById('networklegend');
+        var div_residues = document.createElement('div');
+        var div_interactions = document.createElement('div');
+        var disabled = [];
+        var legend_callback = function() {
+            this.classList.toggle("disabled");
+            var hide = this.classList.contains("disabled");
+            var show = !hide;
+            var btn_label = this.innerHTML;
+            if (hide) {
+                disabled.push(btn_label);
+            } else {
+                disabled = disabled.filter(x => x !== btn_label);
+            }
+            var node_update = [],
+                edge_update = [];
+            // click on residue type
+            if (this.classList.contains("residues")) {
+                nodes.forEach((node) => {
+                    // find nodes corresponding to this type
+                    if (node.residue_type === btn_label) {
+                        // if hiding this type and residue isn't already hidden
+                        if (hide && !node.hidden) {
+                            node.hidden = true;
+                            node_update.push(node);
+                        // if showing this type and residue isn't already visible
+                        } else if (show && node.hidden) {
+                            // display if there's at least one of its edge that isn't hidden
+                            num_edges_active = edges.filter(x => x.to === node.id)
+                                                    .map(x => Boolean(x.hidden))
+                                                    .filter(x => !x)
+                                                    .length;
+                            if (num_edges_active > 0) {
+                                node.hidden = false;
+                                node_update.push(node);
+                            }
+                        }
+                    }
+                });
+                ifp.body.data.nodes.update(node_update);
+            // click on interaction type
+            } else {
+                edges.forEach((edge) => {
+                    // find edges corresponding to this type
+                    if (edge.interaction_type === btn_label) {
+                        edge.hidden = !edge.hidden;
+                        edge_update.push(edge);
+                        // number of active edges for the corresponding residue
+                        var num_edges_active = edges.filter(x => x.to === edge.to)
+                                               .map(x => Boolean(x.hidden))
+                                               .filter(x => !x)
+                                               .length;
+                        // find corresponding residue
+                        var ix = nodes.findIndex(x => x.id === edge.to);
+                        // only change visibility if residue_type not being hidden
+                        if (!(disabled.includes(nodes[ix].residue_type))) {
+                            // hide if no edge being shown for this residue
+                            if (hide && (num_edges_active === 0)) {
+                                nodes[ix].hidden = true;
+                                node_update.push(nodes[ix]);
+                            // show if edges are being shown
+                            } else if (show && (num_edges_active > 0)) {
+                                nodes[ix].hidden = false;
+                                node_update.push(nodes[ix]);
+                            }
+                        }
+                    }
+                });
+                ifp.body.data.nodes.update(node_update);
+                ifp.body.data.edges.update(edge_update);
+            }
+        };
+        legend_buttons.forEach(function(v,i) {
+            if (v.group === "residues") {
+                var div = div_residues;
+                var border = "none";
+                var color = v.color;
+            } else {
+                var div = div_interactions;
+                var border = "3px dashed " + v.color;
+                var color = "white";
+            }
+            var button = div.appendChild(document.createElement('button'));
+            button.classList.add("legend-btn", v.group);
+            button.innerHTML = v.label;
+            Object.assign(button.style, {
+                "cursor": "pointer",
+                "background-color": color,
+                "border": border,
+                "border-radius": "5px",
+                "padding": "5px",
+                "margin": "5px",
+                "font": "14px 'Arial', sans-serif",
+            });
+            button.onclick = legend_callback;
+        });
+        legend.appendChild(div_residues);
+        legend.appendChild(div_interactions);
+        
+        </script>
+        </body>
+        </html>
+    

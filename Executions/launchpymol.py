@@ -9,4 +9,5 @@ print("launchpymol here")
 pymol.finish_launching()
 cmd.load(str(sys.argv[1]))
 cmd.load(str(sys.argv[2]))
+cmd.zoom()
 
