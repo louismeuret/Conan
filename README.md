@@ -34,9 +34,9 @@ To launch the program from the command line:
 2. Run the command: `python clilaunch.py -h`. This command displays all the necessary arguments for executing the program.
 
 Here's an example command for docking with Autodock-GPU:
-'''python
+```python
 python clilaunch.py -software GPU -nptsx 50 -nptsy 76 -nptsz 74 -gridcenterx 11.356 -gridcentery 0 -gridcenterz 8.729 -spacing 1 -threads 4 -nruns 100 -pathdb /home/louis/Downloads/PROJETISDD/ligands/
-'''
+```
 The different software options are: GPU (Autodock-GPU), VINA (Autodock-Vina), AD4 (Autodock4), and Gnina (Gnina).
 
 A docking progress bar is displayed in the terminal, showing the number of ligands fully docked to each receptor.
