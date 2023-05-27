@@ -1,6 +1,6 @@
 import dearpygui.dearpygui as dpg
 import glob
-import postprocess as pp
+import postprocess2 as pp
 import os
 import os.path
 from prolif.plotting.network import LigNetwork
@@ -11,22 +11,89 @@ import pathlib
 import webbrowser
 from subprocess import Popen, PIPE
 from multiprocessing import Process
+#import pymol_clust
+import numpy as np
+import pickle
+import dbscan_cluster
+import pandas as pd
 
 dpg.create_context()
-dpg.create_viewport(title='Conan', width=1200, height=500)
+dpg.create_viewport(title='Conan', width=1500, height=500)
 softwares = ["Autodock-gpu","Autodock-vina","Autodock4","Gnina","Smina","Qvina"]
-headersall = ["Nom ligand","Energy","LogP","MolWt","Complexity"]
-headersgnina = ["Nom ligand","Energy","CNNscore","CNNactivity","LogP","MolWt","Complexity"]
+headersall = ["Ligand Name","Energy","LogP","MolWt","Complexity","Center of mass","Show Interactions", "Open in Pymol"]
+headersgnina = ["Ligand Name","Energy","CNNscore","CNNactivity","LogP","MolWt","Complexity","Center of mass","Show Interactions", "Open in Pymol"]
+
+def pymolcluster(sender, app_data,user_data):
+    pathlist = "../parametres/temp_files/list_results.pkl"   
+    with open(pathlist, 'wb') as f:
+        pickle.dump(user_data, f)
+    
+    process = Popen(["python","pymol_clust.py",pathlist],stdout=PIPE,stderr=PIPE)
+
+def dbscancluster(sender, app_data, user_data):
+    clustered = dbscan_cluster.dbscan_clust(user_data)
+    df = pd.DataFrame(user_data)
+    print(df)    
+    df = df.iloc[:, :2]
+    df[2] = clustered['Cluster']
+
+    print(df)
+
+
+    header_clust = ['Ligand Name','Energy','Cluster']
+    with dpg.window(label="Cluster",width=1500,height=500):
+        with dpg.table(header_row=True,resizable=True,borders_outerH=True, borders_innerV=True, borders_innerH=True, borders_outerV=True):
+            for x in range(len(header_clust)):
+                print(header_clust[x])
+                dpg.add_table_column(label = header_clust[x])  
+                
+            for i in range(len(df)):
+                with dpg.table_row():
+                    dpg.add_text(str(df.iloc[i,0]))
+                    dpg.add_text(str(df.iloc[i,1]))
+                    dpg.add_text(str(df.iloc[i,2]))
+
+            """
+            print(linestoadd)
+            for i in range(len(linestoadd)):
+                with dpg.table_row():
+                    for j in range(len(linestoadd)):
+                        dpg.add_text(linestoadd[i][j])  
+            """
+
+    print(clustered)
+
+def csvsave(sender, app_data, user_data):
+    import time
+    if len(user_data[0][0]) == 6:
+        df = pd.DataFrame(user_data[0], columns=headersall[:-2])
+    else:
+        df = pd.DataFrame(user_data[0], columns=headersgnina[:-2])
+    t = time.localtime()
+    current_time = time.strftime("%H_%M_%S", t)
+    df.to_csv(f"{user_data[1]}_{current_time}.csv")
+
+    print(df)
+
 def get_res(pathres,soft2):
     sortabc,sortnrj = pp.process_results(pathres,soft2)
-    with dpg.window(label=soft2,width=1200,height=500):
-        with dpg.table(header_row=False,resizable=True,borders_outerH=True, borders_innerV=True, borders_innerH=True, borders_outerV=True):
+    print(pathres,soft2)
+    print(sortabc)
+    with dpg.window(label=soft2,width=1500,height=500):
+        with dpg.group(horizontal=True):
+            dpg.add_button(label="View all results in Pymol",callback=pymolcluster,user_data=sortnrj)
+            dpg.add_button(label="Cluster positions",callback=dbscancluster,user_data=sortnrj)
+            dpg.add_button(label="Save as CSV",callback=csvsave,user_data=[sortnrj,soft2])
+        
+        with dpg.table(header_row=True,resizable=True,borders_outerH=True, borders_innerV=True, borders_innerH=True, borders_outerV=True):
+            print(len(sortabc[0]))
             if len(sortabc[0]) == 6:
                 for x in range(len(sortabc[0])+2):
-                    dpg.add_table_column()
+                    print(headersall[x])
+                    dpg.add_table_column(label = headersall[x])
             else:
                 for x in range(len(sortabc[0])+2):
-                    dpg.add_table_column()
+                    dpg.add_table_column(label = headersgnina[x])
 
             for i in range(len(sortabc)):
                 with dpg.table_row():
@@ -35,13 +102,16 @@ def get_res(pathres,soft2):
                     dpg.add_button(label="Show interactions",callback=show_interactions,user_data=[sortabc[i],pathres])
                     dpg.add_button(label="Open in Pymol", callback=pymol_open,user_data=[sortabc[i],pathres])
 
+# Define a function to open the results directory and get the results for each software
 def openres():
     tosearch = os.path.dirname(os.getcwd())
     toopen = glob.glob(f'{tosearch}/results*')
     for path in toopen:
         soft = path.split("_")[1]
+        print(f"SOFTWARE USED = {soft}")
         get_res(path,soft)
 
+# Define a function to find files with a given name in a directory
 def findfiles(name,dir):
     newdir = pathlib.Path(dir)
     listfile = list(newdir.rglob(name))
@@ -49,6 +119,75 @@ def findfiles(name,dir):
     print(liststr)
     return liststr
 
+def openconsensus(sender, app_data, user_data):
+    tosearch = os.path.dirname(os.getcwd())
+    toopen = glob.glob(f'{tosearch}/results*')
+    print(toopen)
+
+    def compute_values():
+        good = []
+        for path in toopen:
+            if dpg.get_value(path.split("_")[1]):
+                good.append([path,path.split("_")[1]])
+
+            print(good)
+        dataframe_list = []
+        for x in good:
+            sortabc, sortnrj = pp.process_results(x[0],x[1])    
+            sortabc = pd.DataFrame(sortabc)
+            dataframe_list.append(sortabc)
+        
+        print(dataframe_list)
+# Find lines with the first values of the rows in common between all the dataframes
+    
+        # Merge all the dataframes in the dataframe list, according to their first column, and do the sum of the second element of the row
+        df = pd.concat(dataframe_list).groupby(0, as_index=False).agg({1: 'sum', 2: 'first'})
+    
+# Split each string of the first column by _, and remove the last element of the list, then reconstruct with join with _
+        df[0] = df[0].apply(lambda x: "_".join(x.split("_")[:-1]))
+    
+        unique_values = df[0].unique()
+    
+# Get the values in the second column for each element in unique_values
+        print(unique_values)
+
+        list_results_class = []
+        for val in unique_values:
+            values = df.loc[df[0] == val, 1].values
+            list_results_class.append([val,sum(values)/len(values),sum(values),len(values)])
+    
+# Sort new_col by second element of each list
+        list_results_class.sort(key=lambda x: x[1])
+        headers_class = ['Names Ligand', 'Average of Energies', 'Sum of Energies', 'Number of value found']
+        with dpg.window(label="Classified",width=1500,height=500):
+            dpg.add_text("Results are sorted by Average of Energies")
+            with dpg.table(header_row=True,resizable=True,borders_outerH=True, borders_innerV=True, borders_innerH=True, borders_outerV=True):
+
+                for x in range(len(headers_class)):
+                    print(headers_class[x])
+                    dpg.add_table_column(label = headers_class[x])
+                for i in range(len(list_results_class)):
+                    with dpg.table_row():
+                        for j in range(len(list_results_class[i])):
+                            dpg.add_text(list_results_class[i][j])
+
+    with dpg.window(label="Select results to process",width=500,height=500):
+        dpg.add_text("Conan has detected theses results, please select the one that you want to compair")
+        for path in toopen:
+            dpg.add_checkbox(label=path.split("_")[1], default_value=False, tag=path.split("_")[1])
+        dpg.add_button(label="Process", callback=compute_values)
+    
+
+
+    
+    
+
+
+        
+    #sortabc,sortnrj = pp.process_results(pathres,soft2)
+
+
+# Define a function to open a ligand and receptor in PyMOL
 def pymol_open(sender, app_data, user_data):
     import pymol
     pathres = user_data[1]
@@ -133,11 +272,14 @@ with dpg.window(label="Parameters",width=1200,height=1000):
     dpg.add_input_text(tag="pathresults",width=200,label="Path for the results")
     dpg.add_button(label="Load Configuration",callback=load)
     dpg.add_button(label="Open all results found",callback=openres)
+    dpg.add_button(label="Consensus Docking",callback=openconsensus)
 
-dpg.create_viewport(title='Show results', width=1200, height=600)
+dpg.create_viewport(title='Show results', width=1500, height=600)
 
 dpg.setup_dearpygui()
 dpg.show_viewport()
 dpg.start_dearpygui()
 dpg.destroy_context()
+
+
 
