@@ -19,7 +19,7 @@ The main part of the program is contained in two Python files located in the `Ex
 
 To launch the program with a graphical interface, you need to install the necessary packages:
 
-1. Go to the `parameters` folder and execute the following command: `pip install -r requirements.txt`.
+1. Go to the `parametres` folder and execute the following command: `pip install -r requirements.txt`.
 
 2. Move to the `Executions` folder and run the program with the command: `python gui.py`. This will open the graphical interface where you can interact with the program.
 
