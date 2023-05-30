@@ -219,12 +219,13 @@ def get_info_db(sender, app_data, user_data):
 # Plotting the histogram
             plt.hist(data, bins=10)  # Adjust the number of bins as needed
 
-            from math import sin
-            sindatax = []
-            sindatay = []
-            for i in range(0, 500):
-                sindatax.append(i / 1000)
-                sindatay.append(0.5 + 0.5 * sin(50 * i / 1000))
+            # Adding labels and title
+            plt.xlabel('Values')
+            plt.ylabel('Frequency')
+            plt.title('Histogram of First Column')
+
+            # Displaying the histogram
+            plt.show()
     
             """
             with dpg.window(
@@ -255,12 +256,17 @@ def get_info_db(sender, app_data, user_data):
                     dpg.add_histogram_series(newdata, bins=10, parent="y_axis")  # A
                 """
                 with dpg.plot(label="Histograms", width=700, height=400,parent="descriptors_histogram"):
-
+                    
                     dpg.add_plot_axis(dpg.mvXAxis, label="x")
                     dpg.add_plot_axis(dpg.mvYAxis, label="y", tag="y_axis")
-                    for descriptor in descriptor_names_entry:
-                        print([int(item) for item in list(pandas_df[descriptor])])
-                        dpg.add_histogram_series([int(item) for item in list(pandas_df[descriptor])], bins=int(num_bins), label=descriptor, parent="y_axis")
+                    #for descriptor in descriptor_names_entry:
+                    print([int(item) for item in list(pandas_df["exactmw"])])
+                    hist_series = dpg.add_histogram_series([int(item) for item in list(pandas_df["exactmw"])], bins=int(num_bins), label="exactmw", parent="y_axis")
+                    
+                    dpg.add_plot_legend(location="upper right")
+                    
+                    dpg.set_item_color(hist_series, [255, 0, 0, 255])
+
                     #dpg.add_histogram_series(list(pandas_df['exactmw']), bins=num_bins, label='descriptor', parent="y_axis")
                     #dpg.add_plot_legend(location="upper right")
                     #dpg.add_plot_axis(dpg.mvXAxis, label="x")
@@ -268,7 +274,6 @@ def get_info_db(sender, app_data, user_data):
                     """
 
                 # series belong to a y axis
-                    dpg.add_line_series(sindatax, sindatay, label="0.5 + 0.5 * sin(x)", parent="y_axis")
 
                 # dpg.add_button(label="Plot Histograms", tag="plot_histograms", callback=plot_histograms)
 
@@ -443,9 +448,9 @@ def windowsettingsopen(path):
         # read a list of lines into data
         config_data = configfile.readlines()
 
-    with dpg.window(label="Parameters", width=1000, height=500):
+    with dpg.window(label="Parameters", width=800, height=500):
         block_config = ''.join(config_data)
-        dpg.add_input_text(tag="test", label="test2", multiline=True, height=500, width=1000, default_value=block_config)
+        dpg.add_input_text(tag="", label="test2", multiline=True, height=500, width=800, default_value=block_config)
 
 def settingseditor(sender, data):
     soft = dpg.get_value("Softfock")

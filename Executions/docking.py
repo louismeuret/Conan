@@ -108,6 +108,7 @@ def docking(
             cwd,
             ligandfirstpath,
         )
+        # a changer pour une position dependante de l'emplacement spécifié par l'utilisateur
         dpflocation = path_ligand + "DOCKING.dpf"
 
         if DEBUG_FLAG == True:
