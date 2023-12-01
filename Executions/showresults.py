@@ -48,10 +48,11 @@ headersgnina = [
 
 def pymolcluster(sender, app_data, user_data):
     pathlist = "../parametres/temp_files/list_results.pkl"
+    print("clustering")
     with open(pathlist, "wb") as f:
         pickle.dump(user_data, f)
 
-    process = Popen(["python", "pymol_clust.py", pathlist], stdout=PIPE, stderr=PIPE)
+    process = Popen(["python3", "pymol_clust.py"], stdout=PIPE, stderr=PIPE)
 
 
 def dbscancluster(sender, app_data, user_data):
@@ -111,7 +112,7 @@ def csvsave(sender, app_data, user_data):
 def get_res(pathres, soft2):
     sortabc, sortnrj = pp.process_results(pathres, soft2)
     print(pathres, soft2)
-    print(sortabc)
+    print(sortnrj)
     with dpg.window(label=soft2, width=600, height=500):
         with dpg.group(horizontal=True):
             dpg.add_button(
@@ -134,37 +135,38 @@ def get_res(pathres, soft2):
             borders_innerH=True,
             borders_outerV=True,
         ):
-            print(len(sortabc[0]))
-            if len(sortabc[0]) == 6:
-                for x in range(len(sortabc[0]) + 2):
+            print(len(sortnrj[0]))
+            if len(sortnrj[0]) == 6:
+                for x in range(len(sortnrj[0]) + 2):
                     print(headersall[x])
                     dpg.add_table_column(label=headersall[x])
             else:
-                for x in range(len(sortabc[0]) + 2):
+                for x in range(len(sortnrj[0]) + 2):
                     dpg.add_table_column(label=headersgnina[x])
 
-            for i in range(len(sortabc)):
+            for i in range(len(sortnrj)):
                 with dpg.table_row():
-                    for j in range(len(sortabc[i])):
-                        dpg.add_text(sortabc[i][j])
+                    for j in range(len(sortnrj[i])):
+                        dpg.add_text(sortnrj[i][j])
                     dpg.add_button(
                         label="Show interactions",
                         callback=show_interactions,
-                        user_data=[sortabc[i], pathres],
+                        user_data=[sortnrj[i], pathres],
                     )
                     dpg.add_button(
                         label="Open in Pymol",
                         callback=pymol_open,
-                        user_data=[sortabc[i], pathres],
+                        user_data=[sortnrj[i], pathres],
                     )
 
 
 # Define a function to open the results directory and get the results for each software
 def openres():
     tosearch = os.path.dirname(os.getcwd())
-    toopen = glob.glob(f"{tosearch}/results*")
+    #toopen = glob.glob(f"{tosearch}/results*")
+    toopen = [path for path in glob.glob(f"{tosearch}/result*") if os.path.isdir(path)]
     for path in toopen:
-        soft = path.split("_")[1]
+        soft = path.split("_")[-1]
         print(f"SOFTWARE USED = {soft}")
         get_res(path, soft)
 
@@ -180,21 +182,23 @@ def findfiles(name, dir):
 
 def openconsensus(sender, app_data, user_data):
     tosearch = os.path.dirname(os.getcwd())
-    toopen = glob.glob(f"{tosearch}/results*")
+    #toopen = glob.glob(f"{tosearch}/results*")
+    toopen = [path for path in glob.glob(f"{tosearch}/result*") if os.path.isdir(path)]
     print(toopen)
 
     def compute_values():
         good = []
         for path in toopen:
-            if dpg.get_value(path.split("_")[1]):
-                good.append([path, path.split("_")[1]])
+            if dpg.get_value(path.split("_")[-1]):
+                print(path.split("_")[-1])
+                good.append([path, path.split("_")[-1]])
 
             print(good)
         dataframe_list = []
         for x in good:
             sortabc, sortnrj = pp.process_results(x[0], x[1])
-            sortabc = pd.DataFrame(sortabc)
-            dataframe_list.append(sortabc)
+            sortnrj = pd.DataFrame(sortnrj)
+            dataframe_list.append(sortnrj)
 
         print(dataframe_list)
         # Find lines with the first values of the rows in common between all the dataframes
@@ -254,12 +258,12 @@ def openconsensus(sender, app_data, user_data):
         def check_uncheck_all_2(sender, app_data, user_data):
             check_all_2 = dpg.get_value("check_all_2")
             for path in toopen:
-                dpg.set_value(path.split("_")[1], check_all_2)
+                dpg.set_value(path.split("_")[-1], check_all_2)
         dpg.add_checkbox(label="Check/Uncheck All", callback=check_uncheck_all_2, tag="check_all_2")
 
         for path in toopen:
             dpg.add_checkbox(
-                label=path.split("_")[1], default_value=False, tag=path.split("_")[1]
+                label=path.split("_")[-1], default_value=False, tag=path.split("_")[-1]
             )
         dpg.add_button(label="Process", callback=compute_values)
 
@@ -279,7 +283,7 @@ def pymol_open(sender, app_data, user_data):
     rec = f"{os.path.dirname(os.getcwd())}/receptors/{receptor}"
     print(f"ligand : {pathlig}, rec: {rec}")
     process = Popen(
-        ["python", "launchpymol.py", rec, pathlig], stdout=PIPE, stderr=PIPE
+        ["python3", "launchpymol.py", rec, pathlig], stdout=PIPE, stderr=PIPE
     )
     # data = process.communicate()
     # os.call(f"python launchpymol.py -pathrec {rec} -pathlig {pathlig}",shell=True)
@@ -317,15 +321,21 @@ def show_interactions(sender, app_data, user_data):
 
     ligtemp = prolif.Molecule(lig)
     rectemp = prolif.Molecule(rec)
+    print(ligtemp)
+    print(rectemp)
 
     ligpro = prolif.molecule.pdbqt_supplier(pathlig, lig)
 
-    fp = prolif.Fingerprint()
-    ifp = fp.generate(ligtemp, rectemp, return_atoms=True)
-    ifp["Frame"] = 0
-    df = prolif.to_dataframe([ifp], fp.interactions.keys(), return_atoms=True)
-    net = LigNetwork.from_ifp(
-        df,
+    fp = prolif.Fingerprint(count = True)
+    fp.run_from_iterable([ligtemp],rectemp)
+    #ifp = fp.generate(ligtemp, rectemp,metadata=True)
+    #df = prolif.to_dataframe({0: ifp}, fp.interactions)
+    #print(df)
+    #print(ifp)
+    #ifp["Frame"] = 0
+    #df = prolif.to_dataframe([ifp], fp.interactions.keys())
+    net = LigNetwork.from_fingerprint(
+        fp,
         ligtemp,
         # replace with `kind="frame", frame=0` for the other depiction
         kind="aggregate",
@@ -334,6 +344,7 @@ def show_interactions(sender, app_data, user_data):
     )
     net.save(f"../parametres/temp_html/{ligand}.html")
     webbrowser.open(f"../parametres/temp_html/{ligand}.html", new=2)
+
 
 
 def load():

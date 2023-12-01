@@ -1,4 +1,4 @@
-#!/usr/bin/env pythonsh
+#!/usr/bin/env /opt/sdv/MGLTools-1.5.7/bin/pythonsh
 #
 # 
 #

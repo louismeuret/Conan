@@ -38,14 +38,14 @@ def parsepdbqt(pathpdbqt, software):
 
     if software == "GNINA":
         try:
-            findenergy = pdbqtcontenu[1].split("REMARK")
             highest = [
-                float(findenergy[1].split()[1]),
-                float(findenergy[2].split()[1]),
-                float(findenergy[3].split()[1]),
+                float(pdbqtcontenu[1].split()[2]),
+                float(pdbqtcontenu[2].split()[2]),
+                float(pdbqtcontenu[3].split()[2]),
             ]
         except:
-            highest = [float(0), float(0), float(0)]
+            highest = [0,0,0]
+
 
     for x in range(len(pdbqtcontenu)):
         if pdbqtcontenu[x][:4] == "ATOM" or pdbqtcontenu[x][:6] == "HETATM":
@@ -144,6 +144,7 @@ def processGNINA(path):
     for result in listf:
         nomligand = result.split("/")[-2]
         blockdata, highest = parsepdbqt(result, "GNINA")
+        print(highest)
         pathbest = "/".join(result.split("/")[:-1]) + "/best.pdbqt"
         f = open(pathbest, "w")
         f.write(blockdata)

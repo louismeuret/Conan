@@ -11,7 +11,7 @@ from subprocess import Popen, PIPE
 dpg.create_context()
 dpg.create_viewport(title="Conan", width=800, height=500)
 
-#dpg.show_metrics()
+dpg.show_metrics()
 
 
 def boutonsave(sender, data):
@@ -453,10 +453,9 @@ def windowsettingsopen(path):
         dpg.add_input_text(tag="", label="test2", multiline=True, height=500, width=800, default_value=block_config)
 
 def settingseditor(sender, data):
-    soft = dpg.get_value("Softdock")
-    # need to 
+    soft = dpg.get_value("Softfock")
     if soft == "Autodock-vina" or "Smina" or "Qvina":
-        windowsettingsopen("/home/louis/Conan/parametres/DOCKING.dpf")
+        windowsettingsopen("/home/louis/Conan/newparametres/DOCKING.dpf")
 
 
 def view_grid(sender, data):
@@ -482,11 +481,11 @@ def view_grid(sender, data):
     file.write(txtrec)
     file.close()
     print(
-        f"python ../parametres/viewreceptor.py {nptsx} {nptsy} {nptsz} {gridcenterx} {gridcentery} {gridcenterz}"
+        f"python3 ../parametres/viewreceptor.py {nptsx} {nptsy} {nptsz} {gridcenterx} {gridcentery} {gridcenterz}"
     )
     process = Popen(
         [
-            "python",
+            "python3",
             "../parametres/viewreceptor.py",
             str(nptsx),
             str(nptsy),

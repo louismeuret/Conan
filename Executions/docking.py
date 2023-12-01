@@ -173,7 +173,7 @@ def docking(
             pathout = path_ligand + "out.pdbqt"
             if (os.path.isfile(pathout)) == False:
                 if DEBUG_FLAG == True:
-                    cmdvina = f"{pathsoftware} --config {conftxtcheck} --ligand {pathligand} --out {path_ligand}out.pdbqt --log {path_ligand}log.txt"
+                    cmdvina = f"{pathsoftware} --config {conftxtcheck} --ligand {pathligand} --out {path_ligand}out.pdbqt"
 
                     print(f"Commande vina: {cmdvina}")
                     os.system(cmdvina)

@@ -1,0 +1,12 @@
+#SOFTWARE# gpu 
+#DEBUG# no 
+#THREADS# 10 
+#NRUNS# 100 
+#PATHDB# /home/sdv/m2isdd/lmeuret/Téléchargements/DOCKING_project/Conan-main/pdbqt 
+#SPACING# 1 
+#CENTERX# 40.042 
+#CENTERY# 49.309 
+#CENTERZ# 29.015 
+#SIZEX# 26 
+#SIZEY# 22 
+#SIZEZ# 22 
