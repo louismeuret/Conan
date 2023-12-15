@@ -13,6 +13,14 @@ dpg.create_viewport(title="Conan", width=800, height=500)
 
 dpg.show_metrics()
 
+softwares = {
+    "Autodock-gpu": {"version": "gpu", "path": "/path/to/autodock-gpu"},
+    "Autodock-vina": {"version": "vina", "path": "/path/to/autodock-vina"},
+    "Gnina": {"version": "gnina", "path": "/path/to/gnina"},
+    "Smina": {"version": "smina", "path": "/path/to/smina"},
+    "Qvina": {"version": "qvina", "path": "/path/to/qvina"},
+    "Autodock4": {"version": "AD4", "path": "/path/to/autodock4"}
+}
 
 def boutonsave(sender, data):
     # dpg.get_value(Sender)
@@ -28,18 +36,15 @@ def save_file():
     path = dpg.get_value("pathconfig")
     f = open(path, "w+")
     software = dpg.get_value("Softdock")
-    if software == "Autodock-gpu":
-        soft2 = "gpu"
-    if software == "Autodock-vina":
-        soft2 = "vina"
-    if software == "Gnina":
-        soft2 = "gnina"
-    if software == "Smina":
-        soft2 = "smina"
-    if software == "Qvina":
-        soft2 = "qvina"
-    if software == "Autodock4":
-        soft2 = "AD4"
+    softwares = {
+        "Autodock-gpu": "gpu",
+        "Autodock-vina": "vina",
+        "Gnina": "gnina",
+        "Smina": "smina",
+        "Qvina": "qvina",
+        "Autodock4": "AD4"
+    }
+    soft2 = softwares.get(software, "")
     f.write("#SOFTWARE# " + soft2 + " \n")
     # f.write("#DEBUG# "+dpg.get_value("debug")+" \n")
 

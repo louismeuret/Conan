@@ -1,8 +1,6 @@
 import os
 import glob
 import pathlib
-
-cwd = os.getcwd()
 from rdkit import Chem
 from rdkit.Chem import GraphDescriptors
 from rdkit.Chem import Descriptors
@@ -10,299 +8,191 @@ from tabulate import tabulate
 from operator import itemgetter
 from lxml import etree
 import numpy as np
+from tqdm import tqdm
 
 
-def parsepdbqt(pathpdbqt, software):
-    cwd = os.getcwd()
-    with open(pathpdbqt, "r+") as pdbqt:
-        # read a list of lines into data
-        pdbqtcontenu = pdbqt.readlines()
+def parse_pdbqt(path_pdbqt, software):
+    with open(path_pdbqt, "r+") as pdbqt:
+        pdbqt_content = pdbqt.readlines()
 
     highest = 0
 
-    blockdata = ""
-    if software == "VINA":
-        findenergy = pdbqtcontenu[1].split()
-        highest = float(findenergy[3])
-
-    if software == "QVINA":
-        findenergy = pdbqtcontenu[1].split()
-        highest = float(findenergy[3])
-
-    if software == "SMINA":
-        findenergy = pdbqtcontenu[1].split()
-        highest = float(findenergy[2])
-
-    if software == "GPU":
-        highest = 0
+    if software in ["VINA", "QVINA", "SMINA"]:
+        find_energy = pdbqt_content[1].split()
+        if software in ["VINA", "QVINA"]:
+            highest = float(find_energy[3])
+        elif software == "SMINA":
+            highest = float(find_energy[2])
 
     if software == "GNINA":
         try:
-            highest = [
-                float(pdbqtcontenu[1].split()[2]),
-                float(pdbqtcontenu[2].split()[2]),
-                float(pdbqtcontenu[3].split()[2]),
-            ]
+            highest = [float(pdbqt_content[1].split()[2]), float(pdbqt_content[2].split()[2]), float(pdbqt_content[3].split()[2])]
         except:
-            highest = [0,0,0]
+            highest = [0, 0, 0]
 
-
-    for x in range(len(pdbqtcontenu)):
-        if pdbqtcontenu[x][:4] == "ATOM" or pdbqtcontenu[x][:6] == "HETATM":
-            templine = pdbqtcontenu[x].split()
-            pdbqtcontenu[x] = pdbqtcontenu[x][:-3]
-            pdbqtcontenu[x] = pdbqtcontenu[x] + templine[2][:1] + "\n"
-            blockdata = blockdata + pdbqtcontenu[x]
-            # print(x)
-        if software == "AD4":
-            if pdbqtcontenu[x].startswith("USER    Estimated Free Energy of Binding"):
-                highest = float(pdbqtcontenu[x].split("=")[1].split()[0])
-
-        if pdbqtcontenu[x][:6] == "ENDMDL":
+    for x in range(len(pdbqt_content)):
+        if pdbqt_content[x][:4] == "ATOM" or pdbqt_content[x][:6] == "HETATM":
+            temp_line = pdbqt_content[x].split()
+            pdbqt_content[x] = pdbqt_content[x][:-3] + temp_line[2][:1] + "\n"
+        if "ENDMDL" in pdbqt_content:
             break
 
-            # print(x)
-            # print(blockdata)
-    return blockdata, highest
+    if software == "AD4":
+        for line in pdbqt_content:
+            if line.startswith("USER    Estimated Free Energy of Binding"):
+                highest = float(line.split("=")[1].split()[0])
+            if "ENDMDL" in pdbqt_content:
+                break
+
+    return "".join(pdbqt_content), highest
 
 
-def compute_center_of_mass(mol, confId=-1):
-    numatoms = mol.GetNumAtoms()
-    conf = mol.GetConformer(confId)
+def compute_center_of_mass(mol, conf_id=-1):
+    num_atoms = mol.GetNumAtoms()
+    conf = mol.GetConformer(conf_id)
     if not conf.Is3D():
         return 0
-    # get cordinate of each atoms
-    pts = np.array([list(conf.GetAtomPosition(atmidx)) for atmidx in range(numatoms)])
+    pts = np.array([list(conf.GetAtomPosition(atm_idx)) for atm_idx in range(num_atoms)])
     atoms = [atom for atom in mol.GetAtoms()]
     mass = Descriptors.MolWt(mol)
-    # get center of mass
-    center_of_mass = (
-        np.array(np.sum(atoms[i].GetMass() * pts[i] for i in range(numatoms))) / mass
-    )
-    # print(center_of_mass)
+    center_of_mass = np.array(np.sum(atoms[i].GetMass() * pts[i] for i in range(num_atoms))) / mass
     return center_of_mass
 
 
-def compute_descriptors(blockdata):
+def compute_descriptors(block_data):
     try:
-        m = Chem.rdmolfiles.MolFromPDBBlock(blockdata)
-        complexitypdbqt = Chem.GraphDescriptors.BalabanJ(m)
-        mollogppdbqt = Descriptors.MolLogP(m)
-        molwtpdbqt = Descriptors.ExactMolWt(m)
+        m = Chem.rdmolfiles.MolFromPDBBlock(block_data)
+        complexity_pdbqt = Chem.GraphDescriptors.BalabanJ(m)
+        mol_logp_pdbqt = Descriptors.MolLogP(m)
+        mol_wt_pdbqt = Descriptors.ExactMolWt(m)
         center_of_mass = compute_center_of_mass(m, -1)
     except:
-        complexitypdbqt = 0
-        mollogppdbqt = 0
-        molwtpdbqt = 0
+        complexity_pdbqt = 0
+        mol_logp_pdbqt = 0
+        mol_wt_pdbqt = 0
         center_of_mass = [0, 0, 0]
 
-    return complexitypdbqt, mollogppdbqt, molwtpdbqt, center_of_mass
+    return complexity_pdbqt, mol_logp_pdbqt, mol_wt_pdbqt, center_of_mass
 
 
-def findfiles(name, dir):
-    newdir = pathlib.Path(dir)
-    listfile = list(newdir.rglob("*" + name))
-    liststr = [str(i) for i in listfile]
-    return liststr
+def find_files(name, dir):
+    new_dir = pathlib.Path(dir)
+    list_file = list(new_dir.rglob("*" + name))
+    list_str = [str(i) for i in list_file]
+    return list_str
 
 
-def processGPU(path):
-    tofind = "best.pdbqt"
-    tabresults = []
-    listf = findfiles(tofind, path)
-    for result in listf:
+def process_GPU(path):
+    to_find = "best.pdbqt"
+    tab_results = []
+    list_f = find_files(to_find, path)
+    for result in tqdm(list_f, desc='Processing GPU results'):
         free_energy = []
-        nomligand = result.split("/")[-2]
-        blockdata, highest = parsepdbqt(result, "GPU")
-        toparse = glob.glob("/".join(result.split("/")[:-1]) + "/*.xml")
-        # print(toparse)
-        toparse = toparse[0]
-        tree = etree.parse(toparse)
+        nom_ligand = result.split("/")[-2]
+        block_data, highest = parse_pdbqt(result, "GPU")
+        to_parse = glob.glob("/".join(result.split("/")[:-1]) + "/*.xml")[0]
+        tree = etree.parse(to_parse)
         for user in tree.xpath("/autodock_gpu/runs/run/free_NRG_binding"):
             free_energy.append(float(user.text))
         highest = free_energy[0]
-        complexitypdbqt, mollogppdbqt, molwtpdbqt, center_of_mass = compute_descriptors(
-            blockdata
-        )
-        tabresults.append(
-            [
-                nomligand,
-                highest,
-                mollogppdbqt,
-                molwtpdbqt,
-                complexitypdbqt,
-                center_of_mass,
-            ]
-        )
-    return tabresults
+        complexity_pdbqt, mol_logp_pdbqt, mol_wt_pdbqt, center_of_mass = compute_descriptors(block_data)
+        tab_results.append([nom_ligand, highest, mol_logp_pdbqt, mol_wt_pdbqt, complexity_pdbqt, center_of_mass])
+    return tab_results
 
 
-def processGNINA(path):
-    tofind = "out.pdbqt"
-    tabresults = []
-    listf = findfiles(tofind, path)
-    for result in listf:
-        nomligand = result.split("/")[-2]
-        blockdata, highest = parsepdbqt(result, "GNINA")
-        print(highest)
-        pathbest = "/".join(result.split("/")[:-1]) + "/best.pdbqt"
-        f = open(pathbest, "w")
-        f.write(blockdata)
-        f.close()
-        complexitypdbqt, mollogppdbqt, molwtpdbqt, center_of_mass = compute_descriptors(
-            blockdata
-        )
-        tabresults.append(
-            [
-                nomligand,
-                highest[0],
-                highest[1],
-                highest[2],
-                mollogppdbqt,
-                molwtpdbqt,
-                complexitypdbqt,
-                center_of_mass,
-            ]
-        )
-
-    return tabresults
+def process_GNINA(path):
+    to_find = "out.pdbqt"
+    tab_results = []
+    list_f = find_files(to_find, path)
+    for result in tqdm(list_f, desc='Processing GNINA results'):
+        nom_ligand = result.split("/")[-2]
+        block_data, highest = parse_pdbqt(result, "GNINA")
+        path_best = "/".join(result.split("/")[:-1]) + "/best.pdbqt"
+        with open(path_best, "w") as f:
+            f.write(block_data)
+        complexity_pdbqt, mol_logp_pdbqt, mol_wt_pdbqt, center_of_mass = compute_descriptors(block_data)
+        tab_results.append([nom_ligand, highest[0], highest[1], highest[2], mol_logp_pdbqt, mol_wt_pdbqt, complexity_pdbqt, center_of_mass])
+    return tab_results
 
 
-def processAD4(path):
-    tofind = "log.txt"
-    tabresults = []
-    listf = findfiles(tofind, path)
-    for result in listf:
-        nomligand = result.split("/")[-2]
-        blockdata, highest = parsepdbqt(result, "AD4")
-        pathbest = "/".join(result.split("/")[:-1]) + "/best.pdbqt"
-        f = open(pathbest, "w")
-        f.write(blockdata)
-        f.close()
-        complexitypdbqt, mollogppdbqt, molwtpdbqt, center_of_mass = compute_descriptors(
-            blockdata
-        )
-        tabresults.append(
-            [
-                nomligand,
-                highest,
-                mollogppdbqt,
-                molwtpdbqt,
-                complexitypdbqt,
-                center_of_mass,
-            ]
-        )
-
-    return tabresults
+def process_AD4(path):
+    to_find = "log.txt"
+    tab_results = []
+    list_f = find_files(to_find, path)
+    for result in tqdm(list_f, desc='Processing AD4 results'):
+        nom_ligand = result.split("/")[-2]
+        block_data, highest = parse_pdbqt(result, "AD4")
+        path_best = "/".join(result.split("/")[:-1]) + "/best.pdbqt"
+        with open(path_best, "w") as f:
+            f.write(block_data)
+        complexity_pdbqt, mol_logp_pdbqt, mol_wt_pdbqt, center_of_mass = compute_descriptors(block_data)
+        tab_results.append([nom_ligand, highest, mol_logp_pdbqt, mol_wt_pdbqt, complexity_pdbqt, center_of_mass])
+    return tab_results
 
 
-def processVINA(path):
-    tofind = "out.pdbqt"
-    tabresults = []
-
-    listf = findfiles(tofind, path)
-    for result in listf:
-        nomligand = result.split("/")[-2]
-        blockdata, highest = parsepdbqt(result, "VINA")
-        pathbest = "/".join(result.split("/")[:-1]) + "/best.pdbqt"
-        f = open(pathbest, "w")
-        f.write(blockdata)
-        f.close()
-        complexitypdbqt, mollogppdbqt, molwtpdbqt, center_of_mass = compute_descriptors(
-            blockdata
-        )
-        tabresults.append(
-            [
-                nomligand,
-                highest,
-                mollogppdbqt,
-                molwtpdbqt,
-                complexitypdbqt,
-                center_of_mass,
-            ]
-        )
-
-    return tabresults
+def process_VINA(path):
+    to_find = "out.pdbqt"
+    tab_results = []
+    list_f = find_files(to_find, path)
+    for result in tqdm(list_f, desc='Processing VINA results'):
+        nom_ligand = result.split("/")[-2]
+        block_data, highest = parse_pdbqt(result, "VINA")
+        path_best = "/".join(result.split("/")[:-1]) + "/best.pdbqt"
+        with open(path_best, "w") as f:
+            f.write(block_data)
+        complexity_pdbqt, mol_logp_pdbqt, mol_wt_pdbqt, center_of_mass = compute_descriptors(block_data)
+        tab_results.append([nom_ligand, highest, mol_logp_pdbqt, mol_wt_pdbqt, complexity_pdbqt, center_of_mass])
+    return tab_results
 
 
-def processSMINA(path):
-    tofind = "out.pdbqt"
-    tabresults = []
-
-    listf = findfiles(tofind, path)
-    for result in listf:
-        nomligand = result.split("/")[-2]
-        blockdata, highest = parsepdbqt(result, "SMINA")
-        pathbest = "/".join(result.split("/")[:-1]) + "/best.pdbqt"
-        f = open(pathbest, "w")
-        f.write(blockdata)
-        f.close()
-        complexitypdbqt, mollogppdbqt, molwtpdbqt, center_of_mass = compute_descriptors(
-            blockdata
-        )
-        tabresults.append(
-            [
-                nomligand,
-                highest,
-                mollogppdbqt,
-                molwtpdbqt,
-                complexitypdbqt,
-                center_of_mass,
-            ]
-        )
-
-    return tabresults
+def process_SMINA(path):
+    to_find = "out.pdbqt"
+    tab_results = []
+    list_f = find_files(to_find, path)
+    for result in tqdm(list_f, desc='Processing SMINA results'):
+        nom_ligand = result.split("/")[-2]
+        block_data, highest = parse_pdbqt(result, "SMINA")
+        path_best = "/".join(result.split("/")[:-1]) + "/best.pdbqt"
+        with open(path_best, "w") as f:
+            f.write(block_data)
+        complexity_pdbqt, mol_logp_pdbqt, mol_wt_pdbqt, center_of_mass = compute_descriptors(block_data)
+        tab_results.append([nom_ligand, highest, mol_logp_pdbqt, mol_wt_pdbqt, complexity_pdbqt, center_of_mass])
+    return tab_results
 
 
-def processQVINA(path):
-    tofind = "out.pdbqt"
-    tabresults = []
-
-    listf = findfiles(tofind, path)
-    for result in listf:
-        nomligand = result.split("/")[-2]
-        blockdata, highest = parsepdbqt(result, "QVINA")
-        pathbest = "/".join(result.split("/")[:-1]) + "/best.pdbqt"
-        f = open(pathbest, "w")
-        f.write(blockdata)
-        f.close()
-        complexitypdbqt, mollogppdbqt, molwtpdbqt, center_of_mass = compute_descriptors(
-            blockdata
-        )
-        tabresults.append(
-            [
-                nomligand,
-                highest,
-                mollogppdbqt,
-                molwtpdbqt,
-                complexitypdbqt,
-                center_of_mass,
-            ]
-        )
-
-    return tabresults
+def process_QVINA(path):
+    to_find = "out.pdbqt"
+    tab_results = []
+    list_f = find_files(to_find, path)
+    for result in tqdm(list_f, desc='Processing QVINA results'):
+        nom_ligand = result.split("/")[-2]
+        block_data, highest = parse_pdbqt(result, "QVINA")
+        path_best = "/".join(result.split("/")[:-1]) + "/best.pdbqt"
+        with open(path_best, "w") as f:
+            f.write(block_data)
+        complexity_pdbqt, mol_logp_pdbqt, mol_wt_pdbqt, center_of_mass = compute_descriptors(block_data)
+        tab_results.append([nom_ligand, highest, mol_logp_pdbqt, mol_wt_pdbqt, complexity_pdbqt, center_of_mass])
+    return tab_results
 
 
 def process_results(path, software):
     if software == "GPU":
-        tabresults = processGPU(path)
-    if software == "VINA":
-        tabresults = processVINA(path)
-    if software == "GNINA":
-        tabresults = processGNINA(path)
-    if software == "AD4":
-        tabresults = processAD4(path)
-    if software == "SMINA":
-        tabresults = processSMINA(path)
-    if software == "QVINA":
-        tabresults = processQVINA(path)
+        tab_results = process_GPU(path)
+    elif software == "VINA":
+        tab_results = process_VINA(path)
+    elif software == "GNINA":
+        tab_results = process_GNINA(path)
+    elif software == "AD4":
+        tab_results = process_AD4(path)
+    elif software == "SMINA":
+        tab_results = process_SMINA(path)
+    elif software == "QVINA":
+        tab_results = process_QVINA(path)
 
-    sortresultsnrj = sorted(tabresults, key=itemgetter(1), reverse=False)
-    # print(tabulate(sortresults, headers = ["Nom ligand","Energy","CNNscore","CNNactivity","LogP","MolWt","Complexity"]))
-    sortresultsabc = sorted(tabresults, key=itemgetter(0), reverse=False)
-    # print(tabulate(sortresults, headers = ["Nom ligand","Energy","LogP","MolWt","Complexity"]))
+    sort_results_nrj = sorted(tab_results, key=itemgetter(1), reverse=False)
+    sort_results_abc = sorted(tab_results, key=itemgetter(0), reverse=False)
 
-    return sortresultsabc, sortresultsnrj
+    return sort_results_abc, sort_results_nrj
 
 
 # process_results("/home/louis/Téléchargements/PROJETISDD/results_VINA","VINA")
