@@ -47,7 +47,7 @@ headersgnina = [
 
 
 def pymolcluster(sender, app_data, user_data):
-    pathlist = "../parametres/temp_files/list_results.pkl"
+    pathlist = "../parameters/temp_files/list_results.pkl"
     print("clustering")
     with open(pathlist, "wb") as f:
         pickle.dump(user_data, f)
@@ -342,8 +342,8 @@ def show_interactions(sender, app_data, user_data):
         threshold=0.3,
         rotation=270,
     )
-    net.save(f"../parametres/temp_html/{ligand}.html")
-    webbrowser.open(f"../parametres/temp_html/{ligand}.html", new=2)
+    net.save(f"../parameters/temp_html/{ligand}.html")
+    webbrowser.open(f"../parameters/temp_html/{ligand}.html", new=2)
 
 
 

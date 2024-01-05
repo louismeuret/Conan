@@ -2,11 +2,12 @@
 #DEBUG# True 
 #THREADS# 6
 #NRUNS# 100 
-#PATHDB# /home/louis/Téléchargements/PROJETISDD/ligands 
+#PATHDB# /home/cya/Conan/db_ligands 
+#PATHRESULTS# /home/cya/Conan/results_test
 #SPACING# 1
 #CENTERX# 11.356
 #CENTERY# 0
 #CENTERZ# 8.729 
-#SIZEX# 50
-#SIZEY# 76
-#SIZEZ# 74
+#NPTSX# 50
+#NPTSY# 76
+#NPTSZ# 74

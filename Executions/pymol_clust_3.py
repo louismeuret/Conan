@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib 
 
 # Read the pickled DataFrame
-unpickled_df = pd.read_pickle("../parametres/temp_files/list_results.pkl")
+unpickled_df = pd.read_pickle("../parameters/temp_files/list_results.pkl")
 
 # Create a new DataFrame with selected columns
 new_df = pd.DataFrame(unpickled_df, columns=['lig', 'Energy', 'logp', 'molwt', 'complexity', 'coord'])
@@ -54,5 +54,5 @@ for index, row in new_df.iterrows():
     pymol.cmd.show('spheres', name)
 
 # Save the clustered DataFrame to a pickle file
-new_df.to_pickle("../parametres/temp_files/clustered_results.pkl")
+new_df.to_pickle("../parameters/temp_files/clustered_results.pkl")
 

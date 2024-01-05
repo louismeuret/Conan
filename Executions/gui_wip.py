@@ -11,18 +11,24 @@ from subprocess import Popen, PIPE
 
 
 dpg.create_context()
-dpg.create_viewport(title="Conan", width=800, height=500)
+dpg.create_viewport(title="Conan", width=800, height=800)
 
-dpg.show_metrics()
-
+"""
 softwares = {
     "Autodock-gpu": {"version": "gpu", "path": "/path/to/autodock-gpu"},
     "Autodock-vina": {"version": "vina", "path": "/path/to/autodock-vina"},
     "Gnina": {"version": "gnina", "path": "/path/to/gnina"},
     "Smina": {"version": "smina", "path": "/path/to/smina"},
-    "Qvina": {"version": "qvina", "path": "/path/to/qvina"},
+    "Qvina-w": {"version": "qvina-w", "path": "/path/to/qvina"},
+    "Qvina2.1": {"version": "qvina2.1", "path": "/path/to/qvina"},
     "Autodock4": {"version": "AD4", "path": "/path/to/autodock4"}
 }
+"""
+#software parameters
+with open('../parameters/parameters_software/softwares.yaml', 'r') as file:
+    softwares = yaml.safe_load(file)
+
+
 
 def boutonsave(sender, data):
     # dpg.get_value(Sender)
@@ -34,7 +40,7 @@ def delete_second_window(sender):
     dpg.delete_item(sender)
 
 def create_subfolders(results_folder):
-    subfolders = ["DOCKED", "PARAMETERS", "FILES", "RESULTS"]
+    subfolders = ["DOCKED", "PARAMETERS", "FILES", "RESULTS","MAPS","RECEPTORS"]
     for subfolder in subfolders:
         os.makedirs(os.path.join(results_folder, subfolder), exist_ok=True)
 
@@ -54,14 +60,6 @@ def save_file():
     path = dpg.get_value("pathconfig")
     f = open(path, "w+")
     software = dpg.get_value("Softdock")
-    softwares = {
-        "Autodock-gpu": "gpu",
-        "Autodock-vina": "vina",
-        "Gnina": "gnina",
-        "Smina": "smina",
-        "Qvina": "qvina",
-        "Autodock4": "AD4"
-    }
     soft2 = softwares.get(software, "")
     f.write("#SOFTWARE# " + soft2 + " \n")
     # f.write("#DEBUG# "+dpg.get_value("debug")+" \n")
@@ -75,13 +73,14 @@ def save_file():
     f.write("#THREADS# " + dpg.get_value("threads") + " \n")
     f.write("#NRUNS# " + dpg.get_value("nruns") + " \n")
     f.write("#PATHDB# " + dpg.get_value("db") + " \n")
+    f.write("#PATHRESULTS# " + dpg.get_value("results_folder") + " \n")
     f.write("#SPACING# " + dpg.get_value("spacing") + " \n")
-    f.write("#CENTERX# " + dpg.get_value("gridcenterx") + " \n")
-    f.write("#CENTERY# " + dpg.get_value("gridcentery") + " \n")
-    f.write("#CENTERZ# " + dpg.get_value("gridcenterz") + " \n")
-    f.write("#SIZEX# " + dpg.get_value("nptsx") + " \n")
-    f.write("#SIZEY# " + dpg.get_value("nptsy") + " \n")
-    f.write("#SIZEZ# " + dpg.get_value("nptsz") + " \n")
+    f.write("#CENTERX# " + dpg.get_value("centerx") + " \n")
+    f.write("#CENTERY# " + dpg.get_value("centery") + " \n")
+    f.write("#CENTERZ# " + dpg.get_value("centerz") + " \n")
+    f.write("#NPTSX# " + dpg.get_value("nptsx") + " \n")
+    f.write("#NPTSY# " + dpg.get_value("nptsy") + " \n")
+    f.write("#NPTSZ# " + dpg.get_value("nptsz") + " \n")
     f.close()
     return
 
@@ -90,56 +89,98 @@ def load_file(sender, app_data, user_data):
     print(f"user_data = {user_data}")
     with open(user_data) as f:
         lines = f.readlines()
-    for x in range(len(lines)):
-        if re.findall(r"\S+", lines[x])[0] == "#SOFTWARE#":
-            # /home/louis/Téléchargements/Conansuite/Executions/test.txt
-            if re.findall(r"\S+", lines[x])[1].strip() == "vina":
-                print("test")
-                dpg.set_value("Softdock", softwares[1])
-                print("found vina")
-            if re.findall(r"\S+", lines[x])[1].strip() == "gpu":
-                dpg.set_value("Softdock", softwares[0])
-            if re.findall(r"\S+", lines[x])[1].strip() == "gnina":
-                dpg.set_value("Softdock", softwares[2])
-            if re.findall(r"\S+", lines[x])[1].strip() == "smina":
-                dpg.set_value("Softdock", softwares[3])
-            if re.findall(r"\S+", lines[x])[1].strip() == "qvina":
-                dpg.set_value("Softdock", softwares[4])
-            if re.findall(r"\S+", lines[x])[1].strip() == "autodock4":
-                dpg.set_value("Softdock", softwares[4])
 
-        if re.findall(r"\S+", lines[x])[0] == "#DEBUG#":
-            if re.findall(r"\S+", lines[x])[1].strip() == "yes":
-                dpg.set_value("debug", "True")
-            if re.findall(r"\S+", lines[x])[1].strip() == "no":
-                dpg.set_value("debug", "False")
+    for line in lines:
+        # Extract key and value from each line
+        parts = line.split("#")
+        if len(parts) < 3:
+            continue
+        key, value = parts[1], parts[2].strip()
 
-        if re.findall(r"\S+", lines[x])[0] == "#THREADS#":
-            dpg.set_value("threads", re.findall(r"\S+", lines[x])[1].strip())
-
-        if re.findall(r"\S+", lines[x])[0] == "#NRUNS#":
-            dpg.set_value("nruns", re.findall(r"\S+", lines[x])[1].strip())
-
-        if re.findall(r"\S+", lines[x])[0] == "#PATHDB#":
-            dpg.set_value("db", re.findall(r"\S+", lines[x])[1].strip())
-
-        if re.findall(r"\S+", lines[x])[0] == "#SPACING#":
-            dpg.set_value("spacing", re.findall(r"\S+", lines[x])[1].strip())
-        if re.findall(r"\S+", lines[x])[0] == "#CENTERX#":
-            dpg.set_value("gridcenterx", re.findall(r"\S+", lines[x])[1].strip())
-        if re.findall(r"\S+", lines[x])[0] == "#CENTERY#":
-            dpg.set_value("gridcentery", re.findall(r"\S+", lines[x])[1].strip())
-        if re.findall(r"\S+", lines[x])[0] == "#CENTERZ#":
-            dpg.set_value("gridcenterz", re.findall(r"\S+", lines[x])[1].strip())
-        if re.findall(r"\S+", lines[x])[0] == "#SIZEX#":
-            dpg.set_value("nptsx", re.findall(r"\S+", lines[x])[1].strip())
-        if re.findall(r"\S+", lines[x])[0] == "#SIZEY#":
-            dpg.set_value("nptsy", re.findall(r"\S+", lines[x])[1].strip())
-        if re.findall(r"\S+", lines[x])[0] == "#SIZEZ#":
-            dpg.set_value("nptsz", re.findall(r"\S+", lines[x])[1].strip())
+        # Handle different keys
+        if key == "SOFTWARE":
+            # Find the software name matching the version
+            for name, details in softwares.items():
+                if details["short_name"] == value:
+                    dpg.set_value("Softdock", name)
+                    break
+        elif key == "PATHRESULTS":
+            dpg.set_value("results_folder", value)
+        elif key == "PATHCONFIGFILE":
+            dpg.set_value("config_file", value)
+        elif key in ["DEBUG", "THREADS", "NRUNS", "PATHDB", "SPACING", "CENTERX", "CENTERY", "CENTERZ", "NPTSX", "NPTSY", "NPTSZ"]:
+            # Update the corresponding GUI element
+            gui_key = key.lower() if key != "PATHDB" else "db"
+            print(gui_key,value)
+            dpg.set_value(gui_key, value)
 
     print(dpg.get_value("Softdock"))
-3
+
+def display_settings():
+    with dpg.window(
+        label="Compute",
+        width=400,
+        height=400,
+        pos=(100, 100),
+        tag="computeinformationdb",
+        on_close=delete_second_window,
+    ):
+        dpg.add_text("Edit settings")
+        dpg.add_input_text("Edit settings")
+
+
+def display_config(software_key):
+    print(software_key)
+    version = softwares[software_key]["version"]
+    print(version)
+    file_name = f"{version}.yaml"
+    directory = "../parameters/parameters_software"
+    file_path = os.path.join(directory, file_name)
+    print(file_path)
+
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as file:
+            config = yaml.safe_load(file)
+            # Clear existing GUI elements in the dynamic config window
+            if dpg.does_item_exist("dynamic_config_window"):
+                dpg.delete_item("dynamic_config_window")
+            # Rebuild the GUI with the loaded configuration
+            build_dynamic_gui(config)
+    else:
+        print(f"Configuration file for {software_key} not found.")
+
+def build_dynamic_gui(config):
+    # Clear existing GUI elements if any
+    if dpg.does_item_exist("dynamic_config_window"):
+        dpg.delete_item("dynamic_config_window")
+
+    # Create a new window
+    with dpg.window(label="Dynamic Configuration Editor", tag="dynamic_config_window"):
+        print(config.items())
+        for section, settings in config.items():
+            with dpg.group(label=f"{section} Settings"):
+                # Handle dictionary values
+                if isinstance(settings, dict):
+                    for key, value in settings.items():
+                        create_gui_element(section, key, value)
+                else:
+                    # Handle non-dictionary values
+                    create_gui_element(section, section, settings)
+
+        dpg.add_button(label="Save Configuration", callback=save_current_config)
+        dpg.add_button(label="Load Configuration", callback=load_current_config)
+
+def create_gui_element(section, key, value):
+    # Function to create GUI elements based on value type
+    if isinstance(value, bool):
+        dpg.add_checkbox(tag=f"{section}_{key}", label=key, default_value=value)
+    elif isinstance(value, int):
+        dpg.add_input_int(tag=f"{section}_{key}", label=key, default_value=value)
+    elif isinstance(value, float):
+        dpg.add_input_float(tag=f"{section}_{key}", label=key, default_value=value)
+    else:  # Handle as string
+        dpg.add_input_text(tag=f"{section}_{key}", label=key, default_value=str(value))
+
 
 def get_info_db(sender, app_data, user_data):
     import rdkit
@@ -377,6 +418,7 @@ def load_config(sender):
         )
         dpg.add_text("Theses are detected files in the current directory:")
         config_files = detect_config_files(os.getcwd())
+        
 
         print(config_files)
         headers_conf = ["Filename", "Path", "Software", "Date of Creation", "Open"]
@@ -407,47 +449,25 @@ def load_config(sender):
 
 # dckl.dockingtot("VINA","90","75","85","55","-21","-20","0.375","1","100","/home/louis/Téléchargements/dbtest/",True)
 def run(sender, data):
+    # Retrieve software and parameters from GUI
     software = dpg.get_value("Softdock")
-    #soft = softwares.get(software, "")
+    soft = softwares.get(software, "")['short_name']
+    print(soft)
 
-    # Check if the results_folder is set or empty
+    # Set up the results folder
     results_folder = dpg.get_value("results_folder")
-    if not results_folder:
-        default_path = "C:/path/to/default/directory"  # Set your default directory path here
-        results_folder = os.path.join(default_path, f"results_{soft}")
-
-    # Create the results folder and subfolders
+    if not results_folder: 
+        results_folder = os.path.join(f"results_{soft}")
     create_subfolders(results_folder)
 
-    nptsx = dpg.get_value("nptsx")
-    nptsy = dpg.get_value("nptsy")
-    nptsz = dpg.get_value("nptsz")
-    gridcenterx = dpg.get_value("gridcenterx")
-    gridcentery = dpg.get_value("gridcentery")
-    gridcenterz = dpg.get_value("gridcenterz")
-    spacing = dpg.get_value("spacing")
-    threads = dpg.get_value("threads")
-    nruns = dpg.get_value("nruns")
-    pathdb2 = dpg.get_value("db")
-    if dpg.get_value("debug") == "True":
-        debug = True
-    else:
-        debug = False
-    """
-    results_directory = "results_VINA/"
-    update_interval = 1  # in seconds
+    # Collect parameters from the GUI
+    nptsx, nptsy, nptsz = dpg.get_value("nptsx"), dpg.get_value("nptsy"), dpg.get_value("nptsz")
+    gridcenterx, gridcentery, gridcenterz = dpg.get_value("centerx"), dpg.get_value("centery"), dpg.get_value("centerz")
+    spacing, threads, nruns = dpg.get_value("spacing"), dpg.get_value("threads"), dpg.get_value("nruns")
+    pathdb2, debug = dpg.get_value("db"), dpg.get_value("debug") == "True"
 
-    # Create a threading event to stop the thread later
-    stop_event = threading.Event()
-
-    # Start the file monitoring thread
-    monitor_thread = threading.Thread(target=monitor_file_count, args=(results_directory, update_interval, stop_event))
-    monitor_thread.start()
-    """
-
-    # Save parameters to YAML file
     parameters = {
-        "Software": soft,
+        "Software": software,
         "Number of Points": {"X": nptsx, "Y": nptsy, "Z": nptsz},
         "Grid Center": {"X": gridcenterx, "Y": gridcentery, "Z": gridcenterz},
         "Spacing": spacing,
@@ -459,20 +479,12 @@ def run(sender, data):
     }
     save_parameters_to_yaml(results_folder, parameters)
 
+    # Run docking process
     dckl.dockingtot(
-        software,
-        nptsx,
-        nptsy,
-        nptsz,
-        gridcenterx,
-        gridcentery,
-        gridcenterz,
-        spacing,
-        threads,
-        nruns,
-        pathdb2,
-        debug,
+        software, nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, 
+        spacing, threads, nruns, pathdb2,results_folder, debug,
     )
+
     
 
 def windowsettingsopen(path):
@@ -485,18 +497,17 @@ def windowsettingsopen(path):
         dpg.add_input_text(tag="", label="test2", multiline=True, height=500, width=800, default_value=block_config)
 
 def settingseditor(sender, data):
-    soft = dpg.get_value("Softfock")
-    if soft == "Autodock-vina" or "Smina" or "Qvina":
-        windowsettingsopen("/home/louis/Conan/newparameters/DOCKING.dpf")
+    soft = dpg.get_value("Softdock")
+    display_config(soft)
 
 
 def view_grid(sender, data):
     nptsx = dpg.get_value("nptsx")
     nptsy = dpg.get_value("nptsy")
     nptsz = dpg.get_value("nptsz")
-    gridcenterx = dpg.get_value("gridcenterx")
-    gridcentery = dpg.get_value("gridcentery")
-    gridcenterz = dpg.get_value("gridcenterz")
+    gridcenterx = dpg.get_value("centerx")
+    gridcentery = dpg.get_value("centery")
+    gridcenterz = dpg.get_value("centerz")
     spacing = dpg.get_value("spacing")
     nptsx = float(nptsx) * float(spacing)
     nptsy = float(nptsy) * float(spacing)
@@ -580,13 +591,20 @@ def update():
         f"CPU usage:{psutil.cpu_percent()}%, Memory usage: {psutil.virtual_memory().percent}%",
     )
 
+#softwares_list = ["Autodock-gpu", "Autodock-vina", "Autodock4", "Gnina", "Smina", "Qvina"]
+softwares_list = list(softwares.keys())
 
-softwares = ["Autodock-gpu", "Autodock-vina", "Autodock4", "Gnina", "Smina", "Qvina"]
-with dpg.window(label="Parameters"):
+with dpg.window(label="Parameters", width=500, height=500,tag="Parameters"):
     # dpg.set_main_window_size(500,500)
-    dpg.add_text("Conan")
+    with dpg.group(horizontal=True):
+        dpg.add_text("Conan")
+        # ... other elements on the same line ...
+        dpg.add_spacer(width=400)  # Add a spacer to push the button to the end
+    
+        dpg.add_button(label="Settings")
+
     dpg.add_button(label="Load Configuration", callback=load_config)
-    dpg.add_listbox(tag="Softdock", items=softwares)
+    dpg.add_listbox(tag="Softdock", items=softwares_list)
     dpg.add_text("Number of points in the grid")
     dpg.add_text("  X  --- Y ---  Z")
     with dpg.group(horizontal=True):
@@ -599,11 +617,11 @@ with dpg.window(label="Parameters"):
     dpg.add_text("Center of the grid")
     dpg.add_text("  X  --- Y ---  Z")
     with dpg.group(horizontal=True):
-        dpg.add_input_text(tag="gridcenterx", width=40)
+        dpg.add_input_text(tag="centerx", width=40)
         # dpg.add_same_line()
-        dpg.add_input_text(tag="gridcentery", width=40)
+        dpg.add_input_text(tag="centery", width=40)
         # dpg.add_same_line()
-        dpg.add_input_text(tag="gridcenterz", width=40)
+        dpg.add_input_text(tag="centerz", width=40)
     # dpg.add_text("Spacing (Angstrom)")
     dpg.add_input_text(tag="spacing", width=40, label="Spacing (Angstrom)")
     dpg.add_button(label="View grid in Pymol", callback=view_grid)
@@ -659,5 +677,6 @@ with dpg.window(label="Parameters"):
 
 dpg.setup_dearpygui()
 dpg.show_viewport()
+dpg.set_primary_window("Parameters", True)
 dpg.start_dearpygui()
 dpg.destroy_context()

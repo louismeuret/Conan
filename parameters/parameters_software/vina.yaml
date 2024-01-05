@@ -1,0 +1,25 @@
+config: ''
+info:
+  help: false
+  help_advanced: false
+  version: false
+input:
+  flex: ''
+  ligand: ''
+  receptor: ''
+misc:
+  cpu: 1
+  energy_range: 3
+  exhaustiveness: 8
+  num_modes: 9
+  seed: null
+output:
+  log: ''
+  out: ''
+search_space:
+  center_x: 0.0
+  center_y: 0.0
+  center_z: 0.0
+  size_x: 0.0
+  size_y: 0.0
+  size_z: 0.0

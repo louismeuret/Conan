@@ -53,9 +53,9 @@ cwd = cwd.replace("Executions", "")
 dbused = "/home/louis/Téléchargements/Databases/Chimiothèques/ICSN/"
 secondpathdb = "obabel"
 
-autodock_executable = cwd+"parametres/executables/autodock_gpu_128wi"
-vina_executable = cwd+"parametres/executables/vina"
-gnina_executable = cwd+"Parametres/executables/gnina"
+autodock_executable = cwd+"parameters/executables/autodock_gpu_128wi"
+vina_executable = cwd+"parameters/executables/vina"
+gnina_executable = cwd+"parameters/executables/gnina"
 
 
 meilleureenergie = 0
@@ -63,7 +63,7 @@ meilleurligand = ""
 
 softwareused = {"VINA":False,"GPU":False,"GNINA":False,"QVINA":False,"SMINA":False}
 
-with open('../parametres/conanconfig.txt') as f:
+with open('../parameters/conanconfig.txt') as f:
     lines = f.readlines()
 
 

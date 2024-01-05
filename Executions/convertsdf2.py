@@ -11,7 +11,7 @@ def convertsdf(ligandfiletotal,ligandfilename,pathdb,cwd):
     #print("pdb:")
     #print(pdblocation)
         ligandfiletotal = pathdb + ligandfilename + ".pdbqt"
-        newdir = cwd + "/parametres/prepare_ligand4.py"
+        newdir = cwd + "/parameters/prepare_ligand4.py"
         lncommand = "ln -s "+newdir+ " "+pathdb
 
 
@@ -23,7 +23,7 @@ def convertsdf(ligandfiletotal,ligandfilename,pathdb,cwd):
             os.system(lncommand)
         except:
             pass
-        cwddir = cwd + "parametres/"
+        cwddir = cwd + "parameters/"
         os.chdir(pathdb)    
     #print("-------------%s"%pdblocation)
     #print("------------%s---------------"%cwddir)

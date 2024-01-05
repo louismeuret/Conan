@@ -63,17 +63,17 @@ def dockingtot(software2:str,nptsx:str,nptsy:str,nptsz:str,gridcenterx:str,gridc
           raise Exception 
     except:
         if software2 == "GPU":
-            pathsoftware = cwd+"parametres/executables/autodock_gpu_128wi"
+            pathsoftware = cwd+"parameters/executables/autodock_gpu_128wi"
         elif software2 == "VINA":
-            pathsoftware = cwd+"parametres/executables/vina"
+            pathsoftware = cwd+"parameters/executables/vina"
         elif software2 == "GNINA":
-            pathsoftware = cwd+"parametres/executables/gnina"
+            pathsoftware = cwd+"parameters/executables/gnina"
         elif software2 == "SMINA":
-            pathsoftware = cwd+"parametres/executables/smina"
+            pathsoftware = cwd+"parameters/executables/smina"
         elif software2 == "QVINA":
-            pathsoftware = cwd+"parametres/executables/qvina"
+            pathsoftware = cwd+"parameters/executables/qvina"
         elif software2 == "AD4":
-            pathsoftware = cwd+"parametres/executables/autodock4"
+            pathsoftware = cwd+"parameters/executables/autodock4"
     #listofpdbqt = glob.glob(pathdb)
     # Contient les paths complet de tout les ligands dans la db, recursivement
     listofpdbqt = glob.glob(f'{pathdb}/**/*.pdbqt', recursive=True) # /home/**/outputfile3186/outputfile3186.pdbqt

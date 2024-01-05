@@ -2,7 +2,7 @@ import pandas as pd
 import pymol
 
 # Read the pickled DataFrame
-unpickled_df = pd.read_pickle("../parametres/temp_files/list_results.pkl")
+unpickled_df = pd.read_pickle("../parameters/temp_files/list_results.pkl")
 
 # Print the original DataFrame
 print("Original DataFrame:")

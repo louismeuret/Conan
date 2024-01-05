@@ -1,0 +1,36 @@
+Autodock-gpu:
+  path: parameters/executables/autodock_gpu_128wi
+  version: gpu
+  exe_name: autodock-gpu
+  short_name: gpu
+Autodock-vina:
+  path: parameters/executables/vina
+  version: 1.1.2
+  exe_name: vina
+  short_name: vina
+Autodock4:
+  path: parameters/executables/autodock4
+  version: 4.2.6
+  exe_name: autodock4
+  short_name: ad4
+Gnina:
+  path: parameters/executables/gnina
+  version: gnina
+  exe_name: gnina
+  short_name: gnina
+Qvina-w:
+  path: parameters/executables/qvina-w
+  version: 1.1
+  exe_name: qvina-w
+  short_name: qvina-w
+Qvina2.1:
+  path: parameters/executables/qvina2.1
+  version: 2.1
+  exe_name: qvina2.1
+  short_name: qvina2.1
+Smina:
+  path: parameters/executables/smina.static
+  version: 1.1.2
+  exe_name: smina.static
+  short_name: smina
+  

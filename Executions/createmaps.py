@@ -63,7 +63,7 @@ def createmaps(receptorname,adressereceptor,nomreceptor,nptsx,nptsy,nptsz,gridce
 
                 textfile.close()
             try:
-                os.symlink(cwd+"parametres/", dirmaps)
+                os.symlink(cwd+"parameters/", dirmaps)
             except OSError:
                 pass
             os.chdir(dirmaps)

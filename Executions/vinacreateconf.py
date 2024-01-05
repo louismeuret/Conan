@@ -1,7 +1,6 @@
 import os
 import time
-def createconf(nptsx,nptsy,nptsz,gridcenterx,gridcentery,gridcenterz,spacing,path_receptor,receptorname):
-    import time
+def createconf(nptsx,nptsy,nptsz,gridcenterx,gridcentery,gridcenterz,spacing,path_receptor,receptorname,results_path):
     vinax = nptsx
     vinay = nptsy
     vinaz = nptsz
@@ -19,8 +18,10 @@ def createconf(nptsx,nptsy,nptsz,gridcenterx,gridcentery,gridcenterz,spacing,pat
     filecontent = filecontent + "cpu = 1"+"\n"+"\n"
 
     filecontent = filecontent + "energy_range = 4"+"\n"
-    savedir = "parametres/temp_files/"+receptorname+"_"+gridcenterx+"_"+gridcentery+"_"+gridcenterz+"___"+nptsx+"_"+nptsy+"_"+nptsz+"/"+receptorname+".txt"
-    #print(os.getcwd())
-    f = open(savedir, 'w+')
-    f.write(filecontent)
+    savedir = f"{results_path}/PARAMETERS/config_files_ligands/{receptorname}_{gridcenterx}_{gridcentery}_{gridcenterz}___{nptsx}_{nptsy}_{nptsz}/{receptorname}.txt"
+    # first create the path
+    os.makedirs(os.path.dirname(savedir), exist_ok=True)
+    # then save the file
+    with open(savedir, 'w+') as f:
+        f.write(filecontent)
     f.close()

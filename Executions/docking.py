@@ -44,6 +44,7 @@ def docking(
     cwd: str,
     pathsoftware: str,
     ligandnumber,
+    path_results: str,
 ):
     # print(FAIL)
 
@@ -52,9 +53,12 @@ def docking(
     DEBUG_FLAG = True
     currentligand = listofpdbqt[ligandnumber - 1]
     print(listofpdbqt)
-    ligandfilename = currentligand.split("/")[-1]  # outputfile34.pdbqt
+    print("listofreceptors:")
+    print(listofreceptors)
+    #ligandfilename = currentligand.split("/")[-1]  # outputfile34.pdbqt
+    ligandfilename = os.path.basename(currentligand)
 
-    ligandfirstpath = currentligand.split("/")[-1][:-6]  # outputfile34
+    ligandfirstpath = os.path.splitext(os.path.basename(currentligand))[0]
     # ligandfirstpath = "outputfile"+str(ligandnumber)
 
     # print(ligandfirstpath)
@@ -65,15 +69,16 @@ def docking(
         # try:
         # Failed = False
         # print(listofreceptors)
-        listofreceptorstemp = listofreceptors[receptor][13:]
+        listofreceptorstemp = os.path.basename(listofreceptors[receptor])
         nomreceptor = listofreceptorstemp[:-6]
         receptorname = nomreceptor
-        adressereceptor = cwd + "receptors/"
-        path_receptor = adressereceptor + nomreceptor + ".pdbqt"
+        print(f"receptor name: {receptorname}")
+        adressereceptor = os.path.dirname(listofreceptors[receptor])
+        path_receptor = listofreceptors[receptor]
         dirmap = dirmaps[receptor]
         os.chdir(cwd)
 
-        if software == "VINA" or software == "SMINA" or software == "QVINA":
+        if software == "vina" or software == "smina" or software == "qvina-w" or software == "qvina2.1":
             conftxtcheck = dirmap + receptorname + ".txt"  # AV
             # print(conftxtcheck)  # AV
 
@@ -88,16 +93,8 @@ def docking(
                     spacing,
                     path_receptor,
                     receptorname,
+                    path_results,
                 )  # AV
-
-        # ligandfolder = "outputfile"+str(ligandnumber)
-        # ligandslices = [secondpathdb, ligandfolder]
-        pathdb2 = currentligand[: currentligand.rfind("/")] + "/"
-
-        # ligandfilename = ""
-        # ligandfiletotal = ""
-        # ligandfiletotal, ligandfilename = find.findpdbqt(ligandnumber, pathdb)
-        # ligandfiletotal = csdf.convertsdf(ligandfiletotal,ligandfilename,pathdb,cwd)
 
         path_ligand, pathligand, nameligand = edit.editligandpdbqt(
             software,
@@ -107,6 +104,7 @@ def docking(
             ligandfilename,
             cwd,
             ligandfirstpath,
+            path_results,
         )
         # a changer pour une position dependante de l'emplacement spécifié par l'utilisateur
         dpflocation = path_ligand + "DOCKING.dpf"
@@ -125,7 +123,7 @@ def docking(
             print("dir maps:")
             print(dirmap)
 
-        if software == "GPU" or software == "AD4":
+        if software == "gpu" or software == "ad4":
             ligandtype = dpf.dpfcreation(
                 pathligand,
                 path_receptor,
@@ -137,7 +135,7 @@ def docking(
             )
             # print("ligand type: ")
             # print(ligandtype)
-            if software == "GPU":
+            if software == "gpu":
                 fld.fldcreation(
                     ligandtype,
                     dirmap,
@@ -151,8 +149,9 @@ def docking(
                     nptsy,
                     nptsz,
                     spacing,
+                    path_results,
                 )
-            elif software == "AD4":
+            elif software == "ad4":
                 fld2.fldcreation(
                     ligandtype,
                     dirmap,
@@ -169,7 +168,7 @@ def docking(
                 )
 
         # launching Autodock-VINA
-        if software == "VINA":
+        if software == "vina":
             pathout = path_ligand + "out.pdbqt"
             if (os.path.isfile(pathout)) == False:
                 if DEBUG_FLAG == True:
@@ -198,7 +197,7 @@ def docking(
                     print("SUCCED %s" % ligandnumber - 1, end="")
                     # write.write("SUCCED %s\n" % ligandnumber)
 
-        if software == "SMINA":
+        if software == "smina":
             pathout = path_ligand + "out.pdbqt"
             if (os.path.isfile(pathout)) == False:
                 if DEBUG_FLAG == True:
@@ -226,7 +225,7 @@ def docking(
                     )
                     print("SUCCED %s" % ligandnumber - 1, end="")
 
-        if software == "QVINA":
+        if software == "qvina-w" or software == "qvina2.1":
             pathout = path_ligand + "out.pdbqt"
             if (os.path.isfile(pathout)) == False:
                 if DEBUG_FLAG == True:
@@ -314,7 +313,7 @@ def docking(
                     print("SUCCED %s" % ligandnumber - 1, end="")
                     # write.write("SUCCED %s\n" % ligandnumber)
 
-        if software == "GNINA":
+        if software == "gnina":
             # ligandfiletotal = csdf.convertsdf(ligandfiletotal,ligandfilename,pathdb,cwd)
             if DEBUG_FLAG == True:
                 rungnina = f"{pathsoftware} -r {path_receptor} -l {currentligand} -o {path_ligand}out.pdbqt --center_x {gridcenterx} --center_y {gridcentery} --center_z {gridcenterz} --size_x {nptsx} --size_y {nptsy} --size_z {nptsz} --log {path_ligand}out.log  "

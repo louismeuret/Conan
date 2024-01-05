@@ -8,7 +8,7 @@ def dpfcreation(pathligand,path_receptor,dpflocation,dirmaps,cwd,nomreceptor,sof
     print("cwd: ")
     #print(newcwd)
     print(os.getcwd())
-    dpfconvert = "../parametres/prepare_dpf4.py -l "+pathligand+" -r "+path_receptor+" -o "+dpflocation 
+    dpfconvert = "../parameters/prepare_dpf4.py -l "+pathligand+" -r "+path_receptor+" -o "+dpflocation 
     #print("dpf convert: ")
     #print(dpfconvert)
     os.system(dpfconvert) 

@@ -2,7 +2,7 @@ import os
 import subprocess
 import shutil
 
-def create_maps(nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, spacing, cwd, list_of_receptors):
+def create_maps(nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, spacing, cwd, list_of_receptors,path_results):
     # Helper function to create a GPF file with the given template number and save it to the given path
     dir_save = []
     def make_gpf_file(template_number, save_path,nptsx,nptsy,nptsz,gridcenterx,gridcentery,gridcenterz,spacing,adressereceptor,nomreceptor):
@@ -15,7 +15,7 @@ def create_maps(nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, spac
         # Replace placeholders in the template with the specified values
         data[0] = f'npts {nptsx} {nptsy} {nptsz}\n'
         data[2] = f'spacing {spacing}\n'
-        data[5] = f'receptor {adressereceptor}{nomreceptor}.pdbqt\n'
+        data[5] = f'receptor {adressereceptor}/{nomreceptor}.pdbqt\n'
         data[6] = f'gridcenter {gridcenterx} {gridcentery} {gridcenterz}\n'
 
         # Open the save file for writing
@@ -27,7 +27,7 @@ def create_maps(nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, spac
     def make_symlink(target_dir, link_name):
         try:
             # Create the symlink
-            os.symlink(f'{cwd}parametres/', link_name)
+            os.symlink(f'{cwd}parameters/', link_name)
         except OSError:
             # If the symlink already exists, do nothing
             pass
@@ -44,20 +44,21 @@ def create_maps(nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, spac
     # Iterate over each receptor in the list of receptors
     for receptor in list_of_receptors:
         # Extract the receptor name from the receptor data
-        list_of_receptorstemp = receptor[13:]
-        nomreceptor = list_of_receptorstemp[:-6]
-        adressereceptor = cwd+"receptors/"
+        nomreceptor = os.path.splitext(os.path.basename(receptor))[0]
+        print(f"Nom receptor:{nomreceptor}")
+        adressereceptor = os.path.dirname(receptor)
+        print(f"Adresse:{adressereceptor}")
         print(f"Current WD = {os.getcwd()}")
         # Backup of original file, creation of folder if needed
         if not os.path.exists(f"{adressereceptor}/BAK/"):
-            os.mkdir(f"{adressereceptor}/BAK/")
-            
+            os.mkdir(f"{adressereceptor}/BAK/")    
+
         shutil.copy(receptor,f'{adressereceptor}/BAK/{nomreceptor}_ORIGINAL.pdbqt')
-        preparereceptor = f"{cwd}parametres/prepare_receptor4.py -r {receptor} -o {receptor}"
-        os.system(preparereceptor)
+        #preparereceptor = f"{cwd}parameters/prepare_receptor4.py -r {receptor} -o {receptor}"
+        #os.system(preparereceptor)
         
         # Construct the save directory path
-        save_dir = f'{cwd}maps/{nomreceptor}_{gridcenterx}_{gridcentery}_{gridcenterz}___{nptsx}_{nptsy}_{nptsz}/'
+        save_dir = f'{path_results}/MAPS/{nomreceptor}_{gridcenterx}_{gridcentery}_{gridcenterz}___{nptsx}_{nptsy}_{nptsz}/'
         dir_save.append(save_dir)
         # If the save directory does not exist, create it
         if not os.path.exists(save_dir):
@@ -72,7 +73,7 @@ def create_maps(nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, spac
                 if shutil.which("autogrid4") != "":
                     os.system(f'autogrid4 -p {save_dir}DOCKING{i}.gpf')
                 else:
-                    pathautogrid = f"{cwd}parametres/executables/autogrid4" 
+                    pathautogrid = f"{cwd}parameters/executables/autogrid4" 
                     os.system(f"{pathautogrid} -p {save_dir}DOCKING{i}.gpf")
                 os.chdir(cwd+"Executions") 
                 #subprocess.run(f'autogrid4 -p {save_dir}DOCKING{i}.gpf')
