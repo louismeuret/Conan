@@ -46,6 +46,14 @@ async def monitor_docking_status(status_dict):
         if dpg.does_item_exist("docked_text"):
             docked_count = sum(1 for value in status_dict.values() if value == 'Completed')
             dpg.set_value("docked_text", f"Number of ligands docked: {docked_count}")
+        try:
+            total = pending_count + docking_count + docked_count
+            pourcentage = docked_count / total
+            dpg.set_value("docked_pourcent",str(pourcentage))
+            dpg.set_value("docking_progress",pourcentage)
+        except Exception as e:
+            print(f"An error occurred: {e}")
+
         await asyncio.sleep(5)  # Check status every 5 seconds
 
 def start_async_monitoring(status_dict):
@@ -511,6 +519,8 @@ def run(sender, data):
         dpg.add_text("0", tag="docking_todo")
         dpg.add_text("0", tag="docking_text")
         dpg.add_text("0", tag="docked_text")
+        dpg.add_text("0", tag="docked_pourcent")
+        dpg.add_progress_bar(tag="docking_progress")
         
         
 
