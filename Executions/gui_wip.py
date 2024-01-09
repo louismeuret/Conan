@@ -72,11 +72,6 @@ def boutonsave(sender, data):
 def delete_second_window(sender):
     dpg.delete_item(sender)
 
-def create_subfolders(results_folder):
-    subfolders = ["DOCKED", "PARAMETERS", "FILES", "RESULTS","MAPS","RECEPTORS"]
-    for subfolder in subfolders:
-        os.makedirs(os.path.join(results_folder, subfolder), exist_ok=True)
-
 def save_parameters_to_yaml(results_folder, parameters):
     params_file = os.path.join(results_folder, "PARAMETERS", "docking_parameters.yaml")
     with open(params_file, 'w') as file:
@@ -164,7 +159,7 @@ def display_settings():
 
 def display_config(software_key):
     print(software_key)
-    version = softwares[software_key]["version"]
+    version = softwares[software_key]["short_name"]
     print(version)
     file_name = f"{version}.yaml"
     directory = "../parameters/parameters_software"
@@ -492,7 +487,7 @@ def run(sender, data):
     results_folder = dpg.get_value("results_folder")
     if not results_folder: 
         results_folder = os.path.join(f"results_{soft}")
-    create_subfolders(results_folder)
+    dckl.create_subfolders(results_folder)
 
     # Collect parameters from the GUI
     nptsx, nptsy, nptsz = dpg.get_value("nptsx"), dpg.get_value("nptsy"), dpg.get_value("nptsz")
@@ -522,10 +517,8 @@ def run(sender, data):
         dpg.add_text("0", tag="docked_pourcent")
         dpg.add_progress_bar(tag="docking_progress")
         
-        
 
-
-    print(f"dckl.dockingtot({software}, {nptsx}, {nptsy}, {nptsz}, {gridcenterx}, {gridcentery}, {gridcenterz}, {spacing}, {threads}, {nruns}, {pathdb2}, {results_folder}, {debug})")
+    print(f"dckl.dockingtot({software}, {nptsx}, {nptsy}, {nptsz}, {gridcenterx}, {gridcentery}, {gridcenterz}, {spacing}, {threads}, {nruns}, {pathdb2}, {debug},{results_folder})")
     """
     dckl.dockingtot(
         software, nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, 
@@ -542,7 +535,7 @@ def run(sender, data):
     # Start the docking process in a separate thread
     threading.Thread(target=dckl.dockingtot, args=(
         software, nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, 
-        spacing, threads, nruns, pathdb2, results_folder, debug, status_dict
+        spacing, threads, nruns, pathdb2, debug, results_folder, status_dict
     ), daemon=True).start()
 
     # Start monitoring in a separate thread

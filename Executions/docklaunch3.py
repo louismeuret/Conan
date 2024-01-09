@@ -4,7 +4,6 @@ import shutil
 import numpy as np
 import yaml
 import glob
-import pickle
 import asyncio
 import concurrent.futures
 from multiprocessing import Manager
@@ -18,6 +17,10 @@ import docking as dck
 # Configure the logging
 logging.basicConfig(filename='docking.log', level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')
 
+def create_subfolders(results_folder):
+    subfolders = ["DOCKED", "PARAMETERS", "FILES", "RESULTS","MAPS","RECEPTORS"]
+    for subfolder in subfolders:
+        os.makedirs(os.path.join(results_folder, subfolder), exist_ok=True)
 
 def docking_with_logging(software_b, nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, spacing, threads, nruns, pathdb, DEBUG_FLAG, listofpdbqt, dossiertemps, listofreceptors, dirmaps, cwd, pathsoftware, path_results, status_dict, ligand_info):
     logging.info(f"Starting docking for {ligand_info}")
@@ -42,9 +45,13 @@ async def monitor_docking_status(status_dict):
 def start_async_monitoring(status_file):
     asyncio.run(monitor_docking_status(status_file))
 
-def dockingtot(software2, nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, spacing, threads, nruns, pathdb, path_results, DEBUG_FLAG,status_dict=None):
+def dockingtot(software2, nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, spacing, threads, nruns, pathdb, DEBUG_FLAG,path_results=None,status_dict=None):
     cwd = os.getcwd()
     cwd = cwd.replace("Executions", "")
+    if path_results is None: 
+        path_results = os.path.join(f"results_{software2}")
+    create_subfolders(path_results)
+
     with open('../parameters/parameters_software/softwares.yaml', 'r') as file:
         softwares = yaml.safe_load(file)
 
@@ -109,4 +116,4 @@ def dockingtot(software2, nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcen
 
 
 if __name__ == '__main__':
-    dockingtot("Autodock-vina", "50", "76", "74", "11.356", "0", "8.729", "1", "6", "100", "/home/cya/Conan/db_ligands", "/home/cya/Conan/results_test", True)
+    dockingtot("Qvina-w", "50", "76", "74", "11.356", "0", "8.729", "1", "6", "100", "/home/cya/Conan/db_ligands", True,"/home/cya/Conan/results_test")

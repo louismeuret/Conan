@@ -3304,3 +3304,1678 @@
 2024-01-09 13:16:11,716:INFO:Docking time for Nicardipine_minimized: 220.00778102874756 seconds
 2024-01-09 13:16:11,716:INFO:Docking time for Hesperidin_minimized: 220.0048315525055 seconds
 2024-01-09 13:16:11,722:INFO:Docking time for Sulfasalazine_minimized: 220.01270532608032 seconds
+2024-01-09 15:14:11,579:INFO:MONITORING
+2024-01-09 15:14:11,615:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 15:14:11,626:INFO:Starting docking for 1
+2024-01-09 15:14:11,627:INFO:Starting docking for 2
+2024-01-09 15:14:11,628:INFO:Starting docking for 4
+2024-01-09 15:14:11,628:INFO:Starting docking for 3
+2024-01-09 15:14:11,629:INFO:Starting docking for 5
+2024-01-09 15:14:11,629:INFO:Starting docking for 6
+2024-01-09 15:14:11,642:ERROR:Error occurred during docking of ligand 5: name 'pathout' is not defined
+2024-01-09 15:14:11,642:ERROR:Error occurred during docking of ligand 1: name 'pathout' is not defined
+2024-01-09 15:14:11,642:INFO:Completed docking for 5
+2024-01-09 15:14:11,642:INFO:Completed docking for 1
+2024-01-09 15:14:11,643:ERROR:Error occurred during docking of ligand 6: name 'pathout' is not defined
+2024-01-09 15:14:11,643:INFO:Completed docking for 6
+2024-01-09 15:14:11,644:ERROR:Error occurred during docking of ligand 2: name 'pathout' is not defined
+2024-01-09 15:14:11,644:ERROR:Error occurred during docking of ligand 4: name 'pathout' is not defined
+2024-01-09 15:14:11,657:INFO:Completed docking for 4
+2024-01-09 15:14:11,657:INFO:Completed docking for 2
+2024-01-09 15:14:11,658:ERROR:Error occurred during docking of ligand 3: name 'pathout' is not defined
+2024-01-09 15:14:11,659:INFO:Completed docking for 3
+2024-01-09 15:14:11,661:INFO:Starting docking for 7
+2024-01-09 15:14:11,662:INFO:Starting docking for 8
+2024-01-09 15:14:11,662:INFO:Starting docking for 9
+2024-01-09 15:14:11,662:INFO:Starting docking for 10
+2024-01-09 15:14:11,664:ERROR:Error occurred during docking of ligand 9: name 'pathout' is not defined
+2024-01-09 15:14:11,665:INFO:Completed docking for 9
+2024-01-09 15:14:11,665:ERROR:Error occurred during docking of ligand 7: name 'pathout' is not defined
+2024-01-09 15:14:11,666:INFO:Completed docking for 7
+2024-01-09 15:14:11,666:ERROR:Error occurred during docking of ligand 8: name 'pathout' is not defined
+2024-01-09 15:14:11,666:INFO:Completed docking for 8
+2024-01-09 15:14:11,667:ERROR:Error occurred during docking of ligand 10: name 'pathout' is not defined
+2024-01-09 15:14:11,668:INFO:Completed docking for 10
+2024-01-09 15:14:16,620:INFO:MONITORING
+2024-01-09 15:14:16,627:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:14:21,652:INFO:MONITORING
+2024-01-09 15:14:21,659:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:14:26,684:INFO:MONITORING
+2024-01-09 15:14:26,685:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:14:31,710:INFO:MONITORING
+2024-01-09 15:14:31,711:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:14:36,736:INFO:MONITORING
+2024-01-09 15:14:36,737:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:14:41,760:INFO:MONITORING
+2024-01-09 15:14:41,767:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:14:46,792:INFO:MONITORING
+2024-01-09 15:14:46,799:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:14:51,824:INFO:MONITORING
+2024-01-09 15:14:51,830:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:14:56,856:INFO:MONITORING
+2024-01-09 15:14:56,857:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:15:01,880:INFO:MONITORING
+2024-01-09 15:15:01,882:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:15:06,904:INFO:MONITORING
+2024-01-09 15:15:06,905:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:15:11,929:INFO:MONITORING
+2024-01-09 15:15:11,931:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:15:16,956:INFO:MONITORING
+2024-01-09 15:15:16,957:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:15:21,982:INFO:MONITORING
+2024-01-09 15:15:21,984:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:15:27,010:INFO:MONITORING
+2024-01-09 15:15:27,019:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:15:32,044:INFO:MONITORING
+2024-01-09 15:15:32,046:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:15:37,068:INFO:MONITORING
+2024-01-09 15:15:37,069:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:15:44,456:INFO:MONITORING
+2024-01-09 15:15:44,470:INFO:Starting docking for 2
+2024-01-09 15:15:44,470:INFO:Starting docking for 1
+2024-01-09 15:15:44,471:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 15:15:44,471:INFO:Starting docking for 3
+2024-01-09 15:15:44,471:INFO:Starting docking for 4
+2024-01-09 15:15:44,472:INFO:Starting docking for 5
+2024-01-09 15:15:44,473:INFO:Starting docking for 6
+2024-01-09 15:15:44,473:ERROR:Error occurred during docking of ligand 2: name 'pathout' is not defined
+2024-01-09 15:15:44,474:ERROR:Error occurred during docking of ligand 3: name 'pathout' is not defined
+2024-01-09 15:15:44,474:ERROR:Error occurred during docking of ligand 1: name 'pathout' is not defined
+2024-01-09 15:15:44,474:INFO:Completed docking for 1
+2024-01-09 15:15:44,475:INFO:Completed docking for 2
+2024-01-09 15:15:44,475:INFO:Completed docking for 3
+2024-01-09 15:15:44,475:ERROR:Error occurred during docking of ligand 4: name 'pathout' is not defined
+2024-01-09 15:15:44,475:INFO:Completed docking for 4
+2024-01-09 15:15:44,475:ERROR:Error occurred during docking of ligand 5: name 'pathout' is not defined
+2024-01-09 15:15:44,475:ERROR:Error occurred during docking of ligand 6: name 'pathout' is not defined
+2024-01-09 15:15:44,476:INFO:Completed docking for 6
+2024-01-09 15:15:44,476:INFO:Completed docking for 5
+2024-01-09 15:15:44,478:INFO:Starting docking for 7
+2024-01-09 15:15:44,479:INFO:Starting docking for 8
+2024-01-09 15:15:44,479:INFO:Starting docking for 9
+2024-01-09 15:15:44,480:INFO:Starting docking for 10
+2024-01-09 15:15:44,480:ERROR:Error occurred during docking of ligand 7: name 'pathout' is not defined
+2024-01-09 15:15:44,481:INFO:Completed docking for 7
+2024-01-09 15:15:44,481:ERROR:Error occurred during docking of ligand 8: name 'pathout' is not defined
+2024-01-09 15:15:44,482:ERROR:Error occurred during docking of ligand 9: name 'pathout' is not defined
+2024-01-09 15:15:44,482:INFO:Completed docking for 8
+2024-01-09 15:15:44,482:INFO:Completed docking for 9
+2024-01-09 15:15:44,483:ERROR:Error occurred during docking of ligand 10: name 'pathout' is not defined
+2024-01-09 15:15:44,484:INFO:Completed docking for 10
+2024-01-09 15:15:49,476:INFO:MONITORING
+2024-01-09 15:15:49,483:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:15:54,508:INFO:MONITORING
+2024-01-09 15:15:54,509:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:15:59,533:INFO:MONITORING
+2024-01-09 15:15:59,534:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:16:03,062:INFO:MONITORING
+2024-01-09 15:16:03,076:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 15:16:03,076:INFO:Starting docking for 1
+2024-01-09 15:16:03,077:INFO:Starting docking for 2
+2024-01-09 15:16:03,078:ERROR:Error occurred during docking of ligand 1: name 'pathout' is not defined
+2024-01-09 15:16:03,079:INFO:Starting docking for 3
+2024-01-09 15:16:03,079:INFO:Starting docking for 4
+2024-01-09 15:16:03,079:INFO:Starting docking for 5
+2024-01-09 15:16:03,080:INFO:Completed docking for 1
+2024-01-09 15:16:03,080:INFO:Starting docking for 6
+2024-01-09 15:16:03,081:ERROR:Error occurred during docking of ligand 2: name 'pathout' is not defined
+2024-01-09 15:16:03,081:INFO:Completed docking for 2
+2024-01-09 15:16:03,082:ERROR:Error occurred during docking of ligand 3: name 'pathout' is not defined
+2024-01-09 15:16:03,082:INFO:Completed docking for 3
+2024-01-09 15:16:03,082:ERROR:Error occurred during docking of ligand 4: name 'pathout' is not defined
+2024-01-09 15:16:03,083:INFO:Completed docking for 4
+2024-01-09 15:16:03,083:ERROR:Error occurred during docking of ligand 5: name 'pathout' is not defined
+2024-01-09 15:16:03,083:INFO:Completed docking for 5
+2024-01-09 15:16:03,083:ERROR:Error occurred during docking of ligand 6: name 'pathout' is not defined
+2024-01-09 15:16:03,085:INFO:Completed docking for 6
+2024-01-09 15:16:03,087:INFO:Starting docking for 7
+2024-01-09 15:16:03,087:INFO:Starting docking for 8
+2024-01-09 15:16:03,088:INFO:Starting docking for 9
+2024-01-09 15:16:03,088:INFO:Starting docking for 10
+2024-01-09 15:16:03,090:ERROR:Error occurred during docking of ligand 7: name 'pathout' is not defined
+2024-01-09 15:16:03,090:INFO:Completed docking for 7
+2024-01-09 15:16:03,090:ERROR:Error occurred during docking of ligand 9: name 'pathout' is not defined
+2024-01-09 15:16:03,090:ERROR:Error occurred during docking of ligand 8: name 'pathout' is not defined
+2024-01-09 15:16:03,090:ERROR:Error occurred during docking of ligand 10: name 'pathout' is not defined
+2024-01-09 15:16:03,091:INFO:Completed docking for 8
+2024-01-09 15:16:03,091:INFO:Completed docking for 9
+2024-01-09 15:16:03,091:INFO:Completed docking for 10
+2024-01-09 15:16:08,080:INFO:MONITORING
+2024-01-09 15:16:08,081:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:16:13,104:INFO:MONITORING
+2024-01-09 15:16:13,106:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:16:18,128:INFO:MONITORING
+2024-01-09 15:16:18,129:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:16:23,152:INFO:MONITORING
+2024-01-09 15:16:23,158:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:16:28,180:INFO:MONITORING
+2024-01-09 15:16:28,181:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:16:33,204:INFO:MONITORING
+2024-01-09 15:16:33,211:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:16:38,237:INFO:MONITORING
+2024-01-09 15:16:38,244:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:16:43,268:INFO:MONITORING
+2024-01-09 15:16:43,270:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:16:48,292:INFO:MONITORING
+2024-01-09 15:16:48,299:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:16:53,324:INFO:MONITORING
+2024-01-09 15:16:53,325:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:16:58,351:INFO:MONITORING
+2024-01-09 15:16:58,352:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:17:03,376:INFO:MONITORING
+2024-01-09 15:17:03,377:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:17:08,388:INFO:MONITORING
+2024-01-09 15:17:08,396:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:17:13,420:INFO:MONITORING
+2024-01-09 15:17:13,427:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:17:18,452:INFO:MONITORING
+2024-01-09 15:17:18,454:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:17:23,476:INFO:MONITORING
+2024-01-09 15:17:23,477:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:17:28,500:INFO:MONITORING
+2024-01-09 15:17:28,507:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:32:23,278:INFO:MONITORING
+2024-01-09 15:32:23,283:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 15:32:23,293:INFO:MONITORING
+2024-01-09 15:32:23,295:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 15:32:23,316:INFO:Starting docking for 1
+2024-01-09 15:32:23,317:INFO:Starting docking for 2
+2024-01-09 15:32:23,317:INFO:Starting docking for 3
+2024-01-09 15:32:23,318:INFO:Starting docking for 6
+2024-01-09 15:32:23,318:INFO:Starting docking for 4
+2024-01-09 15:32:23,319:INFO:Starting docking for 5
+2024-01-09 15:32:23,320:ERROR:Error occurred during docking of ligand 1: name 'pathout' is not defined
+2024-01-09 15:32:23,321:INFO:Completed docking for 1
+2024-01-09 15:32:23,323:ERROR:Error occurred during docking of ligand 2: name 'pathout' is not defined
+2024-01-09 15:32:23,323:ERROR:Error occurred during docking of ligand 3: name 'pathout' is not defined
+2024-01-09 15:32:23,324:INFO:Completed docking for 2
+2024-01-09 15:32:23,324:INFO:Completed docking for 3
+2024-01-09 15:32:23,324:ERROR:Error occurred during docking of ligand 6: name 'pathout' is not defined
+2024-01-09 15:32:23,324:INFO:Completed docking for 6
+2024-01-09 15:32:23,327:ERROR:Error occurred during docking of ligand 4: name 'pathout' is not defined
+2024-01-09 15:32:23,328:ERROR:Error occurred during docking of ligand 5: name 'pathout' is not defined
+2024-01-09 15:32:23,329:INFO:Completed docking for 5
+2024-01-09 15:32:23,329:INFO:Completed docking for 4
+2024-01-09 15:32:23,331:INFO:Starting docking for 7
+2024-01-09 15:32:23,334:INFO:Starting docking for 8
+2024-01-09 15:32:23,335:INFO:Starting docking for 9
+2024-01-09 15:32:23,336:ERROR:Error occurred during docking of ligand 8: name 'pathout' is not defined
+2024-01-09 15:32:23,336:ERROR:Error occurred during docking of ligand 7: name 'pathout' is not defined
+2024-01-09 15:32:23,336:ERROR:Error occurred during docking of ligand 9: name 'pathout' is not defined
+2024-01-09 15:32:23,336:INFO:Completed docking for 9
+2024-01-09 15:32:23,337:INFO:Completed docking for 7
+2024-01-09 15:32:23,337:INFO:Completed docking for 8
+2024-01-09 15:32:23,340:INFO:Starting docking for 10
+2024-01-09 15:32:23,343:ERROR:Error occurred during docking of ligand 10: name 'pathout' is not defined
+2024-01-09 15:32:23,343:INFO:Completed docking for 10
+2024-01-09 15:32:28,288:INFO:MONITORING
+2024-01-09 15:32:28,297:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:32:28,300:INFO:MONITORING
+2024-01-09 15:32:28,309:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:32:33,304:INFO:MONITORING
+2024-01-09 15:32:33,309:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:32:33,312:INFO:MONITORING
+2024-01-09 15:32:33,317:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:39:38,278:INFO:MONITORING
+2024-01-09 15:39:38,288:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 15:39:38,294:INFO:Starting docking for 1
+2024-01-09 15:39:38,294:INFO:Starting docking for 2
+2024-01-09 15:39:38,294:INFO:Starting docking for 3
+2024-01-09 15:39:38,296:INFO:Starting docking for 4
+2024-01-09 15:39:38,296:INFO:Starting docking for 6
+2024-01-09 15:39:38,297:ERROR:Error occurred during docking of ligand 1: name 'pathout' is not defined
+2024-01-09 15:39:38,297:ERROR:Error occurred during docking of ligand 3: name 'pathout' is not defined
+2024-01-09 15:39:38,298:INFO:Completed docking for 3
+2024-01-09 15:39:38,298:INFO:Completed docking for 1
+2024-01-09 15:39:38,298:ERROR:Error occurred during docking of ligand 2: name 'pathout' is not defined
+2024-01-09 15:39:38,299:ERROR:Error occurred during docking of ligand 4: name 'pathout' is not defined
+2024-01-09 15:39:38,299:INFO:Completed docking for 2
+2024-01-09 15:39:38,299:INFO:Completed docking for 4
+2024-01-09 15:39:38,301:ERROR:Error occurred during docking of ligand 6: name 'pathout' is not defined
+2024-01-09 15:39:38,302:INFO:Completed docking for 6
+2024-01-09 15:39:38,304:INFO:Starting docking for 7
+2024-01-09 15:39:38,304:INFO:Starting docking for 8
+2024-01-09 15:39:38,305:INFO:Starting docking for 9
+2024-01-09 15:39:38,305:INFO:Starting docking for 10
+2024-01-09 15:39:38,306:ERROR:Error occurred during docking of ligand 7: name 'pathout' is not defined
+2024-01-09 15:39:38,306:ERROR:Error occurred during docking of ligand 8: name 'pathout' is not defined
+2024-01-09 15:39:38,306:INFO:Completed docking for 7
+2024-01-09 15:39:38,306:ERROR:Error occurred during docking of ligand 9: name 'pathout' is not defined
+2024-01-09 15:39:38,306:INFO:Completed docking for 8
+2024-01-09 15:39:38,307:INFO:Completed docking for 9
+2024-01-09 15:39:38,307:ERROR:Error occurred during docking of ligand 10: name 'pathout' is not defined
+2024-01-09 15:39:38,307:INFO:Completed docking for 10
+2024-01-09 15:39:43,292:INFO:MONITORING
+2024-01-09 15:39:43,294:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:39:48,316:INFO:MONITORING
+2024-01-09 15:39:48,317:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:39:53,340:INFO:MONITORING
+2024-01-09 15:39:53,342:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:39:58,352:INFO:MONITORING
+2024-01-09 15:39:58,360:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:40:03,384:INFO:MONITORING
+2024-01-09 15:40:03,386:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:40:08,408:INFO:MONITORING
+2024-01-09 15:40:08,409:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:40:13,432:INFO:MONITORING
+2024-01-09 15:40:13,439:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:40:18,464:INFO:MONITORING
+2024-01-09 15:40:18,468:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:40:23,492:INFO:MONITORING
+2024-01-09 15:40:23,494:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:40:28,516:INFO:MONITORING
+2024-01-09 15:40:28,527:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:40:33,552:INFO:MONITORING
+2024-01-09 15:40:33,553:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:40:38,576:INFO:MONITORING
+2024-01-09 15:40:38,577:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:40:43,600:INFO:MONITORING
+2024-01-09 15:40:43,601:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:40:48,624:INFO:MONITORING
+2024-01-09 15:40:48,632:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:40:53,656:INFO:MONITORING
+2024-01-09 15:40:53,662:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:40:58,688:INFO:MONITORING
+2024-01-09 15:40:58,689:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:41:03,713:INFO:MONITORING
+2024-01-09 15:41:03,714:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:41:08,737:INFO:MONITORING
+2024-01-09 15:41:08,739:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:41:13,764:INFO:MONITORING
+2024-01-09 15:41:13,769:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:41:18,792:INFO:MONITORING
+2024-01-09 15:41:18,794:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:41:23,816:INFO:MONITORING
+2024-01-09 15:41:23,818:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:41:28,842:INFO:MONITORING
+2024-01-09 15:41:28,843:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:41:33,868:INFO:MONITORING
+2024-01-09 15:41:33,877:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:41:38,900:INFO:MONITORING
+2024-01-09 15:41:38,901:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:41:43,924:INFO:MONITORING
+2024-01-09 15:41:43,930:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:41:48,952:INFO:MONITORING
+2024-01-09 15:41:48,953:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:41:53,976:INFO:MONITORING
+2024-01-09 15:41:53,986:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:41:59,012:INFO:MONITORING
+2024-01-09 15:41:59,020:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:42:04,046:INFO:MONITORING
+2024-01-09 15:42:04,053:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:42:09,076:INFO:MONITORING
+2024-01-09 15:42:09,085:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:42:14,108:INFO:MONITORING
+2024-01-09 15:42:14,114:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:42:19,140:INFO:MONITORING
+2024-01-09 15:42:19,149:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:42:24,164:INFO:MONITORING
+2024-01-09 15:42:24,170:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:42:29,196:INFO:MONITORING
+2024-01-09 15:42:29,202:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:42:34,228:INFO:MONITORING
+2024-01-09 15:42:34,237:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:42:39,263:INFO:MONITORING
+2024-01-09 15:42:39,270:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:42:44,292:INFO:MONITORING
+2024-01-09 15:42:44,294:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:42:49,316:INFO:MONITORING
+2024-01-09 15:42:49,324:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:42:54,341:INFO:MONITORING
+2024-01-09 15:42:54,346:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:42:59,368:INFO:MONITORING
+2024-01-09 15:42:59,375:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:43:04,400:INFO:MONITORING
+2024-01-09 15:43:04,401:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:43:09,424:INFO:MONITORING
+2024-01-09 15:43:09,431:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:43:14,456:INFO:MONITORING
+2024-01-09 15:43:14,463:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:43:19,488:INFO:MONITORING
+2024-01-09 15:43:19,495:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:43:24,520:INFO:MONITORING
+2024-01-09 15:43:24,521:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:43:29,544:INFO:MONITORING
+2024-01-09 15:43:29,552:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:43:34,576:INFO:MONITORING
+2024-01-09 15:43:34,584:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:43:39,609:INFO:MONITORING
+2024-01-09 15:43:39,615:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:43:44,640:INFO:MONITORING
+2024-01-09 15:43:44,641:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:43:49,664:INFO:MONITORING
+2024-01-09 15:43:49,665:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:43:54,674:INFO:MONITORING
+2024-01-09 15:43:54,681:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:43:59,704:INFO:MONITORING
+2024-01-09 15:43:59,714:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:44:04,727:INFO:MONITORING
+2024-01-09 15:44:04,732:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:44:09,756:INFO:MONITORING
+2024-01-09 15:44:09,762:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:44:14,784:INFO:MONITORING
+2024-01-09 15:44:14,792:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:44:19,816:INFO:MONITORING
+2024-01-09 15:44:19,825:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:44:24,848:INFO:MONITORING
+2024-01-09 15:44:24,856:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:44:29,880:INFO:MONITORING
+2024-01-09 15:44:29,887:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:44:34,912:INFO:MONITORING
+2024-01-09 15:44:34,914:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:44:39,936:INFO:MONITORING
+2024-01-09 15:44:39,937:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:44:44,962:INFO:MONITORING
+2024-01-09 15:44:44,963:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:44:49,988:INFO:MONITORING
+2024-01-09 15:44:49,989:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:44:55,012:INFO:MONITORING
+2024-01-09 15:44:55,013:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:45:00,036:INFO:MONITORING
+2024-01-09 15:45:00,038:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:45:05,060:INFO:MONITORING
+2024-01-09 15:45:05,061:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:45:10,084:INFO:MONITORING
+2024-01-09 15:45:10,085:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:45:15,108:INFO:MONITORING
+2024-01-09 15:45:15,109:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:45:20,132:INFO:MONITORING
+2024-01-09 15:45:20,133:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:45:25,157:INFO:MONITORING
+2024-01-09 15:45:25,159:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:45:30,184:INFO:MONITORING
+2024-01-09 15:45:30,186:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:45:35,211:INFO:MONITORING
+2024-01-09 15:45:35,213:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:45:40,236:INFO:MONITORING
+2024-01-09 15:45:40,237:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:45:45,260:INFO:MONITORING
+2024-01-09 15:45:45,261:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:45:50,287:INFO:MONITORING
+2024-01-09 15:45:50,294:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:45:55,320:INFO:MONITORING
+2024-01-09 15:45:55,323:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:46:00,348:INFO:MONITORING
+2024-01-09 15:46:00,356:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:46:05,380:INFO:MONITORING
+2024-01-09 15:46:05,382:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:46:10,404:INFO:MONITORING
+2024-01-09 15:46:10,407:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:46:15,432:INFO:MONITORING
+2024-01-09 15:46:15,433:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:46:20,456:INFO:MONITORING
+2024-01-09 15:46:20,464:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:46:25,488:INFO:MONITORING
+2024-01-09 15:46:25,491:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:46:30,516:INFO:MONITORING
+2024-01-09 15:46:30,547:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:46:35,572:INFO:MONITORING
+2024-01-09 15:46:35,573:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:46:40,596:INFO:MONITORING
+2024-01-09 15:46:40,602:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:46:45,624:INFO:MONITORING
+2024-01-09 15:46:45,625:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:46:50,648:INFO:MONITORING
+2024-01-09 15:46:50,656:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:46:55,680:INFO:MONITORING
+2024-01-09 15:46:55,681:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:47:00,704:INFO:MONITORING
+2024-01-09 15:47:00,705:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:47:05,729:INFO:MONITORING
+2024-01-09 15:47:05,730:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:47:10,756:INFO:MONITORING
+2024-01-09 15:47:10,761:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:47:15,787:INFO:MONITORING
+2024-01-09 15:47:15,790:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:47:20,816:INFO:MONITORING
+2024-01-09 15:47:20,823:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:47:25,848:INFO:MONITORING
+2024-01-09 15:47:25,853:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:47:30,879:INFO:MONITORING
+2024-01-09 15:47:30,886:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:47:35,892:INFO:MONITORING
+2024-01-09 15:47:35,898:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:47:40,920:INFO:MONITORING
+2024-01-09 15:47:40,926:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:47:45,952:INFO:MONITORING
+2024-01-09 15:47:45,957:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:47:50,983:INFO:MONITORING
+2024-01-09 15:47:50,990:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:47:56,012:INFO:MONITORING
+2024-01-09 15:47:56,019:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:48:01,044:INFO:MONITORING
+2024-01-09 15:48:01,047:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:48:06,072:INFO:MONITORING
+2024-01-09 15:48:06,079:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:48:11,104:INFO:MONITORING
+2024-01-09 15:48:11,105:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:48:16,128:INFO:MONITORING
+2024-01-09 15:48:16,134:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:48:21,159:INFO:MONITORING
+2024-01-09 15:48:21,166:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:48:26,192:INFO:MONITORING
+2024-01-09 15:48:26,199:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:48:31,222:INFO:MONITORING
+2024-01-09 15:48:31,228:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:48:36,254:INFO:MONITORING
+2024-01-09 15:48:36,261:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:48:41,284:INFO:MONITORING
+2024-01-09 15:48:41,291:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:48:46,316:INFO:MONITORING
+2024-01-09 15:48:46,317:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:48:51,340:INFO:MONITORING
+2024-01-09 15:48:51,347:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:48:56,361:INFO:MONITORING
+2024-01-09 15:48:56,367:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:49:01,392:INFO:MONITORING
+2024-01-09 15:49:01,393:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:49:06,419:INFO:MONITORING
+2024-01-09 15:49:06,426:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:49:11,448:INFO:MONITORING
+2024-01-09 15:49:11,451:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:49:16,476:INFO:MONITORING
+2024-01-09 15:49:16,482:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:49:21,504:INFO:MONITORING
+2024-01-09 15:49:21,511:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:49:26,536:INFO:MONITORING
+2024-01-09 15:49:26,543:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:49:31,568:INFO:MONITORING
+2024-01-09 15:49:31,575:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:49:36,600:INFO:MONITORING
+2024-01-09 15:49:36,601:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:49:41,624:INFO:MONITORING
+2024-01-09 15:49:41,625:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:49:46,648:INFO:MONITORING
+2024-01-09 15:49:46,649:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:49:51,672:INFO:MONITORING
+2024-01-09 15:49:51,673:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:49:56,696:INFO:MONITORING
+2024-01-09 15:49:56,698:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:50:01,720:INFO:MONITORING
+2024-01-09 15:50:01,723:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:50:06,748:INFO:MONITORING
+2024-01-09 15:50:06,756:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Pending', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:50:11,782:INFO:MONITORING
+2024-01-09 15:51:07,158:INFO:MONITORING
+2024-01-09 15:51:07,187:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 15:51:07,200:INFO:Starting docking for 1
+2024-01-09 15:51:07,200:INFO:Starting docking for 2
+2024-01-09 15:51:07,200:INFO:Starting docking for 3
+2024-01-09 15:51:07,201:INFO:Starting docking for 4
+2024-01-09 15:51:07,202:INFO:Starting docking for 5
+2024-01-09 15:51:07,203:ERROR:Error occurred during docking of ligand 3: name 'pathout' is not defined
+2024-01-09 15:51:07,203:ERROR:Error occurred during docking of ligand 4: name 'pathout' is not defined
+2024-01-09 15:51:07,203:ERROR:Error occurred during docking of ligand 1: name 'pathout' is not defined
+2024-01-09 15:51:07,204:ERROR:Error occurred during docking of ligand 2: name 'pathout' is not defined
+2024-01-09 15:51:07,204:INFO:Starting docking for 6
+2024-01-09 15:51:07,204:INFO:Completed docking for 4
+2024-01-09 15:51:07,204:INFO:Completed docking for 3
+2024-01-09 15:51:07,204:INFO:Completed docking for 2
+2024-01-09 15:51:07,204:INFO:Completed docking for 1
+2024-01-09 15:51:07,205:ERROR:Error occurred during docking of ligand 5: name 'pathout' is not defined
+2024-01-09 15:51:07,206:INFO:Completed docking for 5
+2024-01-09 15:51:07,207:ERROR:Error occurred during docking of ligand 6: name 'pathout' is not defined
+2024-01-09 15:51:07,207:INFO:Completed docking for 6
+2024-01-09 15:51:07,208:INFO:Starting docking for 7
+2024-01-09 15:51:07,208:INFO:Starting docking for 8
+2024-01-09 15:51:07,209:INFO:Starting docking for 9
+2024-01-09 15:51:07,209:INFO:Starting docking for 10
+2024-01-09 15:51:07,211:ERROR:Error occurred during docking of ligand 10: name 'pathout' is not defined
+2024-01-09 15:51:07,211:ERROR:Error occurred during docking of ligand 7: name 'pathout' is not defined
+2024-01-09 15:51:07,211:ERROR:Error occurred during docking of ligand 9: name 'pathout' is not defined
+2024-01-09 15:51:07,211:ERROR:Error occurred during docking of ligand 8: name 'pathout' is not defined
+2024-01-09 15:51:07,211:INFO:Completed docking for 10
+2024-01-09 15:51:07,211:INFO:Completed docking for 7
+2024-01-09 15:51:07,211:INFO:Completed docking for 9
+2024-01-09 15:51:07,211:INFO:Completed docking for 8
+2024-01-09 15:51:12,192:INFO:MONITORING
+2024-01-09 15:51:12,200:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:51:17,224:INFO:MONITORING
+2024-01-09 15:51:17,225:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:51:22,248:INFO:MONITORING
+2024-01-09 15:51:22,250:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:51:27,272:INFO:MONITORING
+2024-01-09 15:51:27,278:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:51:32,304:INFO:MONITORING
+2024-01-09 15:51:32,311:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:51:37,336:INFO:MONITORING
+2024-01-09 15:51:37,343:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:51:42,368:INFO:MONITORING
+2024-01-09 15:51:42,369:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:51:47,392:INFO:MONITORING
+2024-01-09 15:51:47,394:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:51:52,416:INFO:MONITORING
+2024-01-09 15:51:52,417:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:51:57,440:INFO:MONITORING
+2024-01-09 15:51:57,441:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:52:01,836:INFO:MONITORING
+2024-01-09 15:52:01,856:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 15:52:01,865:INFO:Starting docking for 1
+2024-01-09 15:52:01,865:INFO:Starting docking for 2
+2024-01-09 15:52:01,866:INFO:Starting docking for 3
+2024-01-09 15:52:01,867:INFO:Starting docking for 4
+2024-01-09 15:52:01,869:INFO:Starting docking for 5
+2024-01-09 15:52:01,870:INFO:Starting docking for 6
+2024-01-09 15:52:01,877:ERROR:Error occurred during docking of ligand 1: name 'pathout' is not defined
+2024-01-09 15:52:01,878:INFO:Completed docking for 1
+2024-01-09 15:52:01,882:ERROR:Error occurred during docking of ligand 2: name 'pathout' is not defined
+2024-01-09 15:52:01,882:INFO:Completed docking for 2
+2024-01-09 15:52:01,886:ERROR:Error occurred during docking of ligand 3: name 'pathout' is not defined
+2024-01-09 15:52:01,886:INFO:Completed docking for 3
+2024-01-09 15:52:01,890:ERROR:Error occurred during docking of ligand 5: name 'pathout' is not defined
+2024-01-09 15:52:01,890:ERROR:Error occurred during docking of ligand 4: name 'pathout' is not defined
+2024-01-09 15:52:01,891:INFO:Completed docking for 4
+2024-01-09 15:52:01,891:INFO:Completed docking for 5
+2024-01-09 15:52:01,891:ERROR:Error occurred during docking of ligand 6: name 'pathout' is not defined
+2024-01-09 15:52:01,892:INFO:Completed docking for 6
+2024-01-09 15:52:01,892:INFO:Starting docking for 7
+2024-01-09 15:52:01,896:INFO:Starting docking for 8
+2024-01-09 15:52:01,897:INFO:Starting docking for 9
+2024-01-09 15:52:01,898:INFO:Starting docking for 10
+2024-01-09 15:52:01,899:ERROR:Error occurred during docking of ligand 7: name 'pathout' is not defined
+2024-01-09 15:52:01,899:INFO:Completed docking for 7
+2024-01-09 15:52:01,901:ERROR:Error occurred during docking of ligand 9: name 'pathout' is not defined
+2024-01-09 15:52:01,901:ERROR:Error occurred during docking of ligand 8: name 'pathout' is not defined
+2024-01-09 15:52:01,901:ERROR:Error occurred during docking of ligand 10: name 'pathout' is not defined
+2024-01-09 15:52:01,901:INFO:Completed docking for 9
+2024-01-09 15:52:01,901:INFO:Completed docking for 10
+2024-01-09 15:52:01,905:INFO:Completed docking for 8
+2024-01-09 15:52:06,860:INFO:MONITORING
+2024-01-09 15:52:06,868:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:52:11,892:INFO:MONITORING
+2024-01-09 15:52:11,893:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:52:16,916:INFO:MONITORING
+2024-01-09 15:52:16,923:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:52:21,948:INFO:MONITORING
+2024-01-09 15:52:21,955:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:52:26,980:INFO:MONITORING
+2024-01-09 15:52:26,988:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:52:32,012:INFO:MONITORING
+2024-01-09 15:52:32,014:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:52:37,036:INFO:MONITORING
+2024-01-09 15:52:37,043:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:52:42,068:INFO:MONITORING
+2024-01-09 15:52:42,069:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:52:47,092:INFO:MONITORING
+2024-01-09 15:52:47,100:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:52:52,124:INFO:MONITORING
+2024-01-09 15:52:52,126:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:52:57,148:INFO:MONITORING
+2024-01-09 15:52:57,155:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:53:03,230:INFO:MONITORING
+2024-01-09 15:53:03,244:INFO:Starting docking for 1
+2024-01-09 15:53:03,245:INFO:Starting docking for 3
+2024-01-09 15:53:03,245:INFO:Starting docking for 2
+2024-01-09 15:53:03,246:INFO:Starting docking for 4
+2024-01-09 15:53:03,246:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 15:53:03,247:ERROR:Error occurred during docking of ligand 1: name 'pathout' is not defined
+2024-01-09 15:53:03,247:INFO:Starting docking for 6
+2024-01-09 15:53:03,247:INFO:Completed docking for 1
+2024-01-09 15:53:03,247:INFO:Starting docking for 5
+2024-01-09 15:53:03,248:ERROR:Error occurred during docking of ligand 3: name 'pathout' is not defined
+2024-01-09 15:53:03,248:ERROR:Error occurred during docking of ligand 2: name 'pathout' is not defined
+2024-01-09 15:53:03,249:INFO:Completed docking for 3
+2024-01-09 15:53:03,249:INFO:Completed docking for 2
+2024-01-09 15:53:03,250:ERROR:Error occurred during docking of ligand 6: name 'pathout' is not defined
+2024-01-09 15:53:03,251:ERROR:Error occurred during docking of ligand 4: name 'pathout' is not defined
+2024-01-09 15:53:03,251:INFO:Completed docking for 4
+2024-01-09 15:53:03,251:INFO:Completed docking for 6
+2024-01-09 15:53:03,252:ERROR:Error occurred during docking of ligand 5: name 'pathout' is not defined
+2024-01-09 15:53:03,253:INFO:Completed docking for 5
+2024-01-09 15:53:03,253:INFO:Starting docking for 7
+2024-01-09 15:53:03,255:INFO:Starting docking for 8
+2024-01-09 15:53:03,255:INFO:Starting docking for 9
+2024-01-09 15:53:03,256:INFO:Starting docking for 10
+2024-01-09 15:53:03,257:ERROR:Error occurred during docking of ligand 7: name 'pathout' is not defined
+2024-01-09 15:53:03,257:INFO:Completed docking for 7
+2024-01-09 15:53:03,258:ERROR:Error occurred during docking of ligand 8: name 'pathout' is not defined
+2024-01-09 15:53:03,258:INFO:Completed docking for 8
+2024-01-09 15:53:03,258:ERROR:Error occurred during docking of ligand 10: name 'pathout' is not defined
+2024-01-09 15:53:03,258:ERROR:Error occurred during docking of ligand 9: name 'pathout' is not defined
+2024-01-09 15:53:03,259:INFO:Completed docking for 10
+2024-01-09 15:53:03,259:INFO:Completed docking for 9
+2024-01-09 15:53:08,248:INFO:MONITORING
+2024-01-09 15:53:08,255:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:53:13,280:INFO:MONITORING
+2024-01-09 15:53:13,281:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:53:18,304:INFO:MONITORING
+2024-01-09 15:53:18,311:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:53:23,336:INFO:MONITORING
+2024-01-09 15:53:23,345:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:53:28,369:INFO:MONITORING
+2024-01-09 15:53:28,371:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:53:33,396:INFO:MONITORING
+2024-01-09 15:53:33,397:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:53:38,420:INFO:MONITORING
+2024-01-09 15:53:38,426:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:53:43,448:INFO:MONITORING
+2024-01-09 15:53:43,454:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:53:48,479:INFO:MONITORING
+2024-01-09 15:53:48,486:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:53:53,509:INFO:MONITORING
+2024-01-09 15:53:53,516:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:53:58,540:INFO:MONITORING
+2024-01-09 15:53:58,547:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:54:03,572:INFO:MONITORING
+2024-01-09 15:54:03,581:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:54:08,604:INFO:MONITORING
+2024-01-09 15:54:08,610:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:54:13,635:INFO:MONITORING
+2024-01-09 15:54:13,637:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:54:18,653:INFO:MONITORING
+2024-01-09 15:54:18,662:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:54:23,688:INFO:MONITORING
+2024-01-09 15:54:23,689:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:54:28,712:INFO:MONITORING
+2024-01-09 15:54:28,718:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:54:33,744:INFO:MONITORING
+2024-01-09 15:54:33,751:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:54:38,776:INFO:MONITORING
+2024-01-09 15:54:38,777:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:54:43,800:INFO:MONITORING
+2024-01-09 15:54:43,801:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:54:48,824:INFO:MONITORING
+2024-01-09 15:54:48,825:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:54:53,848:INFO:MONITORING
+2024-01-09 15:54:53,849:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:54:58,872:INFO:MONITORING
+2024-01-09 15:54:58,873:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:55:03,899:INFO:MONITORING
+2024-01-09 15:55:03,900:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:55:08,924:INFO:MONITORING
+2024-01-09 15:55:08,925:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:55:13,951:INFO:MONITORING
+2024-01-09 15:55:13,952:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:55:18,976:INFO:MONITORING
+2024-01-09 15:55:18,978:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:55:23,980:INFO:MONITORING
+2024-01-09 15:55:23,987:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:55:29,012:INFO:MONITORING
+2024-01-09 15:55:29,013:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:55:34,036:INFO:MONITORING
+2024-01-09 15:55:34,045:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:55:39,069:INFO:MONITORING
+2024-01-09 15:55:39,077:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:55:44,100:INFO:MONITORING
+2024-01-09 15:55:44,105:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:55:49,128:INFO:MONITORING
+2024-01-09 15:55:49,129:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:55:54,152:INFO:MONITORING
+2024-01-09 15:55:54,153:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:55:59,176:INFO:MONITORING
+2024-01-09 15:55:59,177:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:56:04,200:INFO:MONITORING
+2024-01-09 15:56:04,201:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:56:09,224:INFO:MONITORING
+2024-01-09 15:56:09,225:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:56:14,248:INFO:MONITORING
+2024-01-09 15:56:14,249:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:56:19,272:INFO:MONITORING
+2024-01-09 15:56:19,273:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:56:24,296:INFO:MONITORING
+2024-01-09 15:56:24,306:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:56:29,328:INFO:MONITORING
+2024-01-09 15:56:29,329:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:56:34,353:INFO:MONITORING
+2024-01-09 15:56:34,354:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:56:39,380:INFO:MONITORING
+2024-01-09 15:56:39,381:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:56:44,404:INFO:MONITORING
+2024-01-09 15:56:44,405:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:56:49,430:INFO:MONITORING
+2024-01-09 15:56:49,431:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:56:54,456:INFO:MONITORING
+2024-01-09 15:56:54,462:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:56:59,488:INFO:MONITORING
+2024-01-09 15:56:59,489:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:57:04,512:INFO:MONITORING
+2024-01-09 15:57:04,518:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:57:09,536:INFO:MONITORING
+2024-01-09 15:57:09,543:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:57:14,569:INFO:MONITORING
+2024-01-09 15:57:14,573:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:57:19,596:INFO:MONITORING
+2024-01-09 15:57:19,602:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:57:24,628:INFO:MONITORING
+2024-01-09 15:57:24,630:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:57:29,652:INFO:MONITORING
+2024-01-09 15:57:29,653:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:57:34,676:INFO:MONITORING
+2024-01-09 15:57:34,677:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:57:39,700:INFO:MONITORING
+2024-01-09 15:57:39,701:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:57:44,724:INFO:MONITORING
+2024-01-09 15:57:44,726:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:57:49,748:INFO:MONITORING
+2024-01-09 15:57:49,749:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:57:54,772:INFO:MONITORING
+2024-01-09 15:57:54,775:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:57:59,800:INFO:MONITORING
+2024-01-09 15:57:59,801:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:58:04,824:INFO:MONITORING
+2024-01-09 15:58:04,825:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:58:09,848:INFO:MONITORING
+2024-01-09 15:58:09,854:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:58:14,880:INFO:MONITORING
+2024-01-09 15:58:14,884:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:58:19,908:INFO:MONITORING
+2024-01-09 15:58:19,910:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:58:24,932:INFO:MONITORING
+2024-01-09 15:58:24,933:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:58:29,956:INFO:MONITORING
+2024-01-09 15:58:29,957:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:58:34,980:INFO:MONITORING
+2024-01-09 15:58:34,986:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:58:40,008:INFO:MONITORING
+2024-01-09 15:58:40,014:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:58:45,036:INFO:MONITORING
+2024-01-09 15:58:45,037:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:58:50,061:INFO:MONITORING
+2024-01-09 15:58:50,064:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:58:55,088:INFO:MONITORING
+2024-01-09 15:58:55,089:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:59:00,112:INFO:MONITORING
+2024-01-09 15:59:00,114:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:59:05,136:INFO:MONITORING
+2024-01-09 15:59:05,137:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:59:10,160:INFO:MONITORING
+2024-01-09 15:59:10,166:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:59:15,192:INFO:MONITORING
+2024-01-09 15:59:15,193:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:59:20,216:INFO:MONITORING
+2024-01-09 15:59:20,219:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:59:25,244:INFO:MONITORING
+2024-01-09 15:59:25,245:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:59:30,270:INFO:MONITORING
+2024-01-09 15:59:30,275:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:59:35,300:INFO:MONITORING
+2024-01-09 15:59:35,305:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:59:40,328:INFO:MONITORING
+2024-01-09 15:59:40,329:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:59:45,352:INFO:MONITORING
+2024-01-09 15:59:45,353:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:59:50,377:INFO:MONITORING
+2024-01-09 15:59:50,378:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 15:59:55,400:INFO:MONITORING
+2024-01-09 15:59:55,401:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:00:00,424:INFO:MONITORING
+2024-01-09 16:00:00,430:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:00:05,456:INFO:MONITORING
+2024-01-09 16:00:05,462:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:00:10,484:INFO:MONITORING
+2024-01-09 16:00:10,485:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:00:15,508:INFO:MONITORING
+2024-01-09 16:00:15,509:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:00:20,532:INFO:MONITORING
+2024-01-09 16:00:20,533:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:00:25,556:INFO:MONITORING
+2024-01-09 16:00:25,557:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:00:30,580:INFO:MONITORING
+2024-01-09 16:00:30,582:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:00:35,604:INFO:MONITORING
+2024-01-09 16:00:35,605:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:00:40,629:INFO:MONITORING
+2024-01-09 16:00:40,633:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:00:45,658:INFO:MONITORING
+2024-01-09 16:00:45,660:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:00:50,684:INFO:MONITORING
+2024-01-09 16:00:50,685:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:00:55,708:INFO:MONITORING
+2024-01-09 16:00:55,709:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:01:00,732:INFO:MONITORING
+2024-01-09 16:01:00,740:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:01:05,764:INFO:MONITORING
+2024-01-09 16:01:05,765:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:01:10,788:INFO:MONITORING
+2024-01-09 16:01:10,795:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:01:15,820:INFO:MONITORING
+2024-01-09 16:01:15,821:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:01:20,844:INFO:MONITORING
+2024-01-09 16:01:20,849:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:01:25,872:INFO:MONITORING
+2024-01-09 16:01:25,873:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:01:30,896:INFO:MONITORING
+2024-01-09 16:01:30,897:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:01:35,920:INFO:MONITORING
+2024-01-09 16:01:35,921:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:01:40,944:INFO:MONITORING
+2024-01-09 16:01:40,951:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:01:45,977:INFO:MONITORING
+2024-01-09 16:01:45,984:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:01:51,008:INFO:MONITORING
+2024-01-09 16:01:51,010:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:01:53,987:INFO:MONITORING
+2024-01-09 16:01:53,990:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:01:54,003:INFO:Starting docking for 1
+2024-01-09 16:01:54,011:INFO:Starting docking for 5
+2024-01-09 16:01:54,005:INFO:Starting docking for 4
+2024-01-09 16:01:54,005:INFO:Starting docking for 2
+2024-01-09 16:01:54,020:INFO:Starting docking for 3
+2024-01-09 16:01:54,020:ERROR:Error occurred during docking of ligand 5: name 'path_ligand' is not defined
+2024-01-09 16:01:54,021:ERROR:Error occurred during docking of ligand 1: name 'path_ligand' is not defined
+2024-01-09 16:01:54,021:INFO:Completed docking for 1
+2024-01-09 16:01:54,021:INFO:Completed docking for 5
+2024-01-09 16:01:54,022:INFO:Starting docking for 6
+2024-01-09 16:01:54,023:ERROR:Error occurred during docking of ligand 4: name 'path_ligand' is not defined
+2024-01-09 16:01:54,023:INFO:Completed docking for 4
+2024-01-09 16:01:54,024:ERROR:Error occurred during docking of ligand 2: name 'path_ligand' is not defined
+2024-01-09 16:01:54,025:ERROR:Error occurred during docking of ligand 3: name 'path_ligand' is not defined
+2024-01-09 16:01:54,026:INFO:Completed docking for 2
+2024-01-09 16:01:54,026:INFO:Completed docking for 3
+2024-01-09 16:01:54,027:INFO:Starting docking for 7
+2024-01-09 16:01:54,027:INFO:Starting docking for 8
+2024-01-09 16:01:54,028:ERROR:Error occurred during docking of ligand 6: name 'path_ligand' is not defined
+2024-01-09 16:01:54,028:INFO:Completed docking for 6
+2024-01-09 16:01:54,030:INFO:Starting docking for 9
+2024-01-09 16:01:54,030:INFO:Starting docking for 10
+2024-01-09 16:01:54,030:ERROR:Error occurred during docking of ligand 8: name 'path_ligand' is not defined
+2024-01-09 16:01:54,030:ERROR:Error occurred during docking of ligand 7: name 'path_ligand' is not defined
+2024-01-09 16:01:54,030:INFO:Completed docking for 8
+2024-01-09 16:01:54,031:INFO:Completed docking for 7
+2024-01-09 16:01:54,032:ERROR:Error occurred during docking of ligand 9: name 'path_ligand' is not defined
+2024-01-09 16:01:54,032:INFO:Completed docking for 9
+2024-01-09 16:01:54,033:ERROR:Error occurred during docking of ligand 10: name 'path_ligand' is not defined
+2024-01-09 16:01:54,033:INFO:Completed docking for 10
+2024-01-09 16:01:58,992:INFO:MONITORING
+2024-01-09 16:01:58,993:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:02:04,016:INFO:MONITORING
+2024-01-09 16:02:04,025:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:02:09,049:INFO:MONITORING
+2024-01-09 16:02:09,051:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:02:14,076:INFO:MONITORING
+2024-01-09 16:02:14,077:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:02:19,101:INFO:MONITORING
+2024-01-09 16:02:19,107:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:02:24,132:INFO:MONITORING
+2024-01-09 16:02:24,133:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:02:29,156:INFO:MONITORING
+2024-01-09 16:02:29,163:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:02:34,188:INFO:MONITORING
+2024-01-09 16:02:34,190:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:02:39,212:INFO:MONITORING
+2024-01-09 16:02:39,213:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:02:44,236:INFO:MONITORING
+2024-01-09 16:02:44,237:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:02:56,428:INFO:MONITORING
+2024-01-09 16:02:56,445:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:02:56,449:INFO:Starting docking for 1
+2024-01-09 16:02:56,449:INFO:Starting docking for 2
+2024-01-09 16:02:56,449:INFO:Starting docking for 5
+2024-01-09 16:02:56,450:INFO:Starting docking for 3
+2024-01-09 16:02:56,451:INFO:Starting docking for 4
+2024-01-09 16:02:56,452:INFO:Starting docking for 6
+2024-01-09 16:02:56,453:ERROR:Error occurred during docking of ligand 1: name 'path_ligand' is not defined
+2024-01-09 16:02:56,453:INFO:Completed docking for 1
+2024-01-09 16:02:56,454:ERROR:Error occurred during docking of ligand 2: name 'path_ligand' is not defined
+2024-01-09 16:02:56,454:INFO:Completed docking for 2
+2024-01-09 16:02:56,456:ERROR:Error occurred during docking of ligand 5: name 'path_ligand' is not defined
+2024-01-09 16:02:56,455:ERROR:Error occurred during docking of ligand 3: name 'path_ligand' is not defined
+2024-01-09 16:02:56,456:ERROR:Error occurred during docking of ligand 6: name 'path_ligand' is not defined
+2024-01-09 16:02:56,456:ERROR:Error occurred during docking of ligand 4: name 'path_ligand' is not defined
+2024-01-09 16:02:56,456:INFO:Completed docking for 3
+2024-01-09 16:02:56,456:INFO:Completed docking for 6
+2024-01-09 16:02:56,457:INFO:Completed docking for 4
+2024-01-09 16:02:56,457:INFO:Completed docking for 5
+2024-01-09 16:02:56,458:INFO:Starting docking for 7
+2024-01-09 16:02:56,458:INFO:Starting docking for 8
+2024-01-09 16:02:56,462:INFO:Starting docking for 9
+2024-01-09 16:02:56,462:ERROR:Error occurred during docking of ligand 7: name 'path_ligand' is not defined
+2024-01-09 16:02:56,463:INFO:Starting docking for 10
+2024-01-09 16:02:56,463:INFO:Completed docking for 7
+2024-01-09 16:02:56,463:ERROR:Error occurred during docking of ligand 8: name 'path_ligand' is not defined
+2024-01-09 16:02:56,464:INFO:Completed docking for 8
+2024-01-09 16:02:56,465:ERROR:Error occurred during docking of ligand 10: name 'path_ligand' is not defined
+2024-01-09 16:02:56,466:ERROR:Error occurred during docking of ligand 9: name 'path_ligand' is not defined
+2024-01-09 16:02:56,468:INFO:Completed docking for 10
+2024-01-09 16:02:56,469:INFO:Completed docking for 9
+2024-01-09 16:03:01,448:INFO:MONITORING
+2024-01-09 16:03:01,455:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:03:06,480:INFO:MONITORING
+2024-01-09 16:03:06,481:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:03:11,504:INFO:MONITORING
+2024-01-09 16:03:11,506:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:03:16,528:INFO:MONITORING
+2024-01-09 16:03:16,530:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:03:21,552:INFO:MONITORING
+2024-01-09 16:03:21,553:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:03:26,577:INFO:MONITORING
+2024-01-09 16:03:26,583:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:03:31,608:INFO:MONITORING
+2024-01-09 16:03:31,609:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:03:36,632:INFO:MONITORING
+2024-01-09 16:03:36,638:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:03:41,660:INFO:MONITORING
+2024-01-09 16:03:41,666:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:03:46,692:INFO:MONITORING
+2024-01-09 16:03:46,693:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:03:51,716:INFO:MONITORING
+2024-01-09 16:03:51,721:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:03:56,728:INFO:MONITORING
+2024-01-09 16:03:56,729:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:04:01,752:INFO:MONITORING
+2024-01-09 16:04:01,754:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:04:06,776:INFO:MONITORING
+2024-01-09 16:04:06,777:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:04:11,800:INFO:MONITORING
+2024-01-09 16:04:11,801:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:04:16,824:INFO:MONITORING
+2024-01-09 16:04:16,826:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:04:21,848:INFO:MONITORING
+2024-01-09 16:04:21,850:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:04:30,503:INFO:MONITORING
+2024-01-09 16:04:30,520:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:04:30,522:INFO:Starting docking for 1
+2024-01-09 16:04:30,522:INFO:Starting docking for 2
+2024-01-09 16:04:30,523:INFO:Starting docking for 3
+2024-01-09 16:04:30,523:INFO:Starting docking for 4
+2024-01-09 16:04:30,524:INFO:Starting docking for 5
+2024-01-09 16:04:30,524:INFO:Starting docking for 6
+2024-01-09 16:04:30,525:ERROR:Error occurred during docking of ligand 1: name 'path_ligand' is not defined
+2024-01-09 16:04:30,525:INFO:Completed docking for 1
+2024-01-09 16:04:30,526:ERROR:Error occurred during docking of ligand 3: name 'path_ligand' is not defined
+2024-01-09 16:04:30,527:INFO:Completed docking for 3
+2024-01-09 16:04:30,527:ERROR:Error occurred during docking of ligand 5: name 'path_ligand' is not defined
+2024-01-09 16:04:30,527:ERROR:Error occurred during docking of ligand 2: name 'path_ligand' is not defined
+2024-01-09 16:04:30,527:ERROR:Error occurred during docking of ligand 4: name 'path_ligand' is not defined
+2024-01-09 16:04:30,528:INFO:Completed docking for 5
+2024-01-09 16:04:30,528:INFO:Completed docking for 4
+2024-01-09 16:04:30,528:INFO:Completed docking for 2
+2024-01-09 16:04:30,528:ERROR:Error occurred during docking of ligand 6: name 'path_ligand' is not defined
+2024-01-09 16:04:30,529:INFO:Completed docking for 6
+2024-01-09 16:04:30,529:INFO:Starting docking for 7
+2024-01-09 16:04:30,531:INFO:Starting docking for 8
+2024-01-09 16:04:30,532:INFO:Starting docking for 9
+2024-01-09 16:04:30,533:INFO:Starting docking for 10
+2024-01-09 16:04:30,533:ERROR:Error occurred during docking of ligand 7: name 'path_ligand' is not defined
+2024-01-09 16:04:30,534:INFO:Completed docking for 7
+2024-01-09 16:04:30,536:ERROR:Error occurred during docking of ligand 8: name 'path_ligand' is not defined
+2024-01-09 16:04:30,536:ERROR:Error occurred during docking of ligand 10: name 'path_ligand' is not defined
+2024-01-09 16:04:30,536:INFO:Completed docking for 8
+2024-01-09 16:04:30,537:INFO:Completed docking for 10
+2024-01-09 16:04:30,537:ERROR:Error occurred during docking of ligand 9: name 'path_ligand' is not defined
+2024-01-09 16:04:30,538:INFO:Completed docking for 9
+2024-01-09 16:04:35,524:INFO:MONITORING
+2024-01-09 16:04:35,530:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:05:41,694:INFO:MONITORING
+2024-01-09 16:05:41,709:INFO:Starting docking for 1
+2024-01-09 16:05:41,710:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:05:41,711:INFO:Starting docking for 2
+2024-01-09 16:05:41,711:INFO:Starting docking for 3
+2024-01-09 16:05:41,713:INFO:Starting docking for 4
+2024-01-09 16:05:41,713:INFO:Starting docking for 5
+2024-01-09 16:05:41,714:ERROR:Error occurred during docking of ligand 1: name 'path_ligand' is not defined
+2024-01-09 16:05:41,714:INFO:Starting docking for 6
+2024-01-09 16:05:41,715:INFO:Completed docking for 1
+2024-01-09 16:05:41,716:ERROR:Error occurred during docking of ligand 2: name 'path_ligand' is not defined
+2024-01-09 16:05:41,716:ERROR:Error occurred during docking of ligand 3: name 'path_ligand' is not defined
+2024-01-09 16:05:41,716:INFO:Completed docking for 2
+2024-01-09 16:05:41,716:INFO:Completed docking for 3
+2024-01-09 16:05:41,716:ERROR:Error occurred during docking of ligand 5: name 'path_ligand' is not defined
+2024-01-09 16:05:41,716:ERROR:Error occurred during docking of ligand 4: name 'path_ligand' is not defined
+2024-01-09 16:05:41,717:INFO:Completed docking for 5
+2024-01-09 16:05:41,717:ERROR:Error occurred during docking of ligand 6: name 'path_ligand' is not defined
+2024-01-09 16:05:41,718:INFO:Completed docking for 4
+2024-01-09 16:05:41,718:INFO:Completed docking for 6
+2024-01-09 16:05:41,720:INFO:Starting docking for 7
+2024-01-09 16:05:41,722:INFO:Starting docking for 8
+2024-01-09 16:05:41,722:INFO:Starting docking for 9
+2024-01-09 16:05:41,723:INFO:Starting docking for 10
+2024-01-09 16:05:41,724:ERROR:Error occurred during docking of ligand 8: name 'path_ligand' is not defined
+2024-01-09 16:05:41,724:ERROR:Error occurred during docking of ligand 7: name 'path_ligand' is not defined
+2024-01-09 16:05:41,724:INFO:Completed docking for 8
+2024-01-09 16:05:41,724:INFO:Completed docking for 7
+2024-01-09 16:05:41,724:ERROR:Error occurred during docking of ligand 9: name 'path_ligand' is not defined
+2024-01-09 16:05:41,725:INFO:Completed docking for 9
+2024-01-09 16:05:41,725:ERROR:Error occurred during docking of ligand 10: name 'path_ligand' is not defined
+2024-01-09 16:05:41,725:INFO:Completed docking for 10
+2024-01-09 16:05:46,716:INFO:MONITORING
+2024-01-09 16:05:46,725:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:05:51,749:INFO:MONITORING
+2024-01-09 16:05:51,751:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:05:56,776:INFO:MONITORING
+2024-01-09 16:05:56,781:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:16:03,799:INFO:MONITORING
+2024-01-09 16:16:03,815:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:16:03,942:INFO:Starting docking for 2
+2024-01-09 16:16:03,943:INFO:Starting docking for 4
+2024-01-09 16:16:03,944:INFO:Starting docking for 3
+2024-01-09 16:16:03,944:INFO:Starting docking for 5
+2024-01-09 16:16:03,948:INFO:Starting docking for 6
+2024-01-09 16:16:03,949:ERROR:Error occurred during docking of ligand 4: name 'path_ligand' is not defined
+2024-01-09 16:16:03,949:ERROR:Error occurred during docking of ligand 2: name 'path_ligand' is not defined
+2024-01-09 16:16:03,950:INFO:Completed docking for 2
+2024-01-09 16:16:03,950:ERROR:Error occurred during docking of ligand 5: name 'path_ligand' is not defined
+2024-01-09 16:16:03,951:INFO:Completed docking for 5
+2024-01-09 16:16:03,951:ERROR:Error occurred during docking of ligand 3: name 'path_ligand' is not defined
+2024-01-09 16:16:03,951:INFO:Completed docking for 4
+2024-01-09 16:16:03,952:INFO:Completed docking for 3
+2024-01-09 16:16:03,955:ERROR:Error occurred during docking of ligand 6: name 'path_ligand' is not defined
+2024-01-09 16:16:03,955:INFO:Completed docking for 6
+2024-01-09 16:16:03,959:INFO:Starting docking for 7
+2024-01-09 16:16:03,961:INFO:Starting docking for 9
+2024-01-09 16:16:03,961:INFO:Starting docking for 8
+2024-01-09 16:16:03,962:INFO:Starting docking for 10
+2024-01-09 16:16:03,962:ERROR:Error occurred during docking of ligand 7: name 'path_ligand' is not defined
+2024-01-09 16:16:03,963:INFO:Completed docking for 7
+2024-01-09 16:16:03,964:ERROR:Error occurred during docking of ligand 9: name 'path_ligand' is not defined
+2024-01-09 16:16:03,965:INFO:Completed docking for 9
+2024-01-09 16:16:03,968:ERROR:Error occurred during docking of ligand 8: name 'path_ligand' is not defined
+2024-01-09 16:16:03,968:ERROR:Error occurred during docking of ligand 10: name 'path_ligand' is not defined
+2024-01-09 16:16:03,969:INFO:Completed docking for 10
+2024-01-09 16:16:03,970:INFO:Completed docking for 8
+2024-01-09 16:16:08,876:INFO:MONITORING
+2024-01-09 16:16:08,877:INFO:{1: 'Pending', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:16:13,900:INFO:MONITORING
+2024-01-09 16:16:13,901:INFO:{1: 'Pending', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:16:18,926:INFO:MONITORING
+2024-01-09 16:16:18,928:INFO:{1: 'Pending', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:16:23,952:INFO:MONITORING
+2024-01-09 16:16:23,954:INFO:{1: 'Pending', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:16:28,977:INFO:MONITORING
+2024-01-09 16:16:28,982:INFO:{1: 'Pending', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:16:34,008:INFO:MONITORING
+2024-01-09 16:16:34,010:INFO:{1: 'Pending', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:16:39,033:INFO:MONITORING
+2024-01-09 16:16:39,041:INFO:{1: 'Pending', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:16:44,064:INFO:MONITORING
+2024-01-09 16:16:44,065:INFO:{1: 'Pending', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:16:49,088:INFO:MONITORING
+2024-01-09 16:16:49,090:INFO:{1: 'Pending', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:16:54,115:INFO:MONITORING
+2024-01-09 16:16:54,117:INFO:{1: 'Pending', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:16:59,142:INFO:MONITORING
+2024-01-09 16:16:59,144:INFO:{1: 'Pending', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:17:04,169:INFO:MONITORING
+2024-01-09 16:17:04,177:INFO:{1: 'Pending', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:17:09,200:INFO:MONITORING
+2024-01-09 16:17:09,201:INFO:{1: 'Pending', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:17:14,224:INFO:MONITORING
+2024-01-09 16:17:14,225:INFO:{1: 'Pending', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:17:19,248:INFO:MONITORING
+2024-01-09 16:17:19,250:INFO:{1: 'Pending', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:17:25,289:INFO:MONITORING
+2024-01-09 16:17:25,306:INFO:Starting docking for 1
+2024-01-09 16:17:25,307:INFO:Starting docking for 2
+2024-01-09 16:17:25,308:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:17:25,308:INFO:Starting docking for 5
+2024-01-09 16:17:25,309:INFO:Starting docking for 3
+2024-01-09 16:17:25,310:INFO:Starting docking for 6
+2024-01-09 16:17:25,310:INFO:Starting docking for 4
+2024-01-09 16:17:25,311:ERROR:Error occurred during docking of ligand 1: name 'path_ligand' is not defined
+2024-01-09 16:17:25,312:INFO:Completed docking for 1
+2024-01-09 16:17:25,312:ERROR:Error occurred during docking of ligand 5: name 'path_ligand' is not defined
+2024-01-09 16:17:25,312:INFO:Completed docking for 5
+2024-01-09 16:17:25,313:ERROR:Error occurred during docking of ligand 3: name 'path_ligand' is not defined
+2024-01-09 16:17:25,313:ERROR:Error occurred during docking of ligand 2: name 'path_ligand' is not defined
+2024-01-09 16:17:25,313:INFO:Completed docking for 2
+2024-01-09 16:17:25,313:INFO:Completed docking for 3
+2024-01-09 16:17:25,313:ERROR:Error occurred during docking of ligand 6: name 'path_ligand' is not defined
+2024-01-09 16:17:25,314:INFO:Completed docking for 6
+2024-01-09 16:17:25,314:ERROR:Error occurred during docking of ligand 4: name 'path_ligand' is not defined
+2024-01-09 16:17:25,315:INFO:Completed docking for 4
+2024-01-09 16:17:25,318:INFO:Starting docking for 7
+2024-01-09 16:17:25,319:INFO:Starting docking for 8
+2024-01-09 16:17:25,321:INFO:Starting docking for 9
+2024-01-09 16:17:25,322:INFO:Starting docking for 10
+2024-01-09 16:17:25,322:ERROR:Error occurred during docking of ligand 7: name 'path_ligand' is not defined
+2024-01-09 16:17:25,323:ERROR:Error occurred during docking of ligand 8: name 'path_ligand' is not defined
+2024-01-09 16:17:25,323:INFO:Completed docking for 8
+2024-01-09 16:17:25,323:ERROR:Error occurred during docking of ligand 9: name 'path_ligand' is not defined
+2024-01-09 16:17:25,324:INFO:Completed docking for 7
+2024-01-09 16:17:25,324:ERROR:Error occurred during docking of ligand 10: name 'path_ligand' is not defined
+2024-01-09 16:17:25,324:INFO:Completed docking for 9
+2024-01-09 16:17:25,324:INFO:Completed docking for 10
+2024-01-09 16:17:30,312:INFO:MONITORING
+2024-01-09 16:17:30,313:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:17:35,336:INFO:MONITORING
+2024-01-09 16:17:35,341:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:17:40,364:INFO:MONITORING
+2024-01-09 16:17:40,365:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:17:45,387:INFO:MONITORING
+2024-01-09 16:17:45,393:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:17:50,416:INFO:MONITORING
+2024-01-09 16:17:50,417:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:17:55,432:INFO:MONITORING
+2024-01-09 16:17:55,433:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:18:00,456:INFO:MONITORING
+2024-01-09 16:18:00,457:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:18:05,480:INFO:MONITORING
+2024-01-09 16:18:05,481:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:18:10,504:INFO:MONITORING
+2024-01-09 16:18:10,506:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:18:15,883:INFO:MONITORING
+2024-01-09 16:18:15,902:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:18:15,902:INFO:Starting docking for 1
+2024-01-09 16:18:15,904:INFO:Starting docking for 2
+2024-01-09 16:18:15,905:INFO:Starting docking for 3
+2024-01-09 16:18:15,905:INFO:Starting docking for 4
+2024-01-09 16:18:15,906:INFO:Starting docking for 5
+2024-01-09 16:18:15,907:ERROR:Error occurred during docking of ligand 1: name 'conftxtcheck' is not defined
+2024-01-09 16:18:15,907:INFO:Completed docking for 1
+2024-01-09 16:18:15,908:INFO:Starting docking for 6
+2024-01-09 16:18:15,909:ERROR:Error occurred during docking of ligand 2: name 'conftxtcheck' is not defined
+2024-01-09 16:18:15,910:INFO:Completed docking for 2
+2024-01-09 16:18:15,910:ERROR:Error occurred during docking of ligand 5: name 'conftxtcheck' is not defined
+2024-01-09 16:18:15,910:ERROR:Error occurred during docking of ligand 3: name 'conftxtcheck' is not defined
+2024-01-09 16:18:15,910:ERROR:Error occurred during docking of ligand 4: name 'conftxtcheck' is not defined
+2024-01-09 16:18:15,910:INFO:Completed docking for 5
+2024-01-09 16:18:15,910:INFO:Completed docking for 3
+2024-01-09 16:18:15,910:INFO:Completed docking for 4
+2024-01-09 16:18:15,912:ERROR:Error occurred during docking of ligand 6: name 'conftxtcheck' is not defined
+2024-01-09 16:18:15,913:INFO:Completed docking for 6
+2024-01-09 16:18:15,913:INFO:Starting docking for 7
+2024-01-09 16:18:15,915:INFO:Starting docking for 8
+2024-01-09 16:18:15,916:INFO:Starting docking for 9
+2024-01-09 16:18:15,916:ERROR:Error occurred during docking of ligand 7: name 'conftxtcheck' is not defined
+2024-01-09 16:18:15,916:INFO:Starting docking for 10
+2024-01-09 16:18:15,917:INFO:Completed docking for 7
+2024-01-09 16:18:15,917:ERROR:Error occurred during docking of ligand 8: name 'conftxtcheck' is not defined
+2024-01-09 16:18:15,917:INFO:Completed docking for 8
+2024-01-09 16:18:15,917:ERROR:Error occurred during docking of ligand 9: name 'conftxtcheck' is not defined
+2024-01-09 16:18:15,918:INFO:Completed docking for 9
+2024-01-09 16:18:15,920:ERROR:Error occurred during docking of ligand 10: name 'conftxtcheck' is not defined
+2024-01-09 16:18:15,921:INFO:Completed docking for 10
+2024-01-09 16:18:20,908:INFO:MONITORING
+2024-01-09 16:18:20,916:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:18:25,940:INFO:MONITORING
+2024-01-09 16:18:25,942:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:18:48,072:INFO:MONITORING
+2024-01-09 16:18:48,085:INFO:Starting docking for 1
+2024-01-09 16:18:48,087:INFO:Starting docking for 2
+2024-01-09 16:18:48,087:INFO:Starting docking for 3
+2024-01-09 16:18:48,088:INFO:Starting docking for 6
+2024-01-09 16:18:48,089:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:18:48,090:INFO:Starting docking for 5
+2024-01-09 16:18:48,090:ERROR:Error occurred during docking of ligand 2: [Errno 17] File exists: '/home/cya/Conan/db_ligands/Nicardipine_minimized.pdbqt' -> '/home/cya/Conan/results_test/DOCKED/Nicardipine_minimized/7p51_Nicardipine_minimized_2024-1-9-16:18/Nicardipine_minimized.pdbqt'
+2024-01-09 16:18:48,090:ERROR:Error occurred during docking of ligand 1: [Errno 17] File exists: '/home/cya/Conan/db_ligands/Sulfasalazine_minimized.pdbqt' -> '/home/cya/Conan/results_test/DOCKED/Sulfasalazine_minimized/7p51_Sulfasalazine_minimized_2024-1-9-16:18/Sulfasalazine_minimized.pdbqt'
+2024-01-09 16:18:48,090:ERROR:Error occurred during docking of ligand 3: [Errno 17] File exists: '/home/cya/Conan/db_ligands/Hesperidin_minimized.pdbqt' -> '/home/cya/Conan/results_test/DOCKED/Hesperidin_minimized/7p51_Hesperidin_minimized_2024-1-9-16:18/Hesperidin_minimized.pdbqt'
+2024-01-09 16:18:48,090:INFO:Completed docking for 2
+2024-01-09 16:18:48,090:INFO:Completed docking for 1
+2024-01-09 16:18:48,090:INFO:Completed docking for 3
+2024-01-09 16:18:48,092:ERROR:Error occurred during docking of ligand 5: [Errno 17] File exists: '/home/cya/Conan/db_ligands/Diosmetin_minimized.pdbqt' -> '/home/cya/Conan/results_test/DOCKED/Diosmetin_minimized/7p51_Diosmetin_minimized_2024-1-9-16:18/Diosmetin_minimized.pdbqt'
+2024-01-09 16:18:48,092:ERROR:Error occurred during docking of ligand 6: [Errno 17] File exists: '/home/cya/Conan/db_ligands/Nicotine_minimized.pdbqt' -> '/home/cya/Conan/results_test/DOCKED/Nicotine_minimized/7p51_Nicotine_minimized_2024-1-9-16:18/Nicotine_minimized.pdbqt'
+2024-01-09 16:18:48,092:INFO:Completed docking for 5
+2024-01-09 16:18:48,092:INFO:Completed docking for 6
+2024-01-09 16:18:48,095:INFO:Starting docking for 7
+2024-01-09 16:18:48,095:INFO:Starting docking for 8
+2024-01-09 16:18:48,095:INFO:Starting docking for 9
+2024-01-09 16:18:48,096:INFO:Starting docking for 10
+2024-01-09 16:18:48,097:ERROR:Error occurred during docking of ligand 7: [Errno 17] File exists: '/home/cya/Conan/db_ligands/Montelukast_minimized.pdbqt' -> '/home/cya/Conan/results_test/DOCKED/Montelukast_minimized/7p51_Montelukast_minimized_2024-1-9-16:18/Montelukast_minimized.pdbqt'
+2024-01-09 16:18:48,097:ERROR:Error occurred during docking of ligand 8: [Errno 17] File exists: '/home/cya/Conan/db_ligands/Carbocysteine_minimized.pdbqt' -> '/home/cya/Conan/results_test/DOCKED/Carbocysteine_minimized/7p51_Carbocysteine_minimized_2024-1-9-16:18/Carbocysteine_minimized.pdbqt'
+2024-01-09 16:18:48,097:ERROR:Error occurred during docking of ligand 9: [Errno 17] File exists: '/home/cya/Conan/db_ligands/Paracetamol_minimized.pdbqt' -> '/home/cya/Conan/results_test/DOCKED/Paracetamol_minimized/7p51_Paracetamol_minimized_2024-1-9-16:18/Paracetamol_minimized.pdbqt'
+2024-01-09 16:18:48,097:INFO:Completed docking for 7
+2024-01-09 16:18:48,097:INFO:Completed docking for 8
+2024-01-09 16:18:48,097:INFO:Completed docking for 9
+2024-01-09 16:18:48,100:ERROR:Error occurred during docking of ligand 10: [Errno 17] File exists: '/home/cya/Conan/db_ligands/Dabigatran_minimized.pdbqt' -> '/home/cya/Conan/results_test/DOCKED/Dabigatran_minimized/7p51_Dabigatran_minimized_2024-1-9-16:18/Dabigatran_minimized.pdbqt'
+2024-01-09 16:18:48,100:INFO:Completed docking for 10
+2024-01-09 16:18:53,092:INFO:MONITORING
+2024-01-09 16:18:53,094:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Pending', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:18:58,119:INFO:MONITORING
+2024-01-09 16:18:58,127:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Pending', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:19:03,152:INFO:MONITORING
+2024-01-09 16:19:03,153:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Pending', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:19:08,176:INFO:MONITORING
+2024-01-09 16:19:08,180:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Pending', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:19:14,824:INFO:MONITORING
+2024-01-09 16:19:14,847:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:19:14,849:INFO:Starting docking for 1
+2024-01-09 16:19:14,849:INFO:Starting docking for 2
+2024-01-09 16:19:14,849:INFO:Starting docking for 3
+2024-01-09 16:19:14,851:INFO:Starting docking for 4
+2024-01-09 16:19:14,852:INFO:Starting docking for 6
+2024-01-09 16:19:14,852:ERROR:Error occurred during docking of ligand 1: name 'conftxtcheck' is not defined
+2024-01-09 16:19:14,853:INFO:Completed docking for 1
+2024-01-09 16:19:14,853:INFO:Starting docking for 5
+2024-01-09 16:19:14,854:ERROR:Error occurred during docking of ligand 2: name 'conftxtcheck' is not defined
+2024-01-09 16:19:14,855:INFO:Completed docking for 2
+2024-01-09 16:19:14,856:ERROR:Error occurred during docking of ligand 4: name 'conftxtcheck' is not defined
+2024-01-09 16:19:14,858:INFO:Completed docking for 4
+2024-01-09 16:19:14,858:ERROR:Error occurred during docking of ligand 3: name 'conftxtcheck' is not defined
+2024-01-09 16:19:14,859:ERROR:Error occurred during docking of ligand 6: name 'conftxtcheck' is not defined
+2024-01-09 16:19:14,859:INFO:Completed docking for 3
+2024-01-09 16:19:14,860:INFO:Completed docking for 6
+2024-01-09 16:19:14,861:ERROR:Error occurred during docking of ligand 5: name 'conftxtcheck' is not defined
+2024-01-09 16:19:14,862:INFO:Completed docking for 5
+2024-01-09 16:19:14,863:INFO:Starting docking for 7
+2024-01-09 16:19:14,865:INFO:Starting docking for 8
+2024-01-09 16:19:14,865:INFO:Starting docking for 9
+2024-01-09 16:19:14,866:INFO:Starting docking for 10
+2024-01-09 16:19:14,867:ERROR:Error occurred during docking of ligand 7: name 'conftxtcheck' is not defined
+2024-01-09 16:19:14,868:ERROR:Error occurred during docking of ligand 9: name 'conftxtcheck' is not defined
+2024-01-09 16:19:14,868:INFO:Completed docking for 9
+2024-01-09 16:19:14,868:INFO:Completed docking for 7
+2024-01-09 16:19:14,868:ERROR:Error occurred during docking of ligand 8: name 'conftxtcheck' is not defined
+2024-01-09 16:19:14,868:ERROR:Error occurred during docking of ligand 10: name 'conftxtcheck' is not defined
+2024-01-09 16:19:14,869:INFO:Completed docking for 10
+2024-01-09 16:19:14,869:INFO:Completed docking for 8
+2024-01-09 16:19:19,852:INFO:MONITORING
+2024-01-09 16:19:19,853:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:19:24,877:INFO:MONITORING
+2024-01-09 16:19:24,878:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:19:29,904:INFO:MONITORING
+2024-01-09 16:19:29,905:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:19:34,929:INFO:MONITORING
+2024-01-09 16:19:34,931:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:19:39,956:INFO:MONITORING
+2024-01-09 16:19:39,963:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:19:44,988:INFO:MONITORING
+2024-01-09 16:19:44,990:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:19:50,012:INFO:MONITORING
+2024-01-09 16:19:50,013:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:19:55,036:INFO:MONITORING
+2024-01-09 16:19:55,043:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:20:00,068:INFO:MONITORING
+2024-01-09 16:20:00,069:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:20:05,092:INFO:MONITORING
+2024-01-09 16:20:05,096:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:20:10,121:INFO:MONITORING
+2024-01-09 16:20:10,123:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:20:15,148:INFO:MONITORING
+2024-01-09 16:20:15,150:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:20:20,169:INFO:MONITORING
+2024-01-09 16:20:20,178:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:20:25,204:INFO:MONITORING
+2024-01-09 16:20:25,206:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:20:30,228:INFO:MONITORING
+2024-01-09 16:20:30,229:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:20:35,252:INFO:MONITORING
+2024-01-09 16:20:35,261:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:20:40,284:INFO:MONITORING
+2024-01-09 16:20:40,286:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:20:45,308:INFO:MONITORING
+2024-01-09 16:20:45,315:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:20:50,340:INFO:MONITORING
+2024-01-09 16:20:50,342:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:20:55,345:INFO:MONITORING
+2024-01-09 16:20:55,347:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:21:00,372:INFO:MONITORING
+2024-01-09 16:21:00,374:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:21:05,400:INFO:MONITORING
+2024-01-09 16:21:05,407:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:21:10,432:INFO:MONITORING
+2024-01-09 16:21:10,433:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:21:15,456:INFO:MONITORING
+2024-01-09 16:21:15,458:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:21:20,484:INFO:MONITORING
+2024-01-09 16:21:20,492:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:21:25,515:INFO:MONITORING
+2024-01-09 16:21:25,524:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:21:30,548:INFO:MONITORING
+2024-01-09 16:21:30,549:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:21:35,572:INFO:MONITORING
+2024-01-09 16:21:35,573:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:21:40,596:INFO:MONITORING
+2024-01-09 16:21:40,604:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:21:45,628:INFO:MONITORING
+2024-01-09 16:21:45,629:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:21:50,644:INFO:MONITORING
+2024-01-09 16:21:50,650:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:21:55,672:INFO:MONITORING
+2024-01-09 16:21:55,678:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:22:00,704:INFO:MONITORING
+2024-01-09 16:22:00,707:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:22:05,732:INFO:MONITORING
+2024-01-09 16:22:05,733:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:22:10,756:INFO:MONITORING
+2024-01-09 16:22:10,757:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:22:15,782:INFO:MONITORING
+2024-01-09 16:22:15,785:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:22:20,808:INFO:MONITORING
+2024-01-09 16:22:20,815:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:22:25,840:INFO:MONITORING
+2024-01-09 16:22:25,841:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:22:28,854:INFO:MONITORING
+2024-01-09 16:22:28,872:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:22:28,872:INFO:Starting docking for 1
+2024-01-09 16:22:28,873:INFO:Starting docking for 2
+2024-01-09 16:22:28,874:INFO:Starting docking for 3
+2024-01-09 16:22:28,875:INFO:Starting docking for 5
+2024-01-09 16:22:28,875:INFO:Starting docking for 4
+2024-01-09 16:22:28,875:INFO:Starting docking for 6
+2024-01-09 16:22:28,877:ERROR:Error occurred during docking of ligand 1: name 'conftxtcheck' is not defined
+2024-01-09 16:22:28,877:INFO:Completed docking for 1
+2024-01-09 16:22:28,878:ERROR:Error occurred during docking of ligand 2: name 'conftxtcheck' is not defined
+2024-01-09 16:22:28,879:INFO:Completed docking for 2
+2024-01-09 16:22:28,881:ERROR:Error occurred during docking of ligand 3: name 'conftxtcheck' is not defined
+2024-01-09 16:22:28,882:ERROR:Error occurred during docking of ligand 5: name 'conftxtcheck' is not defined
+2024-01-09 16:22:28,883:INFO:Completed docking for 3
+2024-01-09 16:22:28,884:ERROR:Error occurred during docking of ligand 6: name 'conftxtcheck' is not defined
+2024-01-09 16:22:28,885:INFO:Completed docking for 5
+2024-01-09 16:22:28,885:INFO:Completed docking for 6
+2024-01-09 16:22:28,886:ERROR:Error occurred during docking of ligand 4: name 'conftxtcheck' is not defined
+2024-01-09 16:22:28,888:INFO:Completed docking for 4
+2024-01-09 16:22:28,889:INFO:Starting docking for 7
+2024-01-09 16:22:28,890:INFO:Starting docking for 8
+2024-01-09 16:22:28,890:INFO:Starting docking for 9
+2024-01-09 16:22:28,891:INFO:Starting docking for 10
+2024-01-09 16:22:28,894:ERROR:Error occurred during docking of ligand 7: name 'conftxtcheck' is not defined
+2024-01-09 16:22:28,895:INFO:Completed docking for 7
+2024-01-09 16:22:28,896:ERROR:Error occurred during docking of ligand 9: name 'conftxtcheck' is not defined
+2024-01-09 16:22:28,897:ERROR:Error occurred during docking of ligand 10: name 'conftxtcheck' is not defined
+2024-01-09 16:22:28,897:INFO:Completed docking for 9
+2024-01-09 16:22:28,898:INFO:Completed docking for 10
+2024-01-09 16:22:28,898:ERROR:Error occurred during docking of ligand 8: name 'conftxtcheck' is not defined
+2024-01-09 16:22:28,898:INFO:Completed docking for 8
+2024-01-09 16:22:33,876:INFO:MONITORING
+2024-01-09 16:22:33,878:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:22:38,900:INFO:MONITORING
+2024-01-09 16:22:38,906:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:22:43,931:INFO:MONITORING
+2024-01-09 16:22:43,938:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:22:48,960:INFO:MONITORING
+2024-01-09 16:22:48,966:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:22:53,992:INFO:MONITORING
+2024-01-09 16:22:53,999:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:22:59,024:INFO:MONITORING
+2024-01-09 16:22:59,026:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:23:04,048:INFO:MONITORING
+2024-01-09 16:23:04,049:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:23:09,072:INFO:MONITORING
+2024-01-09 16:23:09,078:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:23:14,100:INFO:MONITORING
+2024-01-09 16:23:14,104:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:23:19,128:INFO:MONITORING
+2024-01-09 16:23:19,129:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:23:24,152:INFO:MONITORING
+2024-01-09 16:23:24,158:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:23:29,184:INFO:MONITORING
+2024-01-09 16:23:29,185:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:23:34,208:INFO:MONITORING
+2024-01-09 16:23:34,214:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:23:39,236:INFO:MONITORING
+2024-01-09 16:23:39,237:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:23:44,263:INFO:MONITORING
+2024-01-09 16:23:44,271:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:23:49,296:INFO:MONITORING
+2024-01-09 16:23:49,302:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:23:54,328:INFO:MONITORING
+2024-01-09 16:23:54,334:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:23:59,356:INFO:MONITORING
+2024-01-09 16:23:59,357:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:24:04,380:INFO:MONITORING
+2024-01-09 16:24:04,381:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:24:09,404:INFO:MONITORING
+2024-01-09 16:24:09,411:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:24:14,436:INFO:MONITORING
+2024-01-09 16:24:14,437:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:24:19,462:INFO:MONITORING
+2024-01-09 16:24:19,464:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:24:24,488:INFO:MONITORING
+2024-01-09 16:24:24,490:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:24:29,514:INFO:MONITORING
+2024-01-09 16:24:29,516:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:24:34,540:INFO:MONITORING
+2024-01-09 16:24:34,542:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:24:39,564:INFO:MONITORING
+2024-01-09 16:24:39,566:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:24:44,588:INFO:MONITORING
+2024-01-09 16:24:44,589:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:24:49,614:INFO:MONITORING
+2024-01-09 16:24:49,615:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:24:54,640:INFO:MONITORING
+2024-01-09 16:24:54,641:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:24:59,664:INFO:MONITORING
+2024-01-09 16:24:59,666:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:25:04,688:INFO:MONITORING
+2024-01-09 16:25:04,689:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:25:09,712:INFO:MONITORING
+2024-01-09 16:25:09,719:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:25:14,744:INFO:MONITORING
+2024-01-09 16:25:14,745:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:25:19,768:INFO:MONITORING
+2024-01-09 16:25:19,774:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:25:24,800:INFO:MONITORING
+2024-01-09 16:25:24,810:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:25:29,836:INFO:MONITORING
+2024-01-09 16:25:29,844:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:25:34,868:INFO:MONITORING
+2024-01-09 16:25:34,875:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:25:39,892:INFO:MONITORING
+2024-01-09 16:25:39,901:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:25:44,928:INFO:MONITORING
+2024-01-09 16:25:44,929:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:25:49,952:INFO:MONITORING
+2024-01-09 16:25:49,956:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:25:54,980:INFO:MONITORING
+2024-01-09 16:25:54,987:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:26:00,012:INFO:MONITORING
+2024-01-09 16:26:00,013:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:26:05,036:INFO:MONITORING
+2024-01-09 16:26:05,037:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:26:10,060:INFO:MONITORING
+2024-01-09 16:26:10,067:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:26:15,092:INFO:MONITORING
+2024-01-09 16:26:15,099:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:26:20,124:INFO:MONITORING
+2024-01-09 16:26:20,125:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:26:25,144:INFO:MONITORING
+2024-01-09 16:26:25,147:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:26:30,172:INFO:MONITORING
+2024-01-09 16:26:30,173:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:26:35,196:INFO:MONITORING
+2024-01-09 16:26:35,197:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:26:40,220:INFO:MONITORING
+2024-01-09 16:26:40,221:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:26:45,246:INFO:MONITORING
+2024-01-09 16:26:45,253:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:26:50,276:INFO:MONITORING
+2024-01-09 16:26:50,277:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:26:55,300:INFO:MONITORING
+2024-01-09 16:26:55,307:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:27:00,332:INFO:MONITORING
+2024-01-09 16:27:00,333:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:27:05,356:INFO:MONITORING
+2024-01-09 16:27:05,358:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:27:10,380:INFO:MONITORING
+2024-01-09 16:27:10,381:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:27:15,404:INFO:MONITORING
+2024-01-09 16:27:15,413:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:27:20,436:INFO:MONITORING
+2024-01-09 16:27:20,445:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:27:25,468:INFO:MONITORING
+2024-01-09 16:27:25,470:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:27:30,495:INFO:MONITORING
+2024-01-09 16:27:30,503:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:27:35,528:INFO:MONITORING
+2024-01-09 16:27:35,536:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:27:40,560:INFO:MONITORING
+2024-01-09 16:27:40,569:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:27:45,592:INFO:MONITORING
+2024-01-09 16:27:45,601:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:27:50,624:INFO:MONITORING
+2024-01-09 16:27:50,628:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:27:55,653:INFO:MONITORING
+2024-01-09 16:27:55,659:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:28:00,684:INFO:MONITORING
+2024-01-09 16:28:00,685:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:28:05,708:INFO:MONITORING
+2024-01-09 16:28:05,709:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:28:10,732:INFO:MONITORING
+2024-01-09 16:28:10,733:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:28:15,758:INFO:MONITORING
+2024-01-09 16:28:15,759:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:28:20,784:INFO:MONITORING
+2024-01-09 16:28:20,792:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:28:25,817:INFO:MONITORING
+2024-01-09 16:28:25,819:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:28:30,844:INFO:MONITORING
+2024-01-09 16:28:30,845:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:28:35,868:INFO:MONITORING
+2024-01-09 16:28:35,870:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:28:40,892:INFO:MONITORING
+2024-01-09 16:28:40,893:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:28:45,916:INFO:MONITORING
+2024-01-09 16:28:45,919:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:28:50,944:INFO:MONITORING
+2024-01-09 16:28:50,945:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:28:55,968:INFO:MONITORING
+2024-01-09 16:28:55,975:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:29:01,000:INFO:MONITORING
+2024-01-09 16:29:01,002:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:29:06,024:INFO:MONITORING
+2024-01-09 16:29:06,025:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:29:11,048:INFO:MONITORING
+2024-01-09 16:29:11,049:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:29:16,072:INFO:MONITORING
+2024-01-09 16:29:16,073:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:29:21,097:INFO:MONITORING
+2024-01-09 16:29:21,099:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:29:26,124:INFO:MONITORING
+2024-01-09 16:29:26,127:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:29:31,152:INFO:MONITORING
+2024-01-09 16:29:31,154:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:29:36,180:INFO:MONITORING
+2024-01-09 16:29:36,181:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:29:41,204:INFO:MONITORING
+2024-01-09 16:29:41,205:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:29:46,228:INFO:MONITORING
+2024-01-09 16:29:46,229:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:29:51,252:INFO:MONITORING
+2024-01-09 16:29:51,254:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:29:56,280:INFO:MONITORING
+2024-01-09 16:29:56,281:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:30:01,304:INFO:MONITORING
+2024-01-09 16:30:01,306:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:30:06,328:INFO:MONITORING
+2024-01-09 16:30:06,330:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:30:11,352:INFO:MONITORING
+2024-01-09 16:30:11,353:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:30:16,376:INFO:MONITORING
+2024-01-09 16:30:16,378:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:30:21,400:INFO:MONITORING
+2024-01-09 16:30:21,400:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:30:26,424:INFO:MONITORING
+2024-01-09 16:30:26,427:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:30:31,452:INFO:MONITORING
+2024-01-09 16:30:31,453:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:30:36,477:INFO:MONITORING
+2024-01-09 16:30:36,478:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:30:41,500:INFO:MONITORING
+2024-01-09 16:30:41,501:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:30:46,524:INFO:MONITORING
+2024-01-09 16:30:46,525:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:30:51,550:INFO:MONITORING
+2024-01-09 16:30:51,556:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:30:56,580:INFO:MONITORING
+2024-01-09 16:30:56,581:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:31:01,604:INFO:MONITORING
+2024-01-09 16:31:01,608:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:31:06,632:INFO:MONITORING
+2024-01-09 16:31:06,639:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:31:11,664:INFO:MONITORING
+2024-01-09 16:31:11,670:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:31:16,692:INFO:MONITORING
+2024-01-09 16:31:16,698:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:31:21,724:INFO:MONITORING
+2024-01-09 16:31:21,731:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:31:26,756:INFO:MONITORING
+2024-01-09 16:31:26,757:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:31:31,780:INFO:MONITORING
+2024-01-09 16:31:31,786:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:31:36,812:INFO:MONITORING
+2024-01-09 16:31:36,813:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:31:41,836:INFO:MONITORING
+2024-01-09 16:31:41,837:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:31:46,860:INFO:MONITORING
+2024-01-09 16:31:46,861:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:31:51,884:INFO:MONITORING
+2024-01-09 16:31:51,890:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:31:56,912:INFO:MONITORING
+2024-01-09 16:31:56,913:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:32:01,936:INFO:MONITORING
+2024-01-09 16:32:01,938:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:32:06,964:INFO:MONITORING
+2024-01-09 16:32:06,965:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:32:11,988:INFO:MONITORING
+2024-01-09 16:32:11,989:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:32:17,014:INFO:MONITORING
+2024-01-09 16:32:17,021:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:32:22,045:INFO:MONITORING
+2024-01-09 16:32:22,051:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:32:27,077:INFO:MONITORING
+2024-01-09 16:32:27,084:INFO:{1: 'Completed', 2: 'Completed', 3: 'Completed', 4: 'Completed', 5: 'Completed', 6: 'Completed', 7: 'Completed', 8: 'Completed', 9: 'Completed', 10: 'Completed'}
+2024-01-09 16:32:29,273:INFO:MONITORING
+2024-01-09 16:32:29,288:INFO:Starting docking for 1
+2024-01-09 16:32:29,290:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:32:29,290:INFO:Starting docking for 2
+2024-01-09 16:32:29,292:INFO:Starting docking for 3
+2024-01-09 16:32:29,293:INFO:Starting docking for 4
+2024-01-09 16:32:29,293:INFO:Starting docking for 5
+2024-01-09 16:32:29,295:INFO:Starting docking for 6
+2024-01-09 16:32:34,305:INFO:MONITORING
+2024-01-09 16:32:34,308:INFO:{1: 'Processing', 2: 'Processing', 3: 'Processing', 4: 'Processing', 5: 'Processing', 6: 'Processing', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:32:39,355:INFO:MONITORING
+2024-01-09 16:32:39,414:INFO:{1: 'Processing', 2: 'Processing', 3: 'Processing', 4: 'Processing', 5: 'Processing', 6: 'Processing', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:32:44,440:INFO:MONITORING
+2024-01-09 16:32:44,443:INFO:{1: 'Processing', 2: 'Processing', 3: 'Processing', 4: 'Processing', 5: 'Processing', 6: 'Processing', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:32:49,468:INFO:MONITORING
+2024-01-09 16:32:49,479:INFO:{1: 'Processing', 2: 'Processing', 3: 'Processing', 4: 'Processing', 5: 'Processing', 6: 'Processing', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:32:54,504:INFO:MONITORING
+2024-01-09 16:32:54,528:INFO:{1: 'Processing', 2: 'Processing', 3: 'Processing', 4: 'Processing', 5: 'Processing', 6: 'Processing', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:32:59,552:INFO:MONITORING
+2024-01-09 16:32:59,564:INFO:{1: 'Processing', 2: 'Processing', 3: 'Processing', 4: 'Processing', 5: 'Processing', 6: 'Processing', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:33:04,588:INFO:MONITORING
+2024-01-09 16:33:04,597:INFO:{1: 'Processing', 2: 'Processing', 3: 'Processing', 4: 'Processing', 5: 'Processing', 6: 'Processing', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:33:09,624:INFO:MONITORING
+2024-01-09 16:33:09,635:INFO:{1: 'Processing', 2: 'Processing', 3: 'Processing', 4: 'Processing', 5: 'Processing', 6: 'Processing', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:33:14,660:INFO:MONITORING
+2024-01-09 16:33:14,663:INFO:{1: 'Processing', 2: 'Processing', 3: 'Processing', 4: 'Processing', 5: 'Processing', 6: 'Processing', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:33:19,688:INFO:MONITORING
+2024-01-09 16:33:19,690:INFO:{1: 'Processing', 2: 'Processing', 3: 'Processing', 4: 'Processing', 5: 'Processing', 6: 'Processing', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:33:24,712:INFO:MONITORING
+2024-01-09 16:33:24,714:INFO:{1: 'Processing', 2: 'Processing', 3: 'Processing', 4: 'Processing', 5: 'Processing', 6: 'Processing', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:33:25,052:INFO:Starting docking for 7
+2024-01-09 16:33:25,053:INFO:Starting docking for 8
+2024-01-09 16:33:25,054:INFO:Starting docking for 9
+2024-01-09 16:33:25,054:INFO:Starting docking for 10
+2024-01-09 16:33:36,733:INFO:MONITORING
+2024-01-09 16:33:36,739:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:33:36,748:INFO:Starting docking for 1
+2024-01-09 16:33:36,748:INFO:Starting docking for 2
+2024-01-09 16:33:36,749:INFO:Starting docking for 5
+2024-01-09 16:33:36,749:INFO:Starting docking for 4
+2024-01-09 16:33:36,750:INFO:Starting docking for 6
+2024-01-09 16:33:41,995:INFO:MONITORING
+2024-01-09 16:33:42,421:INFO:{1: 'Processing', 2: 'Processing', 3: 'Pending', 4: 'Processing', 5: 'Processing', 6: 'Processing', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:33:47,452:INFO:MONITORING
+2024-01-09 16:33:47,458:INFO:{1: 'Processing', 2: 'Processing', 3: 'Pending', 4: 'Processing', 5: 'Processing', 6: 'Processing', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:33:49,413:INFO:Starting docking for 7
+2024-01-09 16:33:49,418:INFO:Starting docking for 10
+2024-01-09 16:33:49,418:INFO:Starting docking for 8
+2024-01-09 16:33:49,419:INFO:Starting docking for 9
+2024-01-09 16:34:02,749:INFO:MONITORING
+2024-01-09 16:34:02,787:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:34:02,788:INFO:Starting docking for 1
+2024-01-09 16:34:02,788:INFO:Starting docking for 2
+2024-01-09 16:34:02,790:INFO:Starting docking for 3
+2024-01-09 16:34:02,794:INFO:Starting docking for 5
+2024-01-09 16:34:02,795:INFO:Starting docking for 4
+2024-01-09 16:34:02,798:INFO:Starting docking for 6
+2024-01-09 16:34:07,948:INFO:MONITORING
+2024-01-09 16:34:08,028:INFO:{1: 'Processing', 2: 'Processing', 3: 'Processing', 4: 'Processing', 5: 'Processing', 6: 'Processing', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:34:09,582:INFO:Starting docking for 7
+2024-01-09 16:34:19,623:INFO:MONITORING
+2024-01-09 16:34:19,644:INFO:Starting docking for 1
+2024-01-09 16:34:19,647:INFO:{1: 'Pending', 2: 'Pending', 3: 'Pending', 4: 'Pending', 5: 'Pending', 6: 'Pending', 7: 'Pending', 8: 'Pending', 9: 'Pending', 10: 'Pending'}
+2024-01-09 16:34:19,647:INFO:Starting docking for 3
+2024-01-09 16:34:19,649:INFO:Starting docking for 4
+2024-01-09 16:34:19,649:INFO:Starting docking for 2
+2024-01-09 16:34:19,662:INFO:Starting docking for 5
+2024-01-09 16:34:19,663:INFO:Starting docking for 6
+2024-01-09 16:34:19,664:ERROR:Error occurred during docking of ligand 1: [Errno 17] File exists: '/home/cya/Conan/db_ligands/Sulfasalazine_minimized.pdbqt' -> '/home/cya/Conan/results_test/DOCKED/Sulfasalazine_minimized/7p51_Sulfasalazine_minimized_2024-1-9-16:34/Sulfasalazine_minimized.pdbqt'
+2024-01-09 16:34:19,664:INFO:Completed docking for 1
+2024-01-09 16:34:19,665:ERROR:Error occurred during docking of ligand 3: [Errno 17] File exists: '/home/cya/Conan/db_ligands/Hesperidin_minimized.pdbqt' -> '/home/cya/Conan/results_test/DOCKED/Hesperidin_minimized/7p51_Hesperidin_minimized_2024-1-9-16:34/Hesperidin_minimized.pdbqt'
+2024-01-09 16:34:19,665:INFO:Completed docking for 3
+2024-01-09 16:34:19,666:ERROR:Error occurred during docking of ligand 4: [Errno 17] File exists: '/home/cya/Conan/db_ligands/Chlorhexidine_minimized.pdbqt' -> '/home/cya/Conan/results_test/DOCKED/Chlorhexidine_minimized/7p51_Chlorhexidine_minimized_2024-1-9-16:34/Chlorhexidine_minimized.pdbqt'
+2024-01-09 16:34:19,667:ERROR:Error occurred during docking of ligand 2: [Errno 17] File exists: '/home/cya/Conan/db_ligands/Nicardipine_minimized.pdbqt' -> '/home/cya/Conan/results_test/DOCKED/Nicardipine_minimized/7p51_Nicardipine_minimized_2024-1-9-16:34/Nicardipine_minimized.pdbqt'
+2024-01-09 16:34:19,667:ERROR:Error occurred during docking of ligand 5: [Errno 17] File exists: '/home/cya/Conan/db_ligands/Diosmetin_minimized.pdbqt' -> '/home/cya/Conan/results_test/DOCKED/Diosmetin_minimized/7p51_Diosmetin_minimized_2024-1-9-16:34/Diosmetin_minimized.pdbqt'
+2024-01-09 16:34:19,667:INFO:Completed docking for 4
+2024-01-09 16:34:19,668:ERROR:Error occurred during docking of ligand 6: [Errno 17] File exists: '/home/cya/Conan/db_ligands/Nicotine_minimized.pdbqt' -> '/home/cya/Conan/results_test/DOCKED/Nicotine_minimized/7p51_Nicotine_minimized_2024-1-9-16:34/Nicotine_minimized.pdbqt'
+2024-01-09 16:34:19,668:INFO:Completed docking for 2
+2024-01-09 16:34:19,668:INFO:Completed docking for 6
+2024-01-09 16:34:19,668:INFO:Completed docking for 5
+2024-01-09 16:34:19,671:INFO:Starting docking for 7
+2024-01-09 16:34:19,674:INFO:Starting docking for 9
+2024-01-09 16:34:19,674:INFO:Starting docking for 8
+2024-01-09 16:34:19,675:INFO:Starting docking for 10
+2024-01-09 16:34:24,655:INFO:MONITORING
