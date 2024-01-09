@@ -1,12 +1,19 @@
 import dearpygui.dearpygui as dpg
 import sys
 import glob
-import docklaunch as dckl
+import docklaunch3 as dckl
+
+import asyncio
+import concurrent.futures
+from multiprocessing import Manager
+
+import logging
 import psutil
 import re
 import os
 import threading
 import yaml
+import numpy as np
 from subprocess import Popen, PIPE
 
 
@@ -25,10 +32,28 @@ softwares = {
 }
 """
 #software parameters
+
+async def monitor_docking_status(status_dict):
+    while True:
+        logging.info("MONITORING")
+        logging.info(str(dict(status_dict)))  # Convert manager dict to regular dict for logging
+        if dpg.does_item_exist("docking_todo"):
+            pending_count = sum(1 for value in status_dict.values() if value == 'Pending')
+            dpg.set_value("docking_todo", f"Number of ligands not docked yet: {pending_count}")
+        if dpg.does_item_exist("docking_text"):
+            docking_count = sum(1 for value in status_dict.values() if value == 'Processing')
+            dpg.set_value("docking_text", f"Number of ligands being docked {docking_count}")
+        if dpg.does_item_exist("docked_text"):
+            docked_count = sum(1 for value in status_dict.values() if value == 'Completed')
+            dpg.set_value("docked_text", f"Number of ligands docked: {docked_count}")
+        await asyncio.sleep(5)  # Check status every 5 seconds
+
+def start_async_monitoring(status_dict):
+    asyncio.run(monitor_docking_status(status_dict))
+
+
 with open('../parameters/parameters_software/softwares.yaml', 'r') as file:
     softwares = yaml.safe_load(file)
-
-
 
 def boutonsave(sender, data):
     # dpg.get_value(Sender)
@@ -386,6 +411,7 @@ def detect_config_files(path):
     return config_files
 
 
+
 def save_config(sender):
     with dpg.window(
         label="Save",
@@ -480,10 +506,37 @@ def run(sender, data):
     save_parameters_to_yaml(results_folder, parameters)
 
     # Run docking process
+    with dpg.window(label="Example Window"):
+        dpg.add_text("Display current results")
+        dpg.add_text("0", tag="docking_todo")
+        dpg.add_text("0", tag="docking_text")
+        dpg.add_text("0", tag="docked_text")
+        
+        
+
+
+    print(f"dckl.dockingtot({software}, {nptsx}, {nptsy}, {nptsz}, {gridcenterx}, {gridcentery}, {gridcenterz}, {spacing}, {threads}, {nruns}, {pathdb2}, {results_folder}, {debug})")
+    """
     dckl.dockingtot(
         software, nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, 
         spacing, threads, nruns, pathdb2,results_folder, debug,
     )
+    """
+
+    manager = Manager()
+    status_dict = manager.dict()
+    file_ligands = glob.glob(f'{pathdb2}/**/*.pdbqt', recursive=True)
+
+    status_dict.update({ligand_info: 'Pending' for ligand_info in np.arange(1, len(file_ligands)+1, 1)})
+
+    # Start the docking process in a separate thread
+    threading.Thread(target=dckl.dockingtot, args=(
+        software, nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, 
+        spacing, threads, nruns, pathdb2, results_folder, debug, status_dict
+    ), daemon=True).start()
+
+    # Start monitoring in a separate thread
+    threading.Thread(target=start_async_monitoring, args=(status_dict,), daemon=True).start()
 
     
 
