@@ -49,22 +49,28 @@ def docking_with_logging(software_b, nptsx, nptsy, nptsz, gridcenterx, gridcente
     return result
 
 def run_docking_process(threads, file_ligands, software_b, nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, spacing, nruns, pathdb, DEBUG_FLAG, listofpdbqt, dossiertemps, listofreceptors, dirmaps, cwd, pathsoftware, path_results):
-    manager = mp.Manager()
-    shared_dict = manager.dict()
+    # Create a multiprocessing pool
+    p = mp.Pool(int(threads))
 
-    # Initialize all ligands as 'Not started'
-    for ligand in file_ligands:
-        shared_dict[ligand] = 'Not started'
-
-    with mp.Pool(int(threads)) as pool:
-        results = list(
-            tqdm(pool.imap(
-                functools.partial(docking_with_logging,software_b, nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, spacing, threads, nruns, pathdb, DEBUG_FLAG, listofpdbqt, dossiertemps, listofreceptors, dirmaps, cwd, pathsoftware, path_results, ligand_info,shared_dict),
+    # Run the docking process in parallel
+    FAIL = list(
+        tqdm(
+            p.imap(
+                functools.partial(
+                    docking_with_logging,
+                    software_b, nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, spacing, threads, nruns, pathdb, DEBUG_FLAG, listofpdbqt, dossiertemps, listofreceptors, dirmaps, cwd, pathsoftware, path_results
+                ),
                 file_ligands
-            ), total=len(file_ligands))
+            ),
+            total=len(file_ligands)
         )
+    )
 
-    return results
+    # Close the multiprocessing pool
+    p.close()
+    p.join()
+
+    return FAIL
 
 async def monitor_docking_status(shared_dict):
     while True:
@@ -73,7 +79,7 @@ async def monitor_docking_status(shared_dict):
         for ligand, status in shared_dict.items():
             print(f"Ligand {ligand}: {status}")
         await asyncio.sleep(5)  # Check every 5 seconds
-
+        
 def dockingtot(software2:str,nptsx:str,nptsy:str,nptsz:str,gridcenterx:str,gridcentery:str,gridcenterz:str,spacing:str,threads:str,nruns:str,pathdb:str,path_results:str,DEBUG_FLAG:bool):
     cwd = os.getcwd()
     cwd = cwd.replace("Executions", "")
@@ -138,13 +144,11 @@ def dockingtot(software2:str,nptsx:str,nptsy:str,nptsz:str,gridcenterx:str,gridc
     return FAIL
     """
 
-    docking_process = mp.Process(target=run_docking_process, args=(threads, file_ligands, other_args))
-    docking_process.start()
 
-    # Start the monitoring
-    asyncio.run(monitor_docking_status(shared_dict))
+    
+    run_docking_process(threads, file_ligands, software_b, nptsx, nptsy, nptsz, gridcenterx, gridcentery, gridcenterz, spacing, nruns, pathdb, DEBUG_FLAG, listofpdbqt, dossiertemps, listofreceptors, dirmaps, cwd, pathsoftware, path_results)
 
-    docking_process.join() 
+    
     
     
     

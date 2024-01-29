@@ -9,12 +9,13 @@ from multiprocessing import Manager
 
 import logging
 import psutil
-import re
 import os
 import threading
+import collections
 import yaml
 import numpy as np
 from subprocess import Popen, PIPE
+import time
 
 
 dpg.create_context()
@@ -32,10 +33,22 @@ softwares = {
 }
 """
 #software parameters
+# Monitoring resource usage while docking
+def fetch_system_usage():
+    cpu_usage = psutil.cpu_percent()
+    ram_usage = psutil.virtual_memory().percent
+    return cpu_usage, ram_usage
+
+nsamples = 50
+
+# Data queues for CPU and RAM usage
+cpu_data_y = collections.deque([0.0] * nsamples, maxlen=nsamples)
+ram_data_y = collections.deque([0.0] * nsamples, maxlen=nsamples)
+data_x = collections.deque([0.0] * nsamples, maxlen=nsamples)
 
 async def monitor_docking_status(status_dict):
+    t0 = time.time()
     while True:
-        logging.info("MONITORING")
         logging.info(str(dict(status_dict)))  # Convert manager dict to regular dict for logging
         if dpg.does_item_exist("docking_todo"):
             pending_count = sum(1 for value in status_dict.values() if value == 'Pending')
@@ -46,6 +59,20 @@ async def monitor_docking_status(status_dict):
         if dpg.does_item_exist("docked_text"):
             docked_count = sum(1 for value in status_dict.values() if value == 'Completed')
             dpg.set_value("docked_text", f"Number of ligands docked: {docked_count}")
+        
+        t = time.time() - t0
+        cpu_usage, ram_usage = fetch_system_usage()
+
+        # Update data queues
+        data_x.append(t)
+        cpu_data_y.append(cpu_usage)
+        ram_data_y.append(ram_usage)
+        
+        # Update the series with new data
+        dpg.set_value('cpu_series_tag', [list(data_x), list(cpu_data_y)])
+        dpg.set_value('ram_series_tag', [list(data_x), list(ram_data_y)])
+        dpg.fit_axis_data('x_axis')
+        dpg.set_axis_limits("y_axis", 0, 100)
         try:
             total = pending_count + docking_count + docked_count
             pourcentage = docked_count / total
@@ -76,7 +103,6 @@ def save_parameters_to_yaml(results_folder, parameters):
     params_file = os.path.join(results_folder, "PARAMETERS", "docking_parameters.yaml")
     with open(params_file, 'w') as file:
         yaml.dump(parameters, file)
-
 
 def monitor_file_count(directory, update_interval, stop_event):
     while not stop_event.is_set():
@@ -488,12 +514,14 @@ def run(sender, data):
     if not results_folder: 
         results_folder = os.path.join(f"results_{soft}")
     dckl.create_subfolders(results_folder)
-
+    logging.basicConfig(filename=f'{results_folder}/FILES/gui.log', level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s', force=True)
+    logging.info("docking with Conan")
     # Collect parameters from the GUI
     nptsx, nptsy, nptsz = dpg.get_value("nptsx"), dpg.get_value("nptsy"), dpg.get_value("nptsz")
     gridcenterx, gridcentery, gridcenterz = dpg.get_value("centerx"), dpg.get_value("centery"), dpg.get_value("centerz")
     spacing, threads, nruns = dpg.get_value("spacing"), dpg.get_value("threads"), dpg.get_value("nruns")
     pathdb2, debug = dpg.get_value("db"), dpg.get_value("debug") == "True"
+    flex_res = dpg.get_value("flex")
 
     parameters = {
         "Software": software,
@@ -508,14 +536,23 @@ def run(sender, data):
     }
     save_parameters_to_yaml(results_folder, parameters)
 
+
+
     # Run docking process
-    with dpg.window(label="Example Window"):
+    with dpg.window(label="Conan is doing it's job..."):
         dpg.add_text("Display current results")
         dpg.add_text("0", tag="docking_todo")
         dpg.add_text("0", tag="docking_text")
         dpg.add_text("0", tag="docked_text")
         dpg.add_text("0", tag="docked_pourcent")
         dpg.add_progress_bar(tag="docking_progress")
+        with dpg.plot(label='System Usage', height=400, width=400):
+            dpg.add_plot_legend()
+            x_axis = dpg.add_plot_axis(dpg.mvXAxis, label='Time (s)', tag='x_axis',time=True,)
+            y_axis = dpg.add_plot_axis(dpg.mvYAxis, label='Usage (%)', tag='y_axis')
+            # CPU and RAM usage series
+            dpg.add_line_series(x=list(data_x), y=list(cpu_data_y), label='CPU Usage (%)', parent='y_axis', tag='cpu_series_tag')
+            dpg.add_line_series(x=list(data_x), y=list(ram_data_y), label='RAM Usage (%)', parent='y_axis', tag='ram_series_tag')
         
 
     print(f"dckl.dockingtot({software}, {nptsx}, {nptsy}, {nptsz}, {gridcenterx}, {gridcentery}, {gridcenterz}, {spacing}, {threads}, {nruns}, {pathdb2}, {debug},{results_folder})")
@@ -680,6 +717,8 @@ with dpg.window(label="Parameters", width=500, height=500,tag="Parameters"):
         dpg.add_input_text(tag="centerz", width=40)
     # dpg.add_text("Spacing (Angstrom)")
     dpg.add_input_text(tag="spacing", width=40, label="Spacing (Angstrom)")
+    dpg.add_text("For flexible residues, add them in the format Structure:Chain:Residue, Exemple 7djr:A:ASN90")
+    dpg.add_input_text(tag="flex", width=40, label="Flexible residues")
     dpg.add_button(label="View grid in Pymol", callback=view_grid)
     # dpg.add_text("Number of Runs             Number of Threads")
 

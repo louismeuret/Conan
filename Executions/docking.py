@@ -7,7 +7,6 @@ import fldcreation as fld
 import fldcreationAD4 as fld2
 import vinacreateconf as vcc
 from multiprocessing import Process
-import argparse
 import logging
 
 
@@ -33,10 +32,10 @@ def docking(
     path_results: str,
     ligandnumber,
 ):
-    logging.basicConfig(filename='docking.log', level=logging.INFO, format='%(asctime)s:%(levelname)s: %(message)s')
+    logging.basicConfig(filename=f'{path_results}/FILES/docking.log', level=logging.INFO, format='%(asctime)s:%(levelname)s: %(message)s', force=True)
 
     def run_command(command, debug_flag):
-        print(command)
+        logging.info(f"Final command is: {command}")
         if debug_flag:
             subprocess.run(command)
         else:
@@ -45,9 +44,7 @@ def docking(
     try:
         #DEBUG_FLAG = True
         currentligand = listofpdbqt[ligandnumber - 1]
-        print(listofpdbqt)
-        print("listofreceptors:")
-        print(listofreceptors)
+        logging.info(f"Docking ligand {currentligand}")
         #ligandfilename = currentligand.split("/")[-1]  # outputfile34.pdbqt
         ligandfilename = os.path.basename(currentligand)
 
@@ -86,18 +83,23 @@ def docking(
                     f"Dir maps: {map_dir}\n"
                 )
                 print(debug_info)
-            print("HERE")   
-            """     
+            
+            logging.info(f"Software: {software}")
+            logging.info(f"Ligand file total: {currentligand}")
+            logging.info(f"Path ligand: {ligand_full_path}")
+            logging.info(f"Receptor: {receptor_name}")
+            logging.info(f"Path db: {pathdb}")
+            logging.info(f"Dir maps: {map_dir}") 
+            
             if software in ["gpu", "ad4"]:
                 ligand_type = dpf.dpfcreation(ligand_full_path, receptor_path, dpf_location, map_dir, cwd, receptor_name, software)
                 if software == "gpu":
                     fld.fldcreation(ligand_type, map_dir, ligand_path, gridcenterx, gridcentery, gridcenterz, cwd, receptor_name, nptsx, nptsy, nptsz, spacing, path_results)
                 elif software == "ad4":
                     fld2.fldcreation(ligand_type, map_dir, ligand_path, gridcenterx, gridcentery, gridcenterz, cwd, receptor_name, nptsx, nptsy, nptsz, spacing, path_results)
-            """
+            
             pathout = ligand_path + "out.pdbqt"
-            print(f"PATHOUT = {pathout}")
-            print(os.path.isfile(pathout))
+            logging.info(f"Output path of file is {pathout}")
             if not os.path.isfile(pathout):
                 command = [
                     pathsoftware,
@@ -106,7 +108,6 @@ def docking(
                     "--out", f"{pathout}",
                     "--log", f"{ligand_path}log.txt"
                 ]
-                print(command)
 
                 if software in ["vina", "smina", "qvina-w", "qvina2.1"]:
                     run_command(command, DEBUG_FLAG)
@@ -116,9 +117,9 @@ def docking(
                     command = [
                         pathsoftware,
                     ]
-                    additional_params = ["--import_dpf", dpflocation, "--nrun", numberofruns, "--gbest", "1"]
+                    additional_params = ["--import_dpf", dpf_location, "--nrun", numberofruns, "--gbest", "1"]
                     if software == "ad4":
-                        additional_params = ["-p", dpflocation, "-l", f"{pathligand}log.txt"]
+                        additional_params = ["-p", dpf_location, "-l", f"{pathligand}log.txt"]
                     command.extend(additional_params)
                     run_command(command, DEBUG_FLAG)
 

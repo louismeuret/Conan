@@ -1,3 +1,5 @@
+# Evolution of showresults to support any folder
+
 import dearpygui.dearpygui as dpg
 import glob
 import postprocess2 as pp
@@ -14,7 +16,6 @@ from subprocess import Popen, PIPE
 from multiprocessing import Process
 
 # import pymol_clust
-import numpy as np
 import pickle
 import dbscan_cluster
 import pandas as pd
@@ -27,7 +28,6 @@ softwares = ["Autodock-gpu", "Autodock-vina", "Autodock4", "Gnina", "Smina", "Qv
 
 with open('../parameters/parameters_software/softwares.yaml', 'r') as file:
     softwares = yaml.safe_load(file)
-
 
 
 headersall = [
@@ -170,13 +170,17 @@ def get_res(pathres, soft2):
 
 # Define a function to open the results directory and get the results for each software
 def openres():
-    tosearch = os.path.dirname(os.getcwd())
-    #toopen = glob.glob(f"{tosearch}/results*")
-    toopen = [path for path in glob.glob(f"{tosearch}/result*") if os.path.isdir(path)]
-    for path in toopen:
-        soft = path.split("_")[-1]
-        print(f"SOFTWARE USED = {soft}")
-        get_res(path, soft)
+    for root, dirs, files in os.walk(os.path.dirname(os.getcwd())):
+        print(dirs)
+        if "PARAMETERS" in dirs:
+            param_path = os.path.join(root, "PARAMETERS", "docking_parameters.yaml")
+            if os.path.isfile(param_path):
+                print("found file")
+                with open(param_path, 'r') as file:
+                    docking_parameters = yaml.safe_load(file)
+                print(docking_parameters)
+                get_res(root, softwares[docking_parameters['Software']]['short_name'])
+                break
     """
     for root, dirs, files in os.walk(f"{tosearch}/PARAMETERS/SOFT/"):
         for file in files:

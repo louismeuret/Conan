@@ -1,18 +1,4 @@
-input:
-  receptor: ""
-  flex: ""
-  ligand: ""
-  flexres: ""
-  flexdist_ligand: ""
-  flexdist: ""
-
 search_space:
-  center_x: 0.0
-  center_y: 0.0
-  center_z: 0.0
-  size_x: 0.0
-  size_y: 0.0
-  size_z: 0.0
   autobox_ligand: ""
   autobox_add: 4
   no_lig: False
@@ -36,13 +22,6 @@ scoring_minimization:
   print_terms: False
   print_atom_types: False
 
-output:
-  out: ""
-  out_flex: ""
-  log: ""
-  atom_terms: ""
-  atom_term_data: False
-
 misc:
   cpu: 1
   seed: None
@@ -52,11 +31,4 @@ misc:
   min_rmsd_filter: 1
   quiet: False
   addH: True
-
-config: ""
-
-info:
-  help: False
-  help_hidden: False
-  version: False
 

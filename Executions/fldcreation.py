@@ -1,10 +1,10 @@
 import os, shutil
 import subprocess
-def fldcreation(ligandtype,dirmaps,path_ligand,gridcenterx, gridcentery,gridcenterz,cwd,nomreceptor,nptsx,nptsy,nptsz,spacing):
+def fldcreation(ligandtype,dirmaps,path_ligand,gridcenterx, gridcentery,gridcenterz,cwd,nomreceptor,nptsx,nptsy,nptsz,spacing,path_results):
     firstlabel = 23
     firstvariable = firstlabel + len(ligandtype) + 2
 
-    pathreceptor = cwd + "receptors/"+nomreceptor+".pdbqt"
+    pathreceptor = f"{path_results}/RECEPTORS/{nomreceptor}.pdbqt"
 
     # generer le bon fld, puis faire le docking avec autodock-gpu
     with open(cwd+"templates/good.fld", "r+") as fld:

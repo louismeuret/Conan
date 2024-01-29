@@ -1,0 +1,15 @@
+Add a Folder in DOCKED folder for each different software, to allow easier consensus
+Whole parameters editing, in the dpf for autodock, in software for the others
+Add flexibility support
+Better use of argument (use of dict ?)
+Multiprocess of results processing
+Display molecule in results processing
+Add sorting in results processing
+Add save of results in results processing + automatical reuse, without the need of redoing calculations
+Add support for diffdock
+Add full support for dock6
+Add preview of receptors directly in gui
+Add node system for workflow preparation (in a new gui)
+Add automatical setting for PATH for adt and pythonsh (or at least workarounds ?)
+Add plot for performances during docking, prettify it
+Make a web server to use it

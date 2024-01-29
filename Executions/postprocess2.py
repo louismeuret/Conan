@@ -176,17 +176,17 @@ def process_QVINA(path):
 
 
 def process_results(path, software):
-    if software == "GPU":
+    if software == "gpu":
         tab_results = process_GPU(path)
-    elif software == "VINA":
+    elif software == "vina":
         tab_results = process_VINA(path)
-    elif software == "GNINA":
+    elif software == "gnina":
         tab_results = process_GNINA(path)
-    elif software == "AD4":
+    elif software == "ad4":
         tab_results = process_AD4(path)
-    elif software == "SMINA":
+    elif software == "smina":
         tab_results = process_SMINA(path)
-    elif software == "QVINA":
+    elif software in ["qvina-w", "qvina2.1"]:
         tab_results = process_QVINA(path)
 
     sort_results_nrj = sorted(tab_results, key=itemgetter(1), reverse=False)

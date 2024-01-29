@@ -1,0 +1,17 @@
+BEGIN_RES ILE A  59
+REMARK  2 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA   and  CB  
+REMARK    2  A    between atoms: CB   and  CG1 
+ROOT
+ATOM      1  CA  ILE A  59      21.286 -16.363  30.428  1.00  0.00     0.159 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CB  ILE A  59      22.407 -15.945  31.405  1.00  0.00     0.029 C 
+ATOM      3  CG2 ILE A  59      22.680 -17.043  32.426  1.00  0.00     0.002 C 
+BRANCH   2   4
+ATOM      4  CG1 ILE A  59      23.700 -15.633  30.657  1.00  0.00     0.002 C 
+ATOM      5  CD1 ILE A  59      24.800 -15.133  31.579  1.00  0.00     0.000 C 
+ENDBRANCH   2   4
+ENDBRANCH   1   2
+END_RES ILE A  59

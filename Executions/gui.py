@@ -582,6 +582,7 @@ def update():
 
 
 softwares = ["Autodock-gpu", "Autodock-vina", "Autodock4", "Gnina", "Smina", "Qvina"]
+
 with dpg.window(label="Parameters"):
     # dpg.set_main_window_size(500,500)
     dpg.add_text("Conan")
