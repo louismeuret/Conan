@@ -9,6 +9,20 @@ from operator import itemgetter
 from lxml import etree
 import numpy as np
 from tqdm import tqdm
+import argparse
+
+
+# Add argparse to the script
+def main():
+    parser = argparse.ArgumentParser(description='Process docking results.')
+    parser.add_argument('-path', type=str, help='The path to the results directory.')
+    parser.add_argument('-software', type=str, choices=['gpu', 'vina', 'gnina', 'ad4', 'smina', 'qvina-w', 'qvina2.1'], help='The docking software used.')
+
+    args = parser.parse_args()
+
+    # Call process_results with the arguments
+    sorted_by_abc, sorted_by_nrj = process_results(args.path, args.software)
+    print(sorted_by_nrj)
 
 
 def parse_pdbqt(path_pdbqt, software):
@@ -194,8 +208,5 @@ def process_results(path, software):
 
     return sort_results_abc, sort_results_nrj
 
-
-# process_results("/home/louis/Téléchargements/PROJETISDD/results_VINA","VINA")
-# process_results("/home/louis/Téléchargements/PROJETISDD/BLINDDOCK/results_GPU","GPU")
-# process_results("/home/louis/Téléchargements/PROJETISDD/BLINDDOCK/results_GNINA","GNINA")
-# process_results("/home/louis/Téléchargements/PROJETISDD/BLINDDOCK/results_AD4","AD4")
+if __name__ == "__main__":
+    main()

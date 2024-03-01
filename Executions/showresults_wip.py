@@ -21,6 +21,8 @@ import dbscan_cluster
 import pandas as pd
 import yaml
 
+
+
 dpg.create_context()
 dpg.create_viewport(title="Conan", width=1500, height=500)
 
@@ -173,14 +175,15 @@ def openres():
     for root, dirs, files in os.walk(os.path.dirname(os.getcwd())):
         print(dirs)
         if "PARAMETERS" in dirs:
-            param_path = os.path.join(root, "PARAMETERS", "docking_parameters.yaml")
-            if os.path.isfile(param_path):
-                print("found file")
-                with open(param_path, 'r') as file:
-                    docking_parameters = yaml.safe_load(file)
-                print(docking_parameters)
-                get_res(root, softwares[docking_parameters['Software']]['short_name'])
-                break
+            for file in files:
+                if "docking_parameters" in file and file.endswith(".yaml"):
+                    param_path = os.path.join(root, file)
+                    print("found file")
+                    with open(param_path, 'r') as file:
+                        docking_parameters = yaml.safe_load(file)
+                    print(docking_parameters)
+                    get_res(root, softwares[docking_parameters['Software']]['short_name'])
+                    break
     """
     for root, dirs, files in os.walk(f"{tosearch}/PARAMETERS/SOFT/"):
         for file in files:

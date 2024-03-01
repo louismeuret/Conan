@@ -1,7 +1,7 @@
 import dearpygui.dearpygui as dpg
 import sys
 import glob
-import docklaunch3 as dckl
+import docklaunch as dckl
 
 import asyncio
 import concurrent.futures
@@ -100,7 +100,8 @@ def delete_second_window(sender):
     dpg.delete_item(sender)
 
 def save_parameters_to_yaml(results_folder, parameters):
-    params_file = os.path.join(results_folder, "PARAMETERS", "docking_parameters.yaml")
+    heure_actuelle = time.strftime("%H:%M:%S_%d_%m_%Y")
+    params_file = os.path.join(results_folder, "PARAMETERS", f"docking_parameters_{heure_actuelle}.yaml")
     with open(params_file, 'w') as file:
         yaml.dump(parameters, file)
 
